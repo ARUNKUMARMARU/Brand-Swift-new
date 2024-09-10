@@ -1,0 +1,213 @@
+---
+import Section from "../Section.astro";
+import "../review/review.css";
+
+---
+
+<Section>
+  <div class="container">
+    <div class="f-col gap-4">
+      <div class="section-title text-center">
+      <h5 style={{color:'#3272f6'}}>  Testimonials </h5>
+      <p class="text-center sub-head m-auto">
+        The success stories of our clients.
+  
+      </p>
+      
+      </div>
+
+     </div>
+
+     <div class="review-slider">
+       
+    
+      <div class="slide">
+      <div class="wrapper">
+        <div class="row">
+          <div class="col-12 d-flex align-items-center">
+            <div class="reviewer">
+              <!-- <img src="images/logo.png" alt="web development service" style="max-width: 104px;" /> -->
+            </div>
+    
+            <div class="review-content">
+              <p>
+                "Working with Brand Swift has been a game-changer for our business. Their innovative strategies and dedicated team have significantly increased our online presence and sales. Highly recommended!"
+                ..
+              </p>
+    
+              <p class="pt-3">Pooja</p>
+            </div>
+          </div>
+         </div>
+      </div>
+      </div>
+
+      <div class="slide">
+      <div class="wrapper">
+        <div class="row">
+          <div class="col-12 d-flex align-items-center">
+            <div class="reviewer">
+              <!-- <img src="images/logo.png" alt="corporate event service" style="max-width: 104px;" /> -->
+            </div>
+    
+            <div class="review-content">
+              <p>
+                "The expertise and support we received from Brand Swift were exceptional. They tailored their approach to our needs and delivered impressive results, boosting our traffic and engagement remarkably."
+                ..
+              </p>
+    
+              <p class="pt-3">Vinod Kumar</p>
+            </div>
+          </div>
+         </div>
+      </div>
+      </div>
+      <div class="slide">
+      <div class="wrapper">
+        <div class="row">
+          <div class="col-12 d-flex align-items-center">
+            <div class="reviewer">
+              <!-- <img src="images/logo.png" alt="SEO service" style="max-width: 104px;" /> -->
+            </div>
+    
+            <div class="review-content">
+              <p>
+                "I was blown away by the results Brand Swift achieved for our digital marketing campaigns. Their professionalism and insight into the latest trends have truly set them apart. Our ROI has never been better!"
+                ..
+              </p>
+    
+              <p class="pt-3">Sidhegowda</p>
+            </div>
+          </div>
+         </div>
+      </div>
+      </div>   
+
+    </div>
+
+    <div class="container">
+      <div class="hero-navs">
+        <div class="button">
+          
+        </div>
+        <div class="button">
+          
+        </div> 
+        <div class="button">
+          
+        </div>
+       
+         
+      </div>
+    </div>
+  
+  
+  </div>
+</Section>
+
+<style lang="scss" is:inline>
+
+  .review-wrapper{
+    gap: 8rem !important;
+  }
+  .review-slider {
+     
+    .slide{
+      .wrapper{
+        width: 80%;
+        padding: 3rem;
+        background-color: rgba(250, 251, 251, 0.327);
+        border-radius: 10px;
+        margin: 0 auto;
+
+        @media screen and (max-width:1440px) {
+      width: 100% !important;
+    }
+    
+    @media screen and (max-width:480px) {
+      height: 50vh;
+      overflow: scroll;  
+      .reviewer{
+        display: none;
+      }  
+      .review-content {
+        padding: 0;
+      }
+      
+    }
+      }
+    }
+    
+    .row {
+      > :nth-child(1) {
+        width: 100%;
+      }
+      .reviewer {
+        border-radius: 50%;
+        border: solid 2px #3272f6;
+        display: flex;
+        width: 200px;
+        float: left;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+        
+        @media screen and (max-width:1440px) {
+          height: 130px;
+    }
+
+        img {
+          border-radius: 50%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .review-content {
+        overflow: hidden;
+        text-align: left;
+        padding-left: 98px;
+        position: relative;
+       }
+    }
+  }
+
+  .hero-navs {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;  
+    gap: 10px;
+    @media screen and (max-width: 1080px) {
+      display: none;
+    }
+    * {
+      transition: var(--transition);
+    }
+
+   
+    .button {
+      width: 35px !important;
+      height: 7px !important;
+      border-radius: 15px;
+      border: none !important;
+      background-color: #3272f6;
+
+      @media screen and (max-width: 500px) {
+        width: 12px !important;
+        height: 12px !important;
+        aspect-ratio: 1;       
+      }
+    }
+
+    .tns-nav-active {
+      width: 8px !important;
+      height: 8px !important;
+      border-radius: 8px;
+      border: none !important;
+      background-color:#3272f6;
+
+    
+    }
+  }
+
+  
+</style>

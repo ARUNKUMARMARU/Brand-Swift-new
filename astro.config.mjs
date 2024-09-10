@@ -1,0 +1,8 @@
+import { defineConfig } from 'astro/config';
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+export default defineConfig({
+  // Your existing configuration here
+});

@@ -1,0 +1,146 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/header.astro";
+import Footer from "../components/footer3.astro";
+import Section from "../components/Section.astro";
+// import Card from "../components/Card.html"
+import Card from "../components/Card.astro";
+
+const photos = [
+  {
+    img: '/images/slide1.jpg',
+    link: '#',
+  },
+  {
+    img: '/images/slide2.jpg',
+    link: '#',
+  },
+  {
+    img: '/images/slide3.jpg',
+    link: '#',
+  },
+  {
+    img: '/images/slide4.jpg',
+    link: '#',
+  },
+  
+];
+---
+
+<Layout title="Best Digital Marketing Agency in Bangalore" link="">
+<Header/>
+<div class="blur-wrapper">
+    
+    <Section>
+       
+       <div class="intro-seo">
+        <h1 class="elementor-heading-title">Building Your Digital Foundation</h1>
+        <p class="elementor-widget-container">Transform Your Vision into a Seamless Online Experience with Expert Web Development</p>
+       </div>
+       
+    </Section>
+
+    <Section>
+        <div class="seo-list">
+            <div>
+                <h2>Our WEB Development packages Offer</h2>
+            </div>
+            <div class="elementor-7575">
+                <div>
+                    <ul>
+                        <h3><b>Website Design and Development</b></h3>
+                        <li>Creating custom website layouts</li>
+                        <li>Developing responsive designs</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <h3><b>Content Management System Integration</b></h3>
+                        <li>Integrating with popular CMS platforms</li>
+                        <li>Customizing CMS functionalities</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <h3><b>Front-End Development</b></h3>
+                        <li>Building interactive user interfaces</li>
+                        <li>Optimizing for cross-browser compatibility</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <h3><b>Back-End Development</b></h3>
+                        <li>Developing server-side logic</li>
+                        <li>Integrating with databases and APIs</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <h3><b>Website Maintenance and Support</b></h3>
+                        <li>Regular updates and patches</li>
+                        <li>Technical support and troubleshooting</li>
+                    </ul>
+                </div>               
+                <div>
+                    <ul>
+                        <h3><b>Performance Optimization</b></h3>
+                        <li>Improving website speed and load times</li>
+                        <li>Optimizing for better user experience</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="getquote-seo">
+                <a href="/contact" class="btn-2">
+                 Get Quote
+                </a>
+              </div>
+        </div>
+    </Section>
+
+    <Section>
+        <div class="seo-process-container">
+            <div>
+                <h2>Our Web Development Process</h2>
+            </div>
+            <div class="seo-process-list-container">
+                <div class="seo-process-list">
+                    <h4>Discovery & Planning</h4>
+            <p>We start with understanding your business needs, goals, and target audience. This phase includes gathering requirements, defining project scope, and creating a detailed plan that aligns with your objectives and timeline.</p>
+                </div>
+                <div class="seo-process-list">
+                    <h4>Design & Prototyping</h4>
+                    <p>Design engaging and user-friendly website layouts based on the project requirements. This includes creating wireframes and prototypes to visualize the website's structure and functionality before development begins.</p>
+                </div>
+                <div class="seo-process-list">
+                    <h4>Front-End Development</h4>
+                    <p>Develop the website's front end using HTML, CSS, and JavaScript to ensure a responsive and interactive user experience. This step includes implementing designs, creating navigation, and ensuring cross-browser compatibility.</p>
+                </div>               
+                <div class="seo-process-list">
+                    <h4>Testing & Quality Assurance</h4>
+            <p>Conduct thorough testing to identify and fix any issues before the website goes live. This includes checking for bugs, ensuring compatibility across devices and browsers, and validating performance and security measures.</p>
+                </div>
+                <div class="seo-process-list">
+                    <h4>Launch & Deployment</h4>
+            <p>Deploy the website to a live environment, making it accessible to users. This phase includes final checks, domain configuration, and ensuring that all elements are functioning as expected post-launch.</p>
+                </div>
+                <div class="seo-process-list">
+                    <h4>Maintenance & Support</h4>
+                    <p>Provide ongoing maintenance and support to address any issues, implement updates, and optimize the website as needed. This ensures the website remains up-to-date and continues to perform well over time.</p>
+                </div>
+            </div>
+        </div>
+    </Section>
+    <Section>
+       <div>
+        <Card photos={photos}/>
+       </div>
+    </Section>
+   
+    <Footer/>
+</div>
+</div>
+
+</Layout>
+
+   

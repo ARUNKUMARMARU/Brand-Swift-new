@@ -1,0 +1,384 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Section from "../components/Section.astro";
+import Header from "../components/header.astro";
+import Footer from "../components/footer3.astro";
+---
+
+<Layout title="Best Digital Marketing Agency in Bangalore" link="">
+<Header/>
+<div class="blur-wrapper">
+    <Section>
+        <div class="intro-container">
+            <div class="home-section">
+              <div class="d-flex flex-column gap-3">
+               
+               <div class="intro-text">
+                <h1 class="home-banner-title">Join Our Team Today!</h1>
+                <h4>Join our team and shape the future of digital marketing innovation</h4>
+                <div class="button">
+                  <!-- <div>
+                    <a href="/services" class="btn-2">
+                     View Jobs
+                    </a>
+                  </div>                  -->
+                </div>  
+               </div>
+              </div>
+             </div>     
+          </div>           
+           
+    </Section>
+
+    <Section>
+      <div style={{paddingTop:'7vw'}}>       
+          <h2 class="work-benifts-title">About Working Here</h2>        
+        <div class="work-benifts-container">
+          <div class="work-benifts-list">
+            <h4>Teamwork and Collaboration</h4>
+            <p>
+              We harness the power of teamwork to drive creative solutions and achieve remarkable results. Join us and be part of a collaborative environment where your ideas and expertise make a difference.
+            </p>
+          </div>
+          <div class="work-benifts-list">
+            <h4>Secured Future and Career Growth</h4>
+            <p>
+              We are committed to providing a secured future and fostering career growth for our team members. We offer not only job security but also ample opportunities for professional development. 
+            </p>
+          </div>
+          <div class="work-benifts-list">
+            <h4>Learning Opportunities</h4>
+            <p>
+              We are dedicated to your continuous growth, offering extensive learning opportunities to keep you at the forefront of digital marketing. Access to cutting-edge tools, all designed to enhance your skills and advance your career.
+            </p>
+          </div>
+          <div class="work-benifts-list">
+            <h4>Upgrade Skills</h4>
+            <p>
+              Elevate your digital marketing expertise with our customized training programs and state-of-the-art tools, designed to keep your skills at the cutting edge.
+            </p>
+          </div>
+          <div class="work-benifts-list">
+            <h4>Employee Recognition</h4>
+            <p>
+              Experience meaningful recognition for your efforts and achievements with our structured employee appreciation programs, celebrating your contributions.
+            </p>
+          </div>
+          <div class="work-benifts-list">
+            <h4>Work-Life Balance</h4>
+            <p>
+              Achieve optimal work-life balance with our flexible work arrangements and supportive culture, designed to enhance your professional and personal well-being.
+
+
+
+
+
+            </p>
+          </div>          
+        </div>
+      </div>
+    </Section>
+
+    <Section>
+      <div style={{paddingTop:'7vw'}}>
+        <h2 class="work-benifts-title">Open Positions</h2>  
+        <div class="position-list">
+          <div class="position-table-tittle">
+            <h4>Position</h4>
+            <h4>Qualification</h4>
+          <h4>Experience</h4>
+          <h4>Action</h4>
+          </div>
+          <div class="position-list-container">
+            <div class="position-table-data">
+              <p>SEO Specialist</p>
+              <p>Any degree</p>
+              <p>2-3 years</p>
+              <a href="mailto:hello@brandswift.in" class="apply">
+                Apply
+               </a>
+            </div>
+            <div class="position-table-data">
+              <p>Content Writer</p>
+              <p>Any degree</p>
+              <p>2-3 years</p>
+              <a href="mailto:hello@brandswift.in" class="apply">
+                Apply
+               </a>
+            </div>
+            <div class="position-table-data">
+              <p class="social-media">Social Media Specialist</p>
+              <p>Any degree</p>
+              <p>2-3 years</p>
+              <a href="mailto:hello@brandswift.in" class="apply">
+                Apply
+               </a>
+            </div>           
+          </div>
+        </div>
+        
+      </div>
+    </Section>
+    <Section>
+      <Footer/>
+    </Section>
+    
+</div>
+</Layout>
+
+<style lang="scss">
+    .intro-container{
+      background-image: linear-gradient(to bottom right, #87adf9, #f7ecdb);
+  width: 100%; 
+  padding-top: 10vh;
+  border-radius: 5vh;   
+  }
+  .intro-text{
+    display: flex;
+    flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  }  
+  .home-section {
+    height: 40vh;
+    margin-top: var(--header-height);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    line-height: 3vw;   
+
+    h4 {
+     font-weight: 300;
+     line-height: 15vh;
+    }
+
+    .home-banner-title {
+      font-size: 3.5vw;
+      font-weight: 600;
+      text-align: center;
+    }
+    
+  }  
+  
+  .work-benifts-title{
+    text-align: center;
+    font-size: 3vw;
+    padding-bottom: 5vw;
+  }
+  .work-benifts-list{
+    width: 25vw;    
+    text-align: center;
+    padding-top: 15px;
+    background-color:#abc4f8;  
+    border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;   
+    transition: border-radius 0.5s;
+  }
+  .work-benifts-list p{
+    padding: 0px 50px;
+    font-size: 1.2vw;
+  }
+  .work-benifts-list h4{
+   
+    padding: 10px;
+    font-size: 1.75vw;
+  }
+  .work-benifts-list:hover{
+    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%;  
+    transition-duration: 0.5s;
+  }
+  .work-benifts-container{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5vw;
+    justify-content: space-evenly;
+  }
+  .position-table-tittle{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+    background-color: #b9cffc;   
+    border-radius: 1.5vw;      
+  }
+  .position-table-data{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;     
+    border-radius: 1.5vw;      
+  }
+  .position-table-data:nth-child(odd){
+    background-color: #f9f1e3;
+  }
+  .position-table-data:nth-child(odd):hover{   
+    background-color: #fee7bf;
+  }
+  .position-table-data:nth-child(even){
+    background-color: #e6efff;
+  }
+  .position-table-data:nth-child(even):hover{
+    background-color: #cfe0ff;
+  }
+  .position-list li{
+    display: flex;
+   
+    height: 50px;
+    align-items: center;
+   border-radius: 1.25vw; 
+  }
+  .apply{
+    width: 100px;   
+  background-color: white;
+  text-align: center; 
+  border-radius: 20px;
+  font-weight: 400; 
+  }
+  .apply:hover{
+    background: linear-gradient(90deg,#09182d 0%,#183863 50%, #3272f6 100%);
+  transition: all 0.5 ease;
+  font-weight: 500;
+  color: white;
+  }
+  .position-list-container{
+    display: flex;    
+    flex-direction: column;
+    padding-top: 1vw;
+  } 
+  .position-table-data span {
+    color: #f9f1e3;
+  }
+  .social-media{
+    width: 8%;
+  }
+  @media screen and (max-width: 1200px) {
+  .wrapper {
+    height: 180px;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-section {
+    height: 40vh;
+    margin-top: var(--header-height);
+    display: flex;
+    flex-direction: column;   
+    line-height: 3vw;   
+
+    h4 {
+     font-weight: 300;
+     line-height: 8vw;
+     font-size: 3.5vw;
+     text-align: center;
+     font-weight: 400;
+     padding: 0vw 2vw;
+    }
+
+    .home-banner-title {
+      font-size: 6vw;
+      font-weight: 700;   
+      
+    }
+    
+  }  
+  .work-benifts-title{
+    text-align: center;
+    font-size: 5.5vw;
+    font-weight: 700;
+    padding-bottom: 10vw;
+  }
+  .work-benifts-list{ 
+    width: 43vw;     
+    padding-top: 10px;   
+  }
+  .work-benifts-list h4{   
+    padding: 5px;
+    font-size: 3vw;
+  }
+  .work-benifts-list p{
+    padding: 0px 20px;
+    font-size: 2.25vw;
+   }
+  .work-benifts-container{
+    display: flex;
+    flex-wrap: wrap;   
+    row-gap: 5vw;
+    justify-content: space-around;
+  }
+  .social-media{
+    width: 17%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-section {
+    height: 40vh;
+    margin-top: var(--header-height);
+    display: flex;
+    flex-direction: row;   
+    line-height: 3vw;   
+
+    h4 {
+     font-weight: 300;
+     line-height: 8vw;
+     font-size: 4vw;
+     text-align: center;
+     font-weight: 400;
+     padding: 0vw 2vw;
+    }
+
+    .home-banner-title {
+      font-size: 7vw;
+      font-weight: 700; 
+    }
+  }  
+  .work-benifts-title{
+    text-align: center;
+    font-size: 6vw;
+    font-weight: 700;
+    padding-bottom: 10vw;
+  }
+  .work-benifts-list{ 
+    width: 35vw;     
+    padding-top: 10px;   
+  }
+  .work-benifts-list h4{   
+    padding: 5px;
+    font-size: 3vw;
+  }
+  .work-benifts-list p{
+    padding: 0px 20px;
+    font-size: 2.5vw;
+   }
+  .work-benifts-container{
+    display: flex;
+    flex-wrap: wrap;   
+    row-gap: 5vw;
+    justify-content: space-around;
+  }
+  .position-table-tittle{  
+    height: 60px;      
+  }
+  .position-table-tittle h4{  
+    font-size: 15px;  
+    font-weight: 700;    
+  }
+  .position-table-data{
+    height: 50px;
+    font-size: 10px;   
+    text-align: center;   
+    align-items: center;
+   
+  }
+  .social-media{
+    width: 15%;
+  }
+  .apply{
+    width: 80px;  
+  text-align: center; 
+  border-radius: 20px;
+  
+  }
+
+}
+</style>

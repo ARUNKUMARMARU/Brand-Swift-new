@@ -1,0 +1,595 @@
+---
+import Layout from "../layouts/Layout.astro"
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
+---
+
+<Layout title="Best Digital Marketing Agency in Bangalore" link="">  
+  <div style="padding-bottom: 5vw;">
+    <div class="headertop">
+
+      <section class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:hello@brandswift.com">hello@brandswift.com</a>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <a href="tel:+919611007771">+91 9611007771</a>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Banashankari, Bengaluru</span>
+        </div>
+        <div class="social-icons">
+          <a href="https://wa.me/+919611007771" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/brandswift.in/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a>   
+          <a href="https://www.linkedin.com/company/91380961/admin/dashboard/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </section>
+      
+          
+        </div>
+        <header class="d-flex justify-content-between header-container" id="header"> 
+          
+        
+          <div class="logo">
+            <a href="/">
+                <img src="/images/bs-logo-new.png" alt="logo" />
+            </a>
+        </div>  
+      
+        <div class="menu-list">
+          <ul>
+              <li>
+                  <a href="/services">Services</a>
+                  <div class="hover-service">                
+                      <div>
+                          <ul>
+                              <li><b>Title 1</b></li>
+                              <li><a href="#">Ad Shoot 2</a></li>
+                              <li><a href="#">Ad Shoot 3</a></li>
+                              <li><a href="#">Ad Shoot 4</a></li>
+                              <li><a href="#">Ad Shoot 5</a></li>
+                              <li><a href="#">Ad Shoot 6</a></li>   
+                          </ul>   
+                      </div>
+                      <div>
+                          <ul>
+                              <li><b>Title 2</b></li>
+                              <li><a href="#">Ad Shoot 2</a></li>
+                              <li><a href="#">Ad Shoot 3</a></li>
+                              <li><a href="#">Ad Shoot 4</a></li>
+                              <li><a href="#">Ad Shoot 5</a></li>
+                              <li><a href="#">Ad Shoot 6</a></li>   
+                          </ul>   
+                      </div>
+                      <div>
+                          <ul>
+                              <li><b>Title 3</b></li>
+                              <li><a href="#">Ad Shoot 2</a></li>
+                              <li><a href="#">Ad Shoot 3</a></li>
+                              <li><a href="#">Ad Shoot 4</a></li>
+                              <li><a href="#">Ad Shoot 5</a></li>
+                              <li><a href="#">Ad Shoot 6</a></li>   
+                          </ul>   
+                      </div>
+                      <div>
+                          <ul>
+                              <li><b>Title 4</b></li>
+                              <li><a href="#">Ad Shoot 2</a></li>
+                              <li><a href="#">Ad Shoot 3</a></li>
+                              <li><a href="#">Ad Shoot 4</a></li>
+                              <li><a href="#">Ad Shoot 5</a></li>
+                              <li><a href="#">Ad Shoot 6</a></li>   
+                          </ul>   
+                      </div>
+                      <div>
+                          <ul>
+                              <li><b>Title 5</b></li>
+                              <li><a href="#">Ad Shoot 2</a></li>
+                              <li><a href="#">Ad Shoot 3</a></li>
+                              <li><a href="#">Ad Shoot 4</a></li>
+                              <li><a href="#">Ad Shoot 5</a></li>
+                              <li><a href="#">Ad Shoot 6</a></li>   
+                          </ul>   
+                      </div>
+                      <div>
+                          <ul>
+                              <li><b>Title 6</b></li>
+                              <li><a href="#">Ad Shoot 2</a></li>
+                              <li><a href="#">Ad Shoot 3</a></li>
+                              <li><a href="#">Ad Shoot 4</a></li>
+                              <li><a href="#">Ad Shoot 5</a></li>
+                              <li><a href="#">Ad Shoot 6</a></li>   
+                          </ul>   
+                      </div>
+                  </div>
+              </li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About US</a></li>
+              <li><a href="/portfolio">Portfolio</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+          </ul>
+      </div>
+      
+        
+              <div>
+              <!-- <div class="menu-icon" onclick="toggleMenu()">
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+              </div> -->
+        
+              <div class="additional-content" id="additionalContent">
+                
+        
+                <div class="container">
+                  <div class="menu-overlay">
+                    <div class="menu-wrapper" id="menus">
+                      <a href="/" class="menu-item">Home</a>
+                      <a href="/about" class="menu-item">About</a>
+                      <a href="/services" class="menu-item">Services</a>
+                      <a href="/career" class="menu-item">Careers</a>                
+                      <a href="/contact/" class="menu-item">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           
+            </div>
+          
+        </header>
+  </div>
+</Layout>
+
+
+
+<script is:inline>
+  let lastScrollTop = 0;
+
+  window.addEventListener("scroll", function () {
+    const header = document.getElementById("header");
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    // if (scrollTop > lastScrollTop) {
+    //   header.classList.add("hide");
+    // } else {
+    //   header.classList.remove("hide");
+    // }
+
+    lastScrollTop = scrollTop;
+    
+  });
+
+  function toggleMenu() {
+    var menuIcon = document.querySelector(".menu-icon");
+    var additionalContent = document.getElementById("additionalContent");
+    var head = document.getElementById("header");
+
+    menuIcon.classList.toggle("open");
+    additionalContent.classList.toggle("visible");
+    head.classList.toggle("white");
+       
+  }
+</script>
+
+<style lang="scss">
+  .headertop{
+   padding-left: 10vw;
+    z-index: 999;
+    position: fixed !important;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;     
+    background-color: #000c52;
+    color: white;
+  }
+  .contact-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5vw;
+  padding-right: 0 !important;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.contact-item i {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+}
+.contact-item a { 
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+ padding-left: 10vw;
+  gap: 3vw;
+  
+}
+
+.social-icons a {
+  color: white; 
+  font-size: 1.25em;
+  transition: color 0.3s;
+  
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+  .header-container {    
+    background-color: #ffffff;
+   }
+
+  header {
+    padding: 1.5rem 2rem;
+    z-index: 999;
+    position: fixed !important;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    transition: top 0.3s ease;
+
+    &.hide {
+      top: -130px;
+    }
+
+    .logo {   
+     
+      img {
+        width: 13vw;
+        padding-left: 0;
+      }
+    }
+    .menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    height: 100%; /* Adjusted height to 100% */
+    border-radius: 25px;
+    margin-right: 20vw;
+}
+
+/* Remove default list styling */
+.menu-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for individual list items */
+.menu-list ul > li {
+    position: relative;
+    margin-right: 15px;
+}
+
+/* Styling for anchor tags */
+.menu-list a {
+    text-decoration: none;
+    color: black;
+    font-size: 2.25vh;
+    font-weight: 500;
+    padding: 0.5vw 2.5vw;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect for menu items */
+.menu-list a:hover {
+    background-color: #e6a237;
+    border-radius: 20px;
+    color: white;
+}
+
+/* Submenu styling */
+.menu-list ul ul {
+    display: block; /* Hide submenu by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #e6a237;
+    border-radius: 10px;
+    padding: 10px 0;
+    z-index: 1000; /* Ensure the submenu appears above other elements */
+}
+
+/* Show submenu on hover */
+.menu-list ul li:hover > ul {
+    display: block;
+}
+
+/* Submenu item styling */
+.menu-list ul ul li {
+    padding: 5px 20px;
+    white-space: nowrap;
+}
+
+/* Hover effect for submenu items */
+.menu-list ul ul li:hover {
+    background-color: #09182d;
+    color: white;
+    border-radius: 10px;
+}
+    .menu-icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      cursor: pointer;
+      margin-right: 0;
+    }
+
+    .menu-bar {
+      width: 40px;
+      height: 3px;
+      background-color: #09182d;
+      margin: 3px 0;
+      transition: 0.4s;
+    }
+
+    .menu-icon.open .menu-bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-7px, 8px);
+      background-color: rgb(38, 0, 255);
+    }
+
+    .menu-icon.open .menu-bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-icon.open .menu-bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .additional-content {
+      display: none;
+      position: fixed;
+      width: 100%;
+      transition: var(--transition);
+      top: var(--header-height);
+      left: 0;
+      height: 100vh;
+      transform: all 0.5s ease;
+
+      svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px !important;
+      }
+    }
+
+    .additional-content.visible {
+      display: block !important;
+      background-color: white;
+      position: fixed;
+      overflow-y: auto;
+    }
+
+    .menu-overlay {
+      padding-top: 5vh;
+      height: 600px;
+      color: black;
+      z-index: 9999;
+      display: flex;
+      
+
+      .menu-item {
+        font-size: 3vw; // Use viewport width for responsiveness
+        text-transform: uppercase;
+        font-weight: 300;
+        transition: all 0.8s ease-in-out;
+
+        &:hover {
+          background: -webkit-linear-gradient(#09182d, #3272f6);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          transition: all 0.3s ease-in-out;
+          padding-left: 10px;
+         
+        }
+      }
+      
+      .menu-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      isolation: isolate;
+
+      &:before {
+        background: -webkit-linear-gradient(#09182d, #3272f6);
+        content: "";
+        width: 599px;
+        height: 600px;
+        position: absolute;
+        bottom: -120px;
+        right: -160px;
+        border-radius: 50%;
+        filter: blur(80px);
+        z-index: 9;
+
+        @keyframes move {
+          0% {
+            transform: scale(1) translate(10px, -30px);
+          }
+          38% {
+            transform: scale(0.8, 1) translate(5vw, 30vh) rotate(160deg);
+          }
+          100% {
+            transform: scale(1) translate(10px, -90px);
+          }
+        }
+       
+
+        @media screen and (max-width: 900px) {
+          width: 300px;
+          height: 300px;
+        }
+      }
+    }
+
+    .white {
+      background-color: #ffffff;
+    }
+
+    @media screen and (max-width: 1200px) {
+      header {
+        padding: 1rem 3rem;
+      }
+
+      .logo img {
+        width: 12vw;
+      }
+
+      .menu-item {
+        font-size: 2.5vw;
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      header {
+        padding: 1rem 2rem;
+        height: auto;
+
+        .logo img {
+          width: 150px;
+        }
+      }
+
+      .menu-item {
+        font-size: 2vw;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+        .logo img {
+          width: 20vw;
+        }
+      .menu-item {
+        font-size: 2vw;
+      }
+     
+      .menu-bar {
+      width: 35px;
+      height: 2.1px;    
+      
+    }
+    }
+
+    @media screen and (max-width: 480px) {
+        .logo img {
+          width: 28vw;
+        }     
+
+      .menu-item {
+        font-size: 4vw !important;
+        font-weight: 400 !important;
+      }
+      .menu-bar {
+      width: 30px;
+      height: 2px;    
+      
+    }
+    }
+
+    @media screen and (max-width: 390px) {
+      
+      .logo img {
+          width: 25vw;
+      }
+      .menu-item {
+        font-size: 1.2vw;
+      }
+      .menu-overlay{
+        padding-top: 0;
+      }
+      .menu-bar {
+      width: 25px;
+      height: 1.5px;    
+      
+    }
+    }
+  }
+  .menu-list ul li .hover-service {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: auto; /* Adjust width to fit content */
+    background-color: #000c52;
+    padding: 20px;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+/* Show the hover-service div when hovering over the Services menu item */
+.menu-list ul li:hover .hover-service {
+    display: flex;
+    flex-wrap: wrap; /* Ensure all divs are displayed properly */
+    justify-content: space-between; /* Space out divs evenly */
+}
+
+.hover-service > div {
+    flex: 1 1 30%; /* Adjust percentage to fit columns you need */
+    box-sizing: border-box;
+    min-width: 200px;
+    margin-bottom: 20px; /* Add spacing between rows */
+}
+
+.hover-service ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hover-service li {
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hover-service > div {
+        flex: 1 1 calc(50% - 10px); /* Adjust for 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hover-service {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+
+    .hover-service > div {
+        flex: 1 1 100%; /* Full width on small screens */
+        margin-bottom: 20px;
+    }
+}
+
+
+
+</style>
+
+
+

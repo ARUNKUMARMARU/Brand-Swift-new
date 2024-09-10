@@ -1,0 +1,252 @@
+---
+
+---
+<div style={{paddingTop:'7vw'}}>
+    <div class="footer-first-section">
+        <div class="row">
+          <div class="col-lg-5 footer-highlight text-end">
+            <!-- This is a good time to create your  -->
+            <div class="big-title p-0">LET'S BUILD</div>
+          </div>
+          <div class="col-lg-5 p-0">
+            <div class="footer-slider">
+              <div class="slide">
+                <div class="big-title">A WEBSITE</div>
+              </div>
+              <div class="slide">
+                <div class="big-title">A WEBSITE</div>
+              </div>
+              <div class="slide">
+                <div class="big-title">A WEBSITE</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="/contact" class="btn-2">
+            Talk to us
+          </a>
+        </div>
+      </div>
+      <hr>
+   <div class="footer-container">
+    <div class="newsletter">
+        <div class="logo">
+            <a href="/" >
+              <img src="/images/bs-logo-new.png" alt="logo" />
+            </a>
+          </div>
+          <div class="newsletter-content">
+           <h5>Our Newsletter</h5>
+           <p>Subscribe to our newsletter to stay updated with latest trends.
+           </p>
+           <form method="post" enctype="multipart/form-data" id="contact-form">
+            <div >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Your Email"
+              />
+              <div class="subscribe-button">
+                <button>Subscribe</button>  
+             </div>   
+            </div>    
+          </form>
+          </div>
+    </div>
+    <div class="footer-list">
+        <h5>Information</h5>
+        <ul>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/team">Team</a></li>
+            <!-- <li><a href="/portfolio">Portfolio</a></li> -->
+            <li><a href="/career">Careers</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+        </ul>
+    </div>
+    
+    <div class="footer-list">
+        <h5>Helpful Links</h5>
+        <ul>
+            <!-- <li><a href="">FAQ</a></li> -->
+            <!-- <li><a href="">Terms & Condition</a></li> -->
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+        </ul>
+    </div>
+    <div class="footer-list">
+        <h5>Contact Info</h5>
+        <ul>
+         <li>Tel : <a href="tel:+919611007771">+91 9611007771 </a></li>
+         <li>Email : <a href="mailto:hello@brandswift.in"> &nbsp;&nbsp;hello@brandswift.in</a></li>
+         <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1944.733068026069!2d77.51313719898464!3d12.877720523737059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3f002f39e34b%3A0x59532054f1260903!2sBrand%20Swift!5e0!3m2!1sen!2sin!4v1722669627107!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+        </ul>
+
+    </div>
+   </div>
+<hr>
+<div class="copyright">
+         
+  <p class="m-0">Copyrights©2024 Brand Swift.All Rights Reserved</p>
+
+</div>
+</div>
+
+<script>
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+      
+      event.preventDefault();      
+      
+       const formData = new FormData(event.target);
+      const data = Object.fromEntries(formData.entries());
+      var templateParams = {    
+      email: data.email  
+    };
+    
+       emailjs.send('service_8tpviia', 'template_s2yajum', templateParams)
+  .then(function(response) {
+     console.log('SUCCESS!', response.status, response.text);
+     window.alert("Thank you for contacting us! We will be in touch with you shortly.");
+     
+  })
+      
+  });
+
+</script>
+
+<style>
+  .logo img {
+    width: 12vw;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer-list {
+    line-height: 33px;
+  }
+
+  input {
+    border: none;
+    border-bottom: 2px solid #183863;
+    border-radius: 2px;
+    background-color: transparent;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  .newsletter {
+    width: 280px;
+  }
+
+  .newsletter-content p {
+    font-size: 1vw;
+  }
+
+  .newsletter button {
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    background-color: #2068f7;
+    color: white;
+  }
+
+  .newsletter button:hover {
+    background-color: #588ef9;
+  }
+
+  .subscribe-button {
+    padding-top: 1vw;
+    padding-left: 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .footer-container {
+      flex-wrap: wrap;
+      padding-left: 5vw;
+      gap: 1vw;
+    }
+
+    .logo img {
+      width: 20vw;
+    }
+
+    .footer-list {
+      line-height: 30px;
+      font-size: 2.5vw;
+    }
+
+    .footer-container h5 {
+      font-size: 3.5vw;
+    }
+
+    .footer-first-section .big-title {
+      font-size: 20px;
+    }
+
+    .newsletter-content p {
+      font-size: 2.5vw;
+      width: 70%;
+    }
+
+    .subscribe-button {
+      font-size: 3vw;
+      padding-left: 3px;
+    }
+
+    .newsletter-content input {
+      font-size: 2.5vw;
+    }
+
+    .copyright {
+      font-size: 2.25vw;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .footer-container {
+      flex-direction: column;
+      padding-left: 5vw;
+      row-gap: 5vw;
+    }
+
+    .footer-list {
+      line-height: 22px;
+      font-size: 3vw;
+    }
+
+    .footer-container h5 {
+      font-size: 4vw;
+    }
+
+    .newsletter-content p {
+      font-size: 2.5vw;
+      width: 70%;
+    }
+
+    .subscribe-button {
+      font-size: 3vw;
+      padding-left: 3px;
+    }
+
+    .newsletter-content input {
+      font-size: 2.5vw;
+    }
+
+    .copyright {
+      font-size: 2.5vw;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+    margin: 0;
+}
+</style>

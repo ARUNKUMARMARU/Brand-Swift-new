@@ -1,0 +1,172 @@
+---
+interface Props {
+  title: string;
+  link: string;
+}
+
+const { title, link } = Astro.props;
+import "../style/global.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="title" content="Brand Swift">
+    <meta name="keywords" content="Best digital marketing agency Bangalore, best SEO agency Bangalore, Bangalore digital marketing experts, digital advertising Bangalore">
+    <meta name="description" content="Boost your business with Brand Swift, a top digital marketing agency in Bangalore. Specializing in SEO and social media marketing to drive growth and online success. Contact us today!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link rel="canonical" href="https://brandswift.in/">
+    <meta name="robots" content="index, follow"/>
+    <meta name="google-site-verification" content="w96wX-JB_CULrzcFSSiSwLZCxGk8bqoA6ns53RqDNrQ" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1PWHXJF5W"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-N1PWHXJF5W');
+    </script>
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content="We are a Top Digital Marketing Agency in Bangalore" />
+    <meta property="og:image" content="https://brandswift.in/images/bs-logo-new.png" />
+    <meta property="og:url" content="https://brandswift.in/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Brand Swift" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;500;600&family=Work+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />   
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["LocalBusiness", "Organization"],
+        "name": "Brand Swift",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3, Banashankari 6th Stage, 4th Block",
+          "addressLocality": "Bangalore",
+          "addressRegion": "KA",
+          "postalCode": "560062",
+          "addressCountry": "IN"
+        },
+        "telephone": "+91-855-333-3145",
+        "email": "hello@brandswift.in",
+        "url": "https://www.brandswift.in",
+        "openingHours": "Mo-Fr 09:00-18:00",
+        "description": "Brand Swift is a digital marketing agency based in Bangalore, specializing in SEO, SEM, and social media marketing.",
+        "sameAs": "https://www.instagram.com/brandswift.in/"
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+  </head>
+  <body >
+    <div class="blob-wrapper">
+      <div class="blob-section">
+        <div class="blob" id="blob1"></div>
+        <div class="blob" id="blob2"></div>      
+        <div class="blob" id="blob4"></div>       
+      </div>
+    </div>
+    <div id="follower" class="follow"></div>
+    <slot /> 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      is:inline
+      referrerpolicy="no-referrer"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
+
+    
+    <script is:inline src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+
+    
+    <script>
+      import "../app";
+      import "../homeanimation";
+    </script>
+
+    <script>
+      var follower = document.getElementById("follower");
+      var hoveredDiv = document.querySelector(".overlay");
+
+      document.addEventListener("mousemove", function (e) {
+        var xPos = e.clientX - follower.offsetWidth / 2;
+        var yPos = e.clientY - follower.offsetHeight / 2;
+        follower.style.left = xPos + "px";
+        follower.style.top = yPos + "px";
+      });
+    </script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" > </script>
+<script type="text/javascript">
+  (function() {
+  emailjs.init("cm5iGQ0mNf7Rsv9K0");
+  })(); 
+</script>
+  </body>
+</html>
+

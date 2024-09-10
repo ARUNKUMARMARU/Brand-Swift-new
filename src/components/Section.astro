@@ -1,0 +1,39 @@
+---
+let { classes = "", style = "" } = Astro.props;
+---
+
+<div class:list={["section", classes]} style={style}>
+  <slot />
+</div>
+
+<style lang="scss">
+  div.section {
+    padding: 0rem 0 ;
+    @media screen and (max-width: 900px) {
+      padding: 0rem 0;
+    }
+  }
+</style>
+
+<style is:inline>
+  /* .section.add-inner-padding > div{
+      padding: 6rem 0;
+    } */
+</style>
+
+<style is:global lang="scss">
+  .sections {
+    padding: 5rem 0 0 0;
+    @media screen and (max-width: 500px) {
+      padding: 3rem 0 0 0 !important;
+    }
+  }
+
+  .mobile-only-padding {
+    @media screen and (max-width: 500px) {
+      padding: 3rem 0 0 0;
+    }
+  }
+
+  
+</style>

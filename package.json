@@ -1,0 +1,29 @@
+{
+  "name": "civil-comet",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "generate-pages": "node scripts/generate-pages.mjs",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "npm run generate-pages && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "astro": "^3.1.4",
+    "bootstrap-icons": "^1.11.3",
+    "dotenv": "^16.4.5",
+    "fs": "^0.0.1-security",
+    "gsap": "^3.12.2",
+    "path": "^0.12.7",
+    "querystring": "^0.2.1",
+    "sass": "^1.69.3",
+    "swiper": "^11.0.5",
+    "tiny-slider": "^2.9.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.8"
+  }
+}

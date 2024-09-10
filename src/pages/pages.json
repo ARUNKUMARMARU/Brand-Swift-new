@@ -1,0 +1,46 @@
+[
+  {
+    "name": "404",
+    "path": "/404"
+  },
+  {
+    "name": "about",
+    "path": "/about"
+  },
+  {
+    "name": "career",
+    "path": "/career"
+  },
+  {
+    "name": "contact",
+    "path": "/contact"
+  },
+  {
+    "name": "event",
+    "path": "/event"
+  },
+  {
+    "name": "portfolio",
+    "path": "/portfolio"
+  },
+  {
+    "name": "privacy-policy",
+    "path": "/privacy-policy"
+  },
+  {
+    "name": "seo",
+    "path": "/seo"
+  },
+  {
+    "name": "services",
+    "path": "/services"
+  },
+  {
+    "name": "team",
+    "path": "/team"
+  },
+  {
+    "name": "thankyou",
+    "path": "/thankyou"
+  }
+]
