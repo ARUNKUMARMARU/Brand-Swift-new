@@ -81,6 +81,8 @@ body {
   backdrop-filter: blur(84px) !important;
   -webkit-backdrop-filter: blur(84px) !important;
   position: relative;
+  padding-top: 50px;
+  
 }
 
 ul {
@@ -996,6 +998,7 @@ a {
 .elementor-heading-title{
   color: #1e1e21;  
   width: 75%;  
+  margin-bottom: 3vw;
 font-size: 2.5vw;
 font-weight: 600;
 text-transform: uppercase;
@@ -1011,7 +1014,7 @@ font-weight: 400;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+ 
  
 }
 .elementor-7575 h3{           
@@ -1071,7 +1074,8 @@ margin-top: 15vh;
 display: flex;
 flex-direction: row; /* Change to row if you want items side by side */
 flex-wrap: wrap; /* Allows items to wrap to the next line if there's not enough space */
-justify-content: space-around; /* Space out the items */
+
+gap: 2vw;
 width: 100%;
 }
 

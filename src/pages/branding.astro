@@ -3,7 +3,27 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/header.astro";
 import Footer from "../components/footer3.astro";
 import Section from "../components/Section.astro";
-import Card from "../components/Card.html"
+import Card from "../components/Card.astro";
+
+const photos = [
+  {
+    img: '/images/slide1.jpg',
+    link: '#',
+  },
+  {
+    img: '/images/slide2.jpg',
+    link: '#',
+  },
+  {
+    img: '/images/slide3.jpg',
+    link: '#',
+  },
+  {
+    img: '/images/slide4.jpg',
+    link: '#',
+  },
+  
+];
 ---
 <Layout title="Best Digital Marketing Agency in Bangalore" link="">
 <Header/>
@@ -88,7 +108,7 @@ import Card from "../components/Card.html"
     </Section>
 
     <Section>
-        <div class="seo-process-container">
+        <div class="seo-process-container" id="demo">
             <div>
                 <h2>Our Process of Branding</h2>
             </div>
@@ -122,7 +142,7 @@ import Card from "../components/Card.html"
     </Section>
     <Section>
        <div>
-        <Card/>
+        <Card photos={photos}/>
        </div>
     </Section>
    

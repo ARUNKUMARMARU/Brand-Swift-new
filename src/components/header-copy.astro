@@ -119,76 +119,28 @@
     }
     .menu-list {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: #09182d;   
-    height: 100%; /* Adjusted height to 100% */
+    
     border-radius: 25px;
     margin-right: 20vw;
 }
 
-/* Remove default list styling */
-.menu-list ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-/* Styling for individual list items */
-.menu-list ul > li {
-    position: relative;
-    margin-right: 15px;
-}
 
-/* Styling for anchor tags */
-.menu-list a {
-    text-decoration: none;
-    color: white;
-    font-size: 2.25vh;
-    font-weight: 500;
-    padding: 0.5vw 2.5vw;
-    transition: color 0.3s ease, background-color 0.3s ease;
-}
 
-/* Hover effect for menu items */
-.menu-list a:hover {
-    background-color: #e6a237;
-    border-radius: 20px;
-    color: white;
-}
 
-/* Submenu styling */
-.menu-list ul ul {
-    display: none; /* Hide submenu by default */
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #e6a237;
-    border-radius: 10px;
-    padding: 10px 0;
-    z-index: 1000; /* Ensure the submenu appears above other elements */
-}
 
-/* Show submenu on hover */
-.menu-list ul li:hover > ul {
-    display: block;
-}
 
-/* Submenu item styling */
-.menu-list ul ul li {
-    padding: 5px 20px;
-    white-space: nowrap;
-}
 
-/* Hover effect for submenu items */
-.menu-list ul ul li:hover {
-    background-color: #09182d;
-    color: white;
-    border-radius: 10px;
-}
+
+
+
+
+
+
     .menu-icon {
       display: flex;
       flex-direction: column;

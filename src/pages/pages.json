@@ -8,6 +8,14 @@
     "path": "/about"
   },
   {
+    "name": "adshoot",
+    "path": "/adshoot"
+  },
+  {
+    "name": "branding",
+    "path": "/branding"
+  },
+  {
     "name": "career",
     "path": "/career"
   },
@@ -18,6 +26,18 @@
   {
     "name": "event",
     "path": "/event"
+  },
+  {
+    "name": "faq",
+    "path": "/faq"
+  },
+  {
+    "name": "pay-per-click",
+    "path": "/pay-per-click"
+  },
+  {
+    "name": "performance-marketing",
+    "path": "/performance-marketing"
   },
   {
     "name": "portfolio",
@@ -36,11 +56,19 @@
     "path": "/services"
   },
   {
+    "name": "social-media",
+    "path": "/social-media"
+  },
+  {
     "name": "team",
     "path": "/team"
   },
   {
     "name": "thankyou",
     "path": "/thankyou"
+  },
+  {
+    "name": "web-development",
+    "path": "/web-development"
   }
 ]

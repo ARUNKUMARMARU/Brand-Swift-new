@@ -59,7 +59,7 @@ import Footer from "../components/footer3.astro";
         </div>      
        </div>
        <div class="responsive-image-wrapper">
-        <img src="images/home-intro2.png" alt="Home Intro Image">
+        <img src="/images/home-intro2.png" alt="Home Intro Image">
       </div>
       
     </div>
@@ -70,7 +70,7 @@ import Footer from "../components/footer3.astro";
       <Section>
         
      
-        <div class="about-hme">
+        <!-- <div class="about-hme">
           <div class="container">
             <div class="row">
               <div class="col-lg-6">
@@ -79,10 +79,10 @@ import Footer from "../components/footer3.astro";
                   
               </div>
               <div class="text-start">
-                <p>
-                  <span class="home-about-content">
-                    At Brand Swift, we’re dedicated to elevating your brand through expert digital marketing strategies. As a leading digital marketing company, we specialize in creating innovative and effective campaigns that drive real results.
-                  </span>
+                <p class="home-about-content">
+                
+                    Brand Swift is a results-driven digital marketing agency, offering comprehensive services including brand strategy, SEO, PPC, social media marketing, content marketing, email campaigns, influencer partnerships, and more. Our expertise extends to web design, graphic design, video production, and conversion optimization, ensuring your brand stands out in the digital landscape. From local businesses and e-commerce to healthcare, education, real estate, and beyond, we partner with industries like hospitality, finance, technology, fashion, and media to enhance their digital presence. At Brand Swift, our purpose is simple to empower brands to Liberate their full potential and Shine in the digital world
+                  
                 </p>
                
               </div>
@@ -94,7 +94,20 @@ import Footer from "../components/footer3.astro";
               </div>
             </div>
           </div>
+        </div> -->
+
+        <div class="about-bs">
+          <h2>About Brand Swift</h2>
+          <p>
+            Brand Swift is a results-driven digital marketing agency, offering comprehensive services including brand strategy, SEO, PPC, social media marketing, content marketing, email campaigns, influencer partnerships, and more. Our expertise extends to web design, graphic design, video production, and conversion optimization, ensuring your brand stands out in the digital landscape. From local businesses and e-commerce to healthcare, education, real estate, and beyond, we partner with industries like hospitality, finance, technology, fashion, and media to enhance their digital presence. At Brand Swift, our purpose is simple to empower brands to Liberate their full potential and Shine in the digital world
+          </p>
+          <div class="col-lg-3">
+            <div class="text-center">
+              <a href="/about" class="btn-2"> Read More</a>
+            </div>
         </div>
+
+      </div>
       
       </Section>
     
@@ -146,7 +159,8 @@ import Footer from "../components/footer3.astro";
 
       <div class="section project-section" >
         <div>
-          <div class="section-title  text-center">  <h5 style={{color:'#3272f6'}}>latest works</h5>  </div>
+          <div class="section-title  text-center">  <h5 style={{color:'#3272f6'}}> latest works</h5> 
+           </div>
           <div class="latest-wrapper">
 
             <div>
@@ -300,7 +314,45 @@ import Footer from "../components/footer3.astro";
     gap: 2rem;
   }
 }
-
+.about-bs{
+  background-color:#e1ebff ;
+  margin: 10vw 2vw;
+  padding: 2vw;
+  border-radius: 25px;
+  line-height: 2.5vw;
+  font-size: 18px;
+  
+}
+.about-bs h2{
+ color: #3272f6;
+ padding: 2vw;
+}
+.about-bs .col-lg-3{
+  display: flex;
+ margin-left: 40vw;
+}
+@media screen and (max-width:768px) {
+  .about-bs{
+  line-height: 6vw;
+  font-size: 18px;
+  font-weight: 400;
+}
+.about-bs .col-lg-3{
+  display: flex;
+ margin-left: 30vw;
+}
+}
+@media screen and (max-width:480px) {
+  .about-bs{
+  line-height: 7.5vw;
+  font-size: 16px;
+  font-weight: 400;
+}
+.about-bs .col-lg-3{
+  display: flex;
+ margin-left: 30vw;
+}
+}
 .responsive-image-wrapper {
   display: flex;
   justify-content: center;
