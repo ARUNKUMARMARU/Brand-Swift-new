@@ -5,6 +5,7 @@ import Offers from "../components/service/weoffer.astro";
 import Section from "../components/Section.astro";
 import Header from "../components/header.astro";
 import Footer from "../components/footer3.astro";
+import Homeservice from "../components/homeservice.astro";
 ---
 
 <Layout title="Best Digital Marketing Agency in Bangalore" link="">  
@@ -111,7 +112,105 @@ import Footer from "../components/footer3.astro";
       
       </Section>
     
-      <Offers />
+      <Offers />  
+      
+      <Section>
+ 
+       <div class="hover-container-all">
+        <div class="hover-container">
+          <div class="image"> </div>
+          <div class="content">
+            <h4>BRANDING</h4>
+            <h6>Crafting Brands That Connect and Inspire</h6>
+            <p>We specialize in creating powerful, memorable brand identities that capture your essence and connect with your audience, ensuring your business stands out in the digital landscape</p>
+  
+          </div>
+         </div>
+
+         <div class="hover-container">
+          <div class="image"> </div>
+          <div class="content">
+            <h4>GRAPIC DESIGN</h4>
+            <h6>Crafting Brands That Connect and Inspire</h6>
+            <p>We specialize in creating powerful, memorable brand identities that capture your essence and connect with your audience, ensuring your business stands out in the digital landscape</p>
+  
+          </div>
+         </div>
+
+         <div class="hover-container">
+          <div class="image"> </div>
+          <div class="content">
+            <h4>WEB DEVELOPMENT</h4>
+            <h6>Crafting Brands That Connect and Inspire</h6>
+            <p>We specialize in creating powerful, memorable brand identities that capture your essence and connect with your audience, ensuring your business stands out in the digital landscape</p>
+  
+          </div>
+         </div>
+
+         <div class="hover-container">
+          <div class="image"> </div>
+          <div class="content">
+            <h4><span>SEARCH ENGINE OPTIMIZATION</span></h4>
+            <h6>Crafting Brands That Connect and Inspire</h6>
+            <p>We specialize in creating powerful, memorable brand identities that capture your essence and connect with your audience, ensuring your business stands out in the digital landscape</p>
+  
+          </div>
+         </div>
+
+         <div class="hover-container">
+          <div class="image"> </div>
+          <div class="content">
+            <h4>PERFORMANCE MARKETING</h4>
+            <h6>Crafting Brands That Connect and Inspire</h6>
+            <p>We specialize in creating powerful, memorable brand identities that capture your essence and connect with your audience, ensuring your business stands out in the digital landscape</p>
+  
+          </div>
+         </div>
+
+         <div class="hover-container">
+          <div class="image"> </div>
+          <div class="content">
+            <h4><span>SOCIAL MEDIA MARKETING</span></h4>
+            <h6>Crafting Brands That Connect and Inspire</h6>
+            <p>We specialize in creating powerful, memorable brand identities that capture your essence and connect with your audience, ensuring your business stands out in the digital landscape</p>
+  
+          </div>
+         </div>
+
+         <div class="hover-container">
+          <div class="image"> </div>
+          <div class="content">
+            <h4><span>PAY PER CLICK MARKETING</span></h4>
+            <h6>Crafting Brands That Connect and Inspire</h6>
+            <p>We specialize in creating powerful, memorable brand identities that capture your essence and connect with your audience, ensuring your business stands out in the digital landscape</p>
+  
+          </div>
+         </div>
+
+         <div class="hover-container">
+          <div class="image"> </div>
+          <div class="content">
+            <h4>AD SHOOT</h4>
+            <h6>Crafting Brands That Connect and Inspire</h6>
+            <p>We specialize in creating powerful, memorable brand identities that capture your essence and connect with your audience, ensuring your business stands out in the digital landscape</p>
+  
+          </div>
+         </div>
+
+         <div class="hover-container">
+          <div class="image"> </div>
+          <div class="content">
+            <h4><span>CORPORATE EVENT MANAGEMENT</span></h4>
+            <h6>Crafting Brands That Connect and Inspire</h6>
+            <p>We specialize in creating powerful, memorable brand identities that capture your essence and connect with your audience, ensuring your business stands out in the digital landscape</p>
+  
+          </div>
+         </div>
+       </div>
+
+
+
+      </Section>
     
       <Section>
         <div class="container">
@@ -511,6 +610,107 @@ import Footer from "../components/footer3.astro";
   .text-start {
     width: 100%;
   }
+}
+.hover-container-all{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5vw;  
+ justify-content: center;
+}
+.hover-container {
+  width: 25vw;
+  height: 35vh;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px 20px 0px 0px;
+ 
+  background: linear-gradient(90deg, #09182d 0%, #183863 50%, #3272f6 100%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hover-container .inner-container {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 13px; /* Adjusted to fit inside the parent */
+}
+
+.image {
+  background-image: url("https://lbntechsolutions.com/blogs/wp-content/uploads/2023/09/Tips-to-Handle-Digital-Branding.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transition: opacity 0.5s ease-in-out;
+ 
+}
+
+.content {
+  background-color: #000c52;
+  color: white;
+  width: 100%;
+  height: 8vh;
+  padding: 1vw;
+  position: absolute;
+  bottom: 0;
+  transition: height 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+ 
+}
+
+.hover-container:hover .content {
+  height: 35vh;
+  margin-top: -30vh; 
+  
+}
+
+.hover-container:hover .image {
+  opacity: 0;
+}
+@media screen and (max-width:480px){
+  .hover-container-all {
+  padding: 10vw;
+  }
+  .hover-container {   
+  width: 100%;
+}
+
+
+
+.image {
+  background-image: url("https://lbntechsolutions.com/blogs/wp-content/uploads/2023/09/Tips-to-Handle-Digital-Branding.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  transition: opacity 0.5s ease-in-out;
+ 
+}
+.content h4{
+  padding: 6px;
+  font-size: 25px;
+  text-align: center;
+}
+.content {
+  background-color: #000c52;
+  color: white;
+  width: 100%;
+  height: 7vh;
+  padding: 1vw;
+  position: absolute;
+  bottom: 0;
+  transition: height 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+ 
+}
+
+.hover-container:hover .content {
+  height: 35vh;
+  margin-top: -30vh; 
+  
+}
+
+.hover-container:hover .image {
+  opacity: 0;
+}
 }
 
 </style>

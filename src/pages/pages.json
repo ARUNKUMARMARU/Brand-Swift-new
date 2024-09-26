@@ -12,6 +12,10 @@
     "path": "/adshoot"
   },
   {
+    "name": "blog",
+    "path": "/blog"
+  },
+  {
     "name": "branding",
     "path": "/branding"
   },
