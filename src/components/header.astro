@@ -1,13 +1,11 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from '../layouts/Layout.astro';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
 ---
 
-<Layout title="Best Digital Marketing Agency in Bangalore" link="">  
+<Layout title="Best Digital Marketing Agency in Bangalore" link="">
   <div class="page-bottom">
     <div class="headertop">
-
       <section class="contact-info">
         <div class="contact-item">
           <i class="fas fa-envelope"></i>
@@ -22,41 +20,46 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
           <span>Banashankari, Bengaluru</span>
         </div>
         <div class="social-icons">
-          <a href="https://wa.me/+919611007771" target="_blank"><i class="fab fa-whatsapp"></i></a>
-          <a href="https://www.instagram.com/brandswift.in/" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a>   
-          <a href="https://www.linkedin.com/company/91380961/admin/dashboard/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/+919611007771" target="_blank"
+            ><i class="fab fa-whatsapp"></i></a
+          >
+          <a href="https://www.instagram.com/brandswift.in/" target="_blank"
+            ><i class="fab fa-instagram"></i></a
+          >
+          <a href="https://www.facebook.com/yourpage" target="_blank"
+            ><i class="fab fa-facebook-f"></i></a
+          >
+          <a
+            href="https://www.linkedin.com/company/91380961/admin/dashboard/"
+            target="_blank"><i class="fab fa-linkedin-in"></i></a
+          >
         </div>
       </section>
-      
-          
-        </div>
-        <header class="d-flex justify-content-between header-container" id="header"> 
-          
-        
-          <div class="logo">
-            <a href="/">
-                <img src="/images/bs-logo-new.png" alt="logo" />
-            </a>
-        </div>  
-      
-        <div class="menu-list-container">
-          <a href="/">Home</a>
-          <a href="/about">About Us</a>
-         <span class="hover-service"> <a href="services">Service</a>
+    </div>
+    <header class="d-flex justify-content-between header-container" id="header">
+      <div class="logo">
+        <a href="/">
+          <img src="/images/bs-logo-new.png" alt="logo" />
+        </a>
+      </div>
+
+      <div class="menu-list-container">
+        <a href="/">Home</a>
+        <a href="about">About Us</a>
+        <span class="hover-service">
+          <a href="services">Service</a>
           <div class="service-container">
             <div class="service-list">
               <h5><span>&#x2022;</span> Branding</h5>
               <a href="/branding/#demo">Personal Branding</a>
               <a href="">Company Branding</a>
-              <a href="">Product & Service Branding</a>              
+              <a href="">Product & Service Branding</a>
             </div>
             <div class="service-list">
               <h5><span>&#x2022;</span> Graphic Design</h5>
               <a href="">Posters & Reels</a>
               <a href="">Logo Creation</a>
               <a href="">Video Editing</a>
-             
             </div>
             <div class="service-list">
               <h5><span>&#x2022;</span> Web Development</h5>
@@ -102,59 +105,47 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
             </div>
           </div>
         </span>
-          <a href="/career">Career</a>
-          <a href="/blog">Blog</a>
-          <a href="contact">Contact Us</a>
-          
-          
+        <a href="/career">Career</a>
+        <a href="/blog">Blog</a>
+        <a href="contact">Contact Us</a>
       </div>
-      
-        
-              <div class="mobile-menu">
-              <div class="menu-icon" onclick="toggleMenu()">
-                <div class="menu-bar"></div>
-                <div class="menu-bar"></div>
-                <div class="menu-bar"></div>
-              </div>
-        
-              <div class="additional-content" id="additionalContent">
-                
-        
-                <div class="container">
-                  <div class="menu-overlay">
-                    <div class="menu-wrapper" id="menus">
-                      <a href="/" class="menu-item">Home</a>
-                      <a href="/about" class="menu-item">About</a>
-                      <a href="/services" class="menu-item">Services</a>
-                      <a href="/career" class="menu-item">Careers</a>                
-                      <a href="/contact/" class="menu-item">Contact Us</a>
-                      <!-- <div class="social-icons">
+
+      <div class="mobile-menu">
+        <div class="menu-icon" onclick="toggleMenu()">
+          <div class="menu-bar"></div>
+          <div class="menu-bar"></div>
+          <div class="menu-bar"></div>
+        </div>
+
+        <div class="additional-content" id="additionalContent">
+          <div class="container">
+            <div class="menu-overlay">
+              <div class="menu-wrapper" id="menus">
+                <a href="/" class="menu-item">Home</a>
+                <a href="/about" class="menu-item">About</a>
+                <a href="/services" class="menu-item">Services</a>
+                <a href="/career" class="menu-item">Careers</a>
+                <a href="/contact/" class="menu-item">Contact Us</a>
+                <!-- <div class="social-icons">
                         <a href="https://wa.me/+919611007771" target="_blank"><i class="fab fa-whatsapp"></i></a>
                         <a href="https://www.instagram.com/brandswift.in/" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a>   
                         <a href="https://www.linkedin.com/company/91380961/admin/dashboard/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                       </div> -->
-                    </div>
-                  </div>
-                </div>
               </div>
-           
             </div>
- 
-           
-              
-        </header>
+          </div>
+        </div>
+      </div>
+    </header>
   </div>
 </Layout>
 
-
-
 <script is:inline>
-  
   let lastScrollTop = 0;
 
-  window.addEventListener("scroll", function () {
-    const header = document.getElementById("header");
+  window.addEventListener('scroll', function () {
+    const header = document.getElementById('header');
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
     // if (scrollTop > lastScrollTop) {
@@ -164,27 +155,25 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
     // }
 
     lastScrollTop = scrollTop;
-    
   });
 
   function toggleMenu() {
-    var menuIcon = document.querySelector(".menu-icon");
-    var additionalContent = document.getElementById("additionalContent");
-    var head = document.getElementById("header");
+    var menuIcon = document.querySelector('.menu-icon');
+    var additionalContent = document.getElementById('additionalContent');
+    var head = document.getElementById('header');
 
-    menuIcon.classList.toggle("open");
-    additionalContent.classList.toggle("visible");
-    head.classList.toggle("white");
-       
+    menuIcon.classList.toggle('open');
+    additionalContent.classList.toggle('visible');
+    head.classList.toggle('white');
   }
 </script>
 
 <style lang="scss">
-  .page-bottom{
+  .page-bottom {
     padding-bottom: 5vw;
   }
-  .headertop{
-   padding-left: 10vw;
+  .headertop {
+    padding-left: 10vw;
     z-index: 999;
     position: fixed !important;
     top: 0px;
@@ -192,99 +181,92 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
     width: 100%;
     height: 50px;
     display: flex;
-    align-items: center; 
-    justify-content: space-between;     
+    align-items: center;
+    justify-content: space-between;
     background-color: #000c52;
     color: white;
   }
-  @media screen and (max-width:768px) {
-    .headertop{
-    font-size: 15px;
-    .social-icons{
-    display: none;
+  @media screen and (max-width: 768px) {
+    .headertop {
+      font-size: 15px;
+      .social-icons {
+        display: none;
+      }
+      .contact-item span {
+        display: none;
+      }
+      .social-icons-mobile {
+        display: flex;
+        justify-content: center;
+      }
+      .social-icons {
+        padding-left: 0;
+      }
+    }
   }
-  .contact-item span{
-    display: none;
-  }
-  .social-icons-mobile{
-    display: flex;
-    justify-content: center; 
-  } 
-  .social-icons{
-    padding-left: 0;
-  }
-   }  
-   
-  }
-  @media screen and (max-width:480px) {
-   
-   .headertop{
-    font-size: 10px;
-    .social-icons{
-    display: none;
-  }
-  .contact-item span{
-    display: none;
-  }
-  .social-icons-mobile{
-    display: flex;
-    justify-content: center; 
-  } 
-   }  
-   .social-icons{
-    padding-left: 0;
-  }
+  @media screen and (max-width: 480px) {
+    .headertop {
+      font-size: 10px;
+      .social-icons {
+        display: none;
+      }
+      .contact-item span {
+        display: none;
+      }
+      .social-icons-mobile {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .social-icons {
+      padding-left: 0;
+    }
   }
 
-  
-  
   .contact-info {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  gap: 5vw;
-  padding-right: 0 !important;
-}
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5vw;
+    padding-right: 0 !important;
+  }
 
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 1vw;
-}
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+  }
 
-.contact-item i {
-  font-size: 1.5em;
-  color: white;
-  text-decoration: none;
-}
-.contact-item a { 
-  color: white;
-  text-decoration: none;
-}
+  .contact-item i {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+  }
+  .contact-item a {
+    color: white;
+    text-decoration: none;
+  }
 
-.social-icons {
-  display: flex;
- padding-left: 10vw;
-  gap: 3vw;
-  
-}
+  .social-icons {
+    display: flex;
+    padding-left: 10vw;
+    gap: 3vw;
+  }
 
+  .social-icons a {
+    color: white;
+    font-size: 1.25em;
+    transition: color 0.3s;
+  }
 
-.social-icons a {
-  color: white; 
-  font-size: 1.25em;
-  transition: color 0.3s;
-  
-}
+  .social-icons a:hover {
+    color: #007bff;
+  }
 
-.social-icons a:hover {
-  color: #007bff;
-}
-
-  .header-container {    
+  .header-container {
     background-color: #ffffff;
-   }
+  }
 
   header {
     padding: 1.5rem 2rem;
@@ -295,96 +277,95 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
     width: 100%;
     height: 12vh;
     display: flex;
-    align-items: center; 
-    justify-content: space-between; 
+    align-items: center;
+    justify-content: space-between;
     transition: top 0.3s ease;
 
     &.hide {
       top: -130px;
     }
 
-    .logo {   
-     
+    .logo {
       img {
         width: 13vw;
         padding-left: 0;
       }
     }
-    .menu-list-container {   
+    .menu-list-container {
       display: flex;
-      gap: 2vw; 
+      gap: 2vw;
       align-items: center;
-    justify-content: center;    
-    border-radius: 25px;
-    margin-right: 20vw;
+      justify-content: center;
+      border-radius: 25px;
+      margin-right: 20vw;
+    }
+    .menu-list-container a {
+      text-decoration: none;
+      color: black;
+      font-weight: 550;
+      padding: 10px 20px 10px 20px;
+    }
+    .menu-list-container a:hover {
+      background-color: #000c52;
+      color: white;
+      border-radius: 15px;
+    }
+    .service-container {
+      display: none;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin-left: -10vw;
+      position: absolute;
+      width: 50%;
+      gap: 3vw;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 10px;
+      z-index: 1000;
+      opacity: 0;
+      transition:
+        opacity 0.5s ease-in,
+        display 0s 0.5s;
+    }
+    .service-list {
+      display: flex;
+      flex-direction: column;
+    }
+    .service-list a {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    .service-list h5 {
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .service-list span {
+      font-size: 20px;
+    }
+    // .hover-service:hover .service-container {
+    //     display: flex;
+    //   opacity: 1;
+    //   transition: opacity 0.5s ease-in;
+    // }
+    .hover-service .service-container {
+      display: flex;
+      opacity: 0;
+      pointer-events: none; /* Prevent hover interaction when hidden */
+      transition:
+        opacity 0.5s ease-in,
+        display 0s 0.5s; /* Adding delay to display */
+    }
+    @media screen and (max-width: 768px) {
+    }
 
-}
-.menu-list-container a{  
-  text-decoration: none;
-  color: black;
-  font-weight: 550;
-  padding: 10px 20px 10px 20px;
-}
-.menu-list-container a:hover{  
-  background-color: #000c52;
-  color: white;
-  border-radius: 15px;
-}
-.service-container{
-  display: none;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin-left: -10vw;
-    position: absolute;
-    width: 50%;
-    gap: 3vw;
-    background-color: #fff; 
-    border: 1px solid #ddd;
-    padding: 10px;
-    z-index: 1000; 
-    opacity: 0;
-  transition: opacity 0.5s ease-in, display 0s 0.5s;
-}
-.service-list{
-  display: flex;
-  flex-direction: column;
-}
-.service-list a{
-  font-size: 14px;
-  line-height: 16px;
- }
- .service-list h5{
-  font-size: 15px;
-  font-weight: 700;
- }
- .service-list span{
-  font-size: 20px;
- }
-.hover-service:hover .service-container {
-    display: flex;   
-  opacity: 1;
-  transition: opacity 0.5s ease-in;
-}
-.hover-service .service-container {
-  display: flex;
-  opacity: 0;
-  pointer-events: none; /* Prevent hover interaction when hidden */
-  transition: opacity 0.5s ease-in, display 0s 0.5s; /* Adding delay to display */
-}
-@media screen and (max-width:768px) {
-  
-}
-  
-
-
-.mobile-menu{
-  display: none;
-}
+    .mobile-menu {
+      display: none;
+    }
 
     .menu-icon {
       display: flex;
       flex-direction: column;
-      justify-content: center; 
+      justify-content: center;
       cursor: pointer;
       margin-right: 0;
     }
@@ -442,7 +423,6 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
       color: black;
       z-index: 9999;
       display: flex;
-      
 
       .menu-item {
         font-size: 3vw; // Use viewport width for responsiveness
@@ -456,10 +436,9 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
           -webkit-text-fill-color: transparent;
           transition: all 0.3s ease-in-out;
           padding-left: 10px;
-         
         }
       }
-      
+
       .menu-wrapper {
         display: flex;
         flex-direction: column;
@@ -470,7 +449,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
       &:before {
         background: -webkit-linear-gradient(#09182d, #3272f6);
-        content: "";
+        content: '';
         width: 599px;
         height: 600px;
         position: absolute;
@@ -491,7 +470,6 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
             transform: scale(1) translate(10px, -90px);
           }
         }
-       
 
         @media screen and (max-width: 900px) {
           width: 300px;
@@ -534,36 +512,34 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
     }
 
     @media screen and (max-width: 768px) {
-        .logo img {
-          width: 20vw;
-        }
+      .logo img {
+        width: 20vw;
+      }
       .menu-item {
         font-size: 2vw;
       }
-     
+
       .menu-bar {
-      width: 35px;
-      height: 2.1px;    
-      
-    }
-    .menu-list-container{
-      display: none;
-    }
-    .mobile-menu{
-      display: flex;   
-      font-size: 3vw;
-   
-    }
-    .mobile-menu a{
-      text-decoration: none;
-      color: black;
-    }
+        width: 35px;
+        height: 2.1px;
+      }
+      .menu-list-container {
+        display: none;
+      }
+      .mobile-menu {
+        display: flex;
+        font-size: 3vw;
+      }
+      .mobile-menu a {
+        text-decoration: none;
+        color: black;
+      }
     }
 
     @media screen and (max-width: 480px) {
-        .logo img {
-          width: 28vw;
-        }     
+      .logo img {
+        width: 28vw;
+      }
 
       .menu-item {
         font-size: 4vw !important;
@@ -572,38 +548,31 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
         color: black;
       }
       .menu-bar {
-      width: 30px;
-      height: 2px;          
-    }
-    .menu-list-container{
-      display: none;
-    }
-    .mobile-menu{
-      display: flex;
-    }
-   
-
+        width: 30px;
+        height: 2px;
+      }
+      .menu-list-container {
+        display: none;
+      }
+      .mobile-menu {
+        display: flex;
+      }
     }
 
     @media screen and (max-width: 390px) {
-      
       .logo img {
-          width: 25vw;
+        width: 25vw;
       }
       .menu-item {
         font-size: 1.2vw;
       }
-      .menu-overlay{
+      .menu-overlay {
         padding-top: 0;
       }
       .menu-bar {
-      width: 25px;
-      height: 1.5px;    
-      
-    }
+        width: 25px;
+        height: 1.5px;
+      }
     }
   }
 </style>
-
-
-

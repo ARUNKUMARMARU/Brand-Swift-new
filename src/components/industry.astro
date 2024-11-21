@@ -1,0 +1,261 @@
+---
+import Card from './Card.astro'; // Optional: Create a separate Card component for each card
+---
+
+<!-- ---
+const text1 = 'ONE   TWO   THREE  FOUR'; 
+const text2 = 'EIGHTSEVENSIXFIVE';
+---
+
+<style>
+  .scrolling-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .scroll-row {
+    display: inline-block;
+    padding-right: 100%; 
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  
+  .scroll-left-to-right {
+    animation-name: scroll-left-to-right;
+    animation-duration: 10s;
+  }
+
+ 
+  .scroll-right-to-left {
+    animation-name: scroll-right-to-left;
+    animation-duration: 10s;
+  }
+
+  
+  @keyframes scroll-left-to-right {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+
+ 
+  @keyframes scroll-right-to-left {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+</style>
+
+<div class="scrolling-container">
+  
+  <div class="scroll-row scroll-left-to-right">
+    {text1}
+    
+  </div>
+</div>
+
+<div class="scrolling-container">
+  
+  <div class="scroll-row scroll-right-to-left">
+    {text2}
+   
+  </div>
+</div> --><!-- <div class="scrolling-container">
+  <div class="scrolling-text">A B C D E F G H I J</div>
+</div>
+
+<style>
+  .scrolling-container {
+    width: 100%; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    position: relative;
+    background-color: #f0f0f0; 
+  }
+
+  .scrolling-text {
+    display: inline-block;
+    animation: scroll-right-to-left 10s linear infinite;
+    font-size: 2rem;
+    color: #000; 
+    white-space: nowrap;
+  }
+
+  @keyframes scroll-right-to-left {
+    from {
+      transform: translateX(100%); 
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+</style> -->
+<div class="scroll-container">
+  <center><h2>Industries We Serve</h2></center>
+  <div class="scroll-content">
+    <div class="card-list">
+      <p>Education</p>
+    </div>
+    <div class="card-list">
+      <p>Real estate</p>
+    </div>
+    <div class="card-list">
+      <p>Healthcare</p>
+    </div>
+    <div class="card-list">
+      <p>Entertainment</p>
+    </div>
+    <div class="card-list">
+      <p>Fashion</p>
+    </div>
+    <div class="card-list">
+      <p>eCommerce</p>
+    </div>
+    <div class="card-list">
+      <p>Finance</p>
+    </div>
+    <div class="card-list">
+      <p>Manufacturing</p>
+    </div>
+    <div class="card-list">
+      <p>Education</p>
+    </div>
+    <div class="card-list">
+      <p>Real estate</p>
+    </div>
+    <div class="card-list">
+      <p>Healthcare</p>
+    </div>
+    <div class="card-list">
+      <p>Entertainment</p>
+    </div>
+    <div class="card-list">
+      <p>Fashion</p>
+    </div>
+    <div class="card-list">
+      <p>eCommerce</p>
+    </div>
+    <div class="card-list">
+      <p>Finance</p>
+    </div>
+    <div class="card-list">
+      <p>Manufacturing</p>
+    </div>
+  </div>
+
+  <div class="scroll-content-right">
+    <div class="card-list">
+      <p>Education</p>
+    </div>
+    <div class="card-list">
+      <p>Real estate</p>
+    </div>
+    <div class="card-list">
+      <p>Healthcare</p>
+    </div>
+    <div class="card-list">
+      <p>Entertainment</p>
+    </div>
+    <div class="card-list">
+      <p>Fashion</p>
+    </div>
+    <div class="card-list">
+      <p>eCommerce</p>
+    </div>
+    <div class="card-list">
+      <p>Finance</p>
+    </div>
+    <div class="card-list">
+      <p>Manufacturing</p>
+    </div>
+    <div class="card-list">
+      <p>Education</p>
+    </div>
+    <div class="card-list">
+      <p>Real estate</p>
+    </div>
+    <div class="card-list">
+      <p>Healthcare</p>
+    </div>
+    <div class="card-list">
+      <p>Entertainment</p>
+    </div>
+    <div class="card-list">
+      <p>Fashion</p>
+    </div>
+    <div class="card-list">
+      <p>eCommerce</p>
+    </div>
+    <div class="card-list">
+      <p>Finance</p>
+    </div>
+    <div class="card-list">
+      <p>Manufacturing</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .scroll-container {
+    overflow: hidden;
+    width: 100%;
+    background-color: #183863;
+    padding: 20px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .scroll-container h2 {
+    color: #3272f6;
+  }
+  .scroll-content {
+    display: flex;
+    animation: scroll-left 25s linear infinite;
+  }
+
+  .scroll-content-right {
+    display: flex;
+    animation: scroll-right 25s linear infinite;
+  }
+  .card-list {
+    flex: 0 0 200px;
+    height: 150px;
+    margin-right: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(10%);
+    }
+    100% {
+      transform: translateX(calc(-150px * 10 - 20px * 9));
+    }
+  }
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(calc(-150px * 10 - 20px * 9));
+    }
+    100% {
+      transform: translateX(10%);
+    }
+  }
+</style>

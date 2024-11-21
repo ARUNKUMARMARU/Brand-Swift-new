@@ -1,8 +1,11 @@
 import { defineConfig } from 'astro/config';
 import dotenv from 'dotenv';
+import netlify from '@astrojs/netlify';
 
 dotenv.config();
 
 export default defineConfig({
-  // Your existing configuration here
+ 
+  output: 'static',  
+  adapter: netlify()
 });

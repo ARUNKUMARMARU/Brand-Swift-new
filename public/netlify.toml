@@ -4,5 +4,5 @@
 
 [[redirects]]
   from = "/*"
-  to = "/src/layouts/Layout.astro"
+  to = "/index.html"
   status = 200

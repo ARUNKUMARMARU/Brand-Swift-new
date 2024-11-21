@@ -1,17 +1,18 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Reviews from "../components/review/review.astro";
-import Offers from "../components/service/weoffer.astro";
-import Section from "../components/Section.astro";
-import Header from "../components/header.astro";
-import Footer from "../components/footer3.astro";
-import Homeservice from "../components/homeservice.astro";
+import Layout from '../layouts/Layout.astro';
+import Reviews from '../components/review/review.astro';
+import Offers from '../components/service/weoffer.astro';
+import Section from '../components/Section.astro';
+import Header from '../components/header.astro';
+import Footer from '../components/footer3.astro';
+import Homeservice from '../components/homeservice.astro';
+import Industry from '../components/industry.astro';
 ---
 
-<Layout title="Best Digital Marketing Agency in Bangalore" link="">  
-    <Header />  
+<Layout title="Best Digital Marketing Agency in Bangalore" link="">
+  <Header />
   <div class="blur-wrapper">
-      <!-- <Section>
+    <!-- <Section>
         <div style="width:100vw; display: flex; align-items: center; justify-content: center;">
           <section class="intro-slider">
             <div class="slider">
@@ -35,43 +36,36 @@ import Homeservice from "../components/homeservice.astro";
           
         </div>
       </Section> -->
-   <Section>
-    
-    <div class="intro-container">
-      <div class="home-section">
-        <div class="d-flex flex-column gap-3">
-         
-          <h1 class="home-banner-title">Integrated Digital Marketing Agency - Driving through the power of data</h1>
-          <h3 >Partners for designing your dream brand and digital expression</h3>
-          <p class="">
-          </p>
+    <Section>
+      <div class="intro-container">
+        <div class="home-section">
+          <div class="d-flex flex-column gap-3">
+            <h1 class="home-banner-title">
+              Integrated Digital Marketing Agency - Driving through the power of
+              data
+            </h1>
+            <h3>
+              Partners for designing your dream brand and digital expression
+            </h3>
+            <p class=""></p>
+          </div>
+          <div class="button">
+            <div>
+              <a href="/services" class="btn-2"> View Service </a>
+            </div>
+            <div>
+              <a href="/contact" class="btn-2"> Talk to Us </a>
+            </div>
+          </div>
         </div>
-        <div class="button">
-          <div>
-            <a href="/services" class="btn-2">
-              View Service
-            </a>
-          </div>
-          <div>
-            <a href="/contact" class="btn-2">
-              Talk to Us
-            </a>
-          </div>
-        </div>      
-       </div>
-       <div class="responsive-image-wrapper">
-        <img src="/images/home-intro2.png" alt="Home Intro Image">
+        <div class="responsive-image-wrapper">
+          <img src="/images/home-intro2.png" alt="Home Intro Image" />
+        </div>
       </div>
-      
-    </div>
-     
-     
-   </Section>    
-    
-      <Section>
-        
-     
-        <!-- <div class="about-hme">
+    </Section>
+
+    <Section>
+      <!-- <div class="about-hme">
           <div class="container">
             <div class="row">
               <div class="col-lg-6">
@@ -97,620 +91,684 @@ import Homeservice from "../components/homeservice.astro";
           </div>
         </div> -->
 
-        <div class="about-bs">
-          <h2>About Brand Swift</h2>
-          <p>
-            Brand Swift is a results-driven digital marketing agency, offering comprehensive services including brand strategy, SEO, PPC, social media marketing, content marketing, email campaigns, influencer partnerships, and more. Our expertise extends to web design, graphic design, video production, and conversion optimization, ensuring your brand stands out in the digital landscape. From local businesses and e-commerce to healthcare, education, real estate, and beyond, we partner with industries like hospitality, finance, technology, fashion, and media to enhance their digital presence. At Brand Swift, our purpose is simple to empower brands to Liberate their full potential and Shine in the digital world
-          </p>
-          <div class="col-lg-3">
-            <div class="text-center">
-              <a href="/about" class="btn-2"> Read More</a>
-            </div>
+      <div class="about-bs">
+        <h2>About Brand Swift</h2>
+        <p>
+          Brand Swift is a results-driven digital marketing agency, offering
+          comprehensive services including brand strategy, SEO, PPC, social
+          media marketing, content marketing, email campaigns, influencer
+          partnerships, and more. Our expertise extends to web design, graphic
+          design, video production, and conversion optimization, ensuring your
+          brand stands out in the digital landscape. From local businesses and
+          e-commerce to healthcare, education, real estate, and beyond, we
+          partner with industries like hospitality, finance, technology,
+          fashion, and media to enhance their digital presence. At Brand Swift,
+          our purpose is simple to empower brands to Liberate their full
+          potential and Shine in the digital world
+        </p>
+        <div class="col-lg-3">
+          <div class="text-center">
+            <a href="/about" class="btn-2"> Read More</a>
+          </div>
         </div>
-
       </div>
-      
-      </Section>
-    
-      <Offers />  
-      
-      <Section>
- 
-       <div class="hover-container-all">
+    </Section>
+
+    <Offers />
+
+    <Section>
+      <div class="hover-container-all">
         <div class="hover-container">
-          <div class="image"> </div>
+          <div class="image branding"></div>
           <div class="content">
             <h4>BRANDING</h4>
             <h6>Crafting Brands That Connect and Inspire</h6>
-            <p>We specialize in creating powerful, memorable brand identities that capture your essence and connect with your audience, ensuring your business stands out in the digital landscape</p>
-  
+            <p>
+              We specialize in creating powerful, memorable brand identities
+              that capture your essence and connect with your audience, ensuring
+              your business stands out in the digital landscape
+            </p>
           </div>
-         </div>
+        </div>
 
-         <div class="hover-container">
-          <div class="image"> </div>
+        <div class="hover-container">
+          <div class="image graphic-design"></div>
           <div class="content">
             <h4>GRAPIC DESIGN</h4>
-            <h6>Crafting Brands That Connect and Inspire</h6>
-            <p>We specialize in creating powerful, memorable brand identities that capture your essence and connect with your audience, ensuring your business stands out in the digital landscape</p>
-  
+            <h6>Transforming Ideas into Visual Masterpieces.</h6>
+            <p>
+              Our graphic design solutions seamlessly blend creativity and
+              strategy to deliver impactful visuals that resonate and inspire.
+            </p>
           </div>
-         </div>
+        </div>
 
-         <div class="hover-container">
-          <div class="image"> </div>
+        <div class="hover-container">
+          <div class="image web-development"></div>
           <div class="content">
             <h4>WEB DEVELOPMENT</h4>
-            <h6>Crafting Brands That Connect and Inspire</h6>
-            <p>We specialize in creating powerful, memorable brand identities that capture your essence and connect with your audience, ensuring your business stands out in the digital landscape</p>
-  
+            <h6>Building Functional and Scalable Digital Experiences.</h6>
+            <p>
+              Our web development services focus on creating responsive and
+              high-performing websites that drive engagement and conversions.
+            </p>
           </div>
-         </div>
+        </div>
 
-         <div class="hover-container">
-          <div class="image"> </div>
+        <div class="hover-container">
+          <div class="image seo"></div>
           <div class="content">
             <h4><span>SEARCH ENGINE OPTIMIZATION</span></h4>
-            <h6>Crafting Brands That Connect and Inspire</h6>
-            <p>We specialize in creating powerful, memorable brand identities that capture your essence and connect with your audience, ensuring your business stands out in the digital landscape</p>
-  
+            <h6>Boost Your Online Presence with Proven SEO Tactics</h6>
+            <p>
+              We implement effective SEO strategies that improve your website’s
+              ranking, increase organic traffic, and amplify your digital
+              footprint
+            </p>
           </div>
-         </div>
+        </div>
 
-         <div class="hover-container">
-          <div class="image"> </div>
+        <div class="hover-container">
+          <div class="image performance"></div>
           <div class="content">
             <h4>PERFORMANCE MARKETING</h4>
-            <h6>Crafting Brands That Connect and Inspire</h6>
-            <p>We specialize in creating powerful, memorable brand identities that capture your essence and connect with your audience, ensuring your business stands out in the digital landscape</p>
-  
+            <h6>Drive Business Growth with Performance-Driven Marketing</h6>
+            <p>
+              We utilize multi-channel performance marketing strategies to
+              optimize your digital campaigns for measurable and scalable
+              results.
+            </p>
           </div>
-         </div>
+        </div>
 
-         <div class="hover-container">
-          <div class="image"> </div>
+        <div class="hover-container">
+          <div class="image social"></div>
           <div class="content">
             <h4><span>SOCIAL MEDIA MARKETING</span></h4>
-            <h6>Crafting Brands That Connect and Inspire</h6>
-            <p>We specialize in creating powerful, memorable brand identities that capture your essence and connect with your audience, ensuring your business stands out in the digital landscape</p>
-  
+            <h6>Connecting Brands with Audiences Authentically</h6>
+            <p>
+              We craft tailored social media strategies that enhance brand
+              visibility and foster genuine interactions across all platforms.
+            </p>
           </div>
-         </div>
+        </div>
 
-         <div class="hover-container">
-          <div class="image"> </div>
+        <div class="hover-container">
+          <div class="image ppc"></div>
           <div class="content">
             <h4><span>PAY PER CLICK MARKETING</span></h4>
-            <h6>Crafting Brands That Connect and Inspire</h6>
-            <p>We specialize in creating powerful, memorable brand identities that capture your essence and connect with your audience, ensuring your business stands out in the digital landscape</p>
-  
+            <h6>Maximize ROI with Data-Driven PPC Campaigns.</h6>
+            <p>
+              Our PPC campaigns are optimized to deliver precise targeting,
+              increased traffic, and measurable results through continuous
+              performance tracking
+            </p>
           </div>
-         </div>
+        </div>
 
-         <div class="hover-container">
-          <div class="image"> </div>
+        <div class="hover-container">
+          <div class="image adshoot"></div>
           <div class="content">
             <h4>AD SHOOT</h4>
-            <h6>Crafting Brands That Connect and Inspire</h6>
-            <p>We specialize in creating powerful, memorable brand identities that capture your essence and connect with your audience, ensuring your business stands out in the digital landscape</p>
-  
+            <h6>Producing Visually Captivating Ads that Engage.</h6>
+            <p>
+              Our ad shoots bring your brand stories to life through visually
+              compelling content, elevating your product and message for maximum
+              impact.
+            </p>
           </div>
-         </div>
+        </div>
 
-         <div class="hover-container">
-          <div class="image"> </div>
+        <div class="hover-container">
+          <div class="image events"></div>
           <div class="content">
             <h4><span>CORPORATE EVENT MANAGEMENT</span></h4>
-            <h6>Crafting Brands That Connect and Inspire</h6>
-            <p>We specialize in creating powerful, memorable brand identities that capture your essence and connect with your audience, ensuring your business stands out in the digital landscape</p>
-  
+            <h6>Crafting Memorable Events that Align with Your Brand.</h6>
+            <p>
+              Our corporate event management services deliver meticulously
+              planned and executed events that reflect your brand’s identity and
+              values
+            </p>
           </div>
-         </div>
-       </div>
-
-
-
-      </Section>
-    
-      <Section>
-        <div class="container">
-          <div class="highlights">
-            <div class="text-center">
-              <div class="section-title">
-                <p class="growth">
-                  Growth ignited. Results delivered.
-                </p>
-              </div>
-
-              <div>
-                <div class="row">
-                  <div class="col-lg-3">
-                    <div>
-                      <div class="number">
-                        <h2>4+</h2>
-                        <p>Years of experience</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3">
-                    <div>
-                      <div class="number">
-                        <h2>100+</h2>
-                        <p>Clients Served</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3">
-                    <div>
-                      <div class="number">
-                        <h2>200+</h2>
-                        <p>Projects Completed</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Section>
-             
-
-      <div class="section project-section" >
-        <div>
-          <div class="section-title  text-center">  <h5 style={{color:'#3272f6'}}> latest works</h5> 
-           </div>
-          <div class="latest-wrapper">
-
-            <div>
-              <a href="#" class="project-layout">
-                <div class="img">
-                 <img src='/images/dav.webp' alt="dav school marketing">
-                </div>
-                <h3>Dav Public School</h3>
-                <!-- <ul class="tags">
-                  <li>Development </li>
-                  <li>Development </li>
-                </ul> -->
-              </a>
-            </div>
-
-             <div>
-              <a href="#" class="project-layout">
-                <div class="img">
-                 <img src='/images/mis2.gif' alt="marigold school marketing">
-                </div>
-                <h3>Marigold International School</h3>
-                <!-- <ul class="tags">
-                  <li>Development </li>
-                  <li>Development </li>
-                </ul> -->
-              </a>
-            </div>
-
-            <div>
-              <a href="#" class="project-layout">
-                <div class="mhimg">
-                  <img src='/images/mh-logo.gif' alt="marigold hospital marketing">
-                </div>
-                <h3>Marigold Hospital</h3>
-                <!-- <ul class="tags">
-                  <li>Development </li>
-                  <li>Development </li>
-                </ul> -->
-              </a>
-            </div>
-
-            <div>
-              <a href="#" class="project-layout">
-                <div class="img">
-                 <img src='/images/siddhantha.gif' alt="siddhanta school markrting" >
-                </div>
-                <h3>Siddhanta Intellectual School </h3>
-                <!-- <ul class="tags">
-                  <li>Development </li>
-                  <li>Development </li>
-                </ul> -->
-              </a>
-            </div>
-           
-
-          </div>
-            
         </div>
       </div>
+    </Section>
 
-      <Reviews />
-      
-  <Footer />
-    </div>
+    <Section>
+      <div class="container">
+        <div class="highlights">
+          <div class="text-center">
+            <div class="section-title">
+              <p class="growth">Growth ignited. Results delivered.</p>
+            </div>
 
- 
+            <div>
+              <div class="row">
+                <div class="col-lg-3">
+                  <div>
+                    <div class="number">
+                      <h2>4+</h2>
+                      <p>Years of experience</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div>
+                    <div class="number">
+                      <h2>100+</h2>
+                      <p>Clients Served</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div>
+                    <div class="number">
+                      <h2>200+</h2>
+                      <p>Projects Completed</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Section>
+
+    <Industry />
+    <!-- <div class="section project-section">
+      <div>
+        <div class="section-title text-center">
+          <h5 style={{ color: '#3272f6' }}>Industries We Serve</h5>
+        </div>
+        <div class="latest-wrapper">
+          <div>
+            <div class="img">
+              <img
+                src="/images/industry/education.webp"
+                alt="dav school marketing"
+              />
+            </div>
+            <h3>Education</h3>
+          </div>
+
+          <div>
+            <div class="img">
+              <img
+                src="/images/industry/Digital-real-estate.jpg"
+                alt="marigold school marketing"
+              />
+            </div>
+            <h3>Marigold International School</h3>
+          </div>
+
+          <div>
+            <a href="#" class="project-layout">
+              <div class="mhimg">
+                <img
+                  src="/images/industry/healthcare.jpeg"
+                  alt="marigold hospital marketing"
+                />
+              </div>
+              <h3>Marigold Hospital</h3>            
+            </a>
+          </div>
+
+          <div>
+            <a href="#" class="project-layout">
+              <div class="img">
+                <img
+                  src="/images/siddhantha.gif"
+                  alt="siddhanta school markrting"
+                />
+              </div>
+              <h3>Siddhanta Intellectual School</h3>            
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <Reviews />
+
+    <Footer />
+  </div>
 </Layout>
 <script>
-//   document.addEventListener("DOMContentLoaded", function () {
-//   const slider = document.querySelector('.slider');
+  //   document.addEventListener("DOMContentLoaded", function () {
+  //   const slider = document.querySelector('.slider');
 
-//   slider.addEventListener('mouseover', function () {
-//     slider.style.animationPlayState = 'paused';
-//   });
+  //   slider.addEventListener('mouseover', function () {
+  //     slider.style.animationPlayState = 'paused';
+  //   });
 
-//   slider.addEventListener('mouseout', function () {
-//     slider.style.animationPlayState = 'running';
-//   });
-// });
-
+  //   slider.addEventListener('mouseout', function () {
+  //     slider.style.animationPlayState = 'running';
+  //   });
+  // });
 </script>
-
 
 <style lang="scss">
   .color-text {
-  color: #3272f6;
-}
-
-.img img, .mhimg img {
-  width: 100%;
-}
-
-.mhimg img {
-  height: 66vh;
-}
-
-.intro-container {
-  display: flex;
-  position: relative;
-  z-index: 1;
-}
-
-.text-start {
-  width: 60vw;
-}
-
-.home-about-content {
-  font-size: 2vw;
-}
-
-.home-mission {
-  padding-top: 5vh;
-  width: 35vw;
-}
-
-.home-mission-title {
-  font-family: "SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif";
-  font-size: 1.5vw;
-  font-weight: 400;
-  line-height: 1.5em;
-}
-
-.home-mission-content {
-  font-family: "Cotterway Pro Regular", Sans-serif;
-  opacity: 0.7;
-  font-size: 1.4vw;
-  font-weight: 400;
-}
-
-.home-section {
-  height: 40vh;
-  margin-top: var(--header-height);
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  line-height: 3vw;
-  padding-left: 1.5vw;
-
-  h3 {
-    font-size: 1.25vw;
+    color: #3272f6;
   }
 
-  .home-banner-title {
-    font-size: 2.5vw;
-    line-height: 4vw;
-    font-weight: 600;
+  .img img,
+  .mhimg img {
+    width: 100%;
   }
 
-  > :nth-child(2) {
+  .mhimg img {
+    height: 66vh;
+  }
+
+  .intro-container {
     display: flex;
-    gap: 2rem;
-  }
-}
-.about-bs{
-  background-color:#e1ebff ;
-  margin: 10vw 2vw;
-  padding: 2vw;
-  border-radius: 25px;
-  line-height: 2.5vw;
-  font-size: 18px;
-  
-}
-.about-bs h2{
- color: #3272f6;
- padding: 2vw;
-}
-.about-bs .col-lg-3{
-  display: flex;
- margin-left: 40vw;
-}
-@media screen and (max-width:768px) {
-  .about-bs{
-  line-height: 6vw;
-  font-size: 18px;
-  font-weight: 400;
-}
-.about-bs .col-lg-3{
-  display: flex;
- margin-left: 30vw;
-}
-}
-@media screen and (max-width:480px) {
-  .about-bs{
-  line-height: 7.5vw;
-  font-size: 16px;
-  font-weight: 400;
-}
-.about-bs .col-lg-3{
-  display: flex;
- margin-left: 30vw;
-}
-}
-.responsive-image-wrapper {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  overflow: hidden;
-}
-
-.responsive-image-wrapper img {
-  width: 60%;
-  max-height: 25vw;
-}
-
-.intro-slider {
-  padding-top: 10vw;
-  width: 50%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.slider {
-  display: flex;
-  width: 100%;
-  animation: slide 10s infinite;
-}
-
-.slides {
-  display: flex;
-}
-
-.slide {
-  width: 100%;
-  flex-shrink: 0;
-}
-
-.slide img {
-  width: 80%;
-  display: block;
-}
-
-@keyframes slide {
-  0%, 20% { transform: translateX(0%); }
-  25%, 45% { transform: translateX(-100%); }
-  50%, 70% { transform: translateX(-200%); }
-  75%, 100% { transform: translateX(-300%); }
-}
-
-.growth {
-  padding-top: 7vw;
-}
-
-.highlights .row {
-  justify-content: center;
-  gap: 3rem;
-}
-
-.highlights .col-lg-3 > :nth-child(1) {
-  border: 1.5px solid #3272f6;
-  border-radius: 20px;
-  padding: 3rem 0;
-}
-
-@media screen and (max-width: 768px) {
-  .home-section {
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 4rem;
-  }
-
-  .home-about-content {
-    font-size: 3vw;
-  }
-
-  .home-mission {
-    width: 60vw;
-  }
-
-  .home-mission-title {
-    font-size: 2vw;
-  }
-
-  .home-mission-content {
-    font-size: 1.8vw;
-  }
-
-  .home-section h3 {
-    font-size: 4vh;
-  }
-
-  .brands {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .responsive-image-wrapper {
-    display: none;
-  }
-
-  .growth {
-    padding-top: 5vw;
-  }
-
-  .home-section {
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 0rem;
-  }
-
-  .home-section > :nth-child(2) {
-    gap: 1rem;
-  }
-
-  .home-banner-title {
-    font-size: 5vw;
-    line-height: 8vw;
-    padding-left: 15px;
-  }
-
-  .button {
-    display: flex;
-    margin-left: 0;
-  }
-
-  h3 {
-    padding-left: 15px;
-  }
-
-  .home-about-content {
-    font-size: 4vw;
-  }
-
-  .home-mission {
-    width: 80vw;
-  }
-
-  .home-mission-title {
-    font-size: 3vw;
-  }
-
-  .home-mission-content {
-    font-size: 2.5vw;
-  }
-
-  .brands {
-    grid-template-columns: 1fr;
+    position: relative;
+    z-index: 1;
   }
 
   .text-start {
+    width: 60vw;
+  }
+
+  .home-about-content {
+    font-size: 2vw;
+  }
+
+  .home-mission {
+    padding-top: 5vh;
+    width: 35vw;
+  }
+
+  .home-mission-title {
+    font-family: "SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif";
+    font-size: 1.5vw;
+    font-weight: 400;
+    line-height: 1.5em;
+  }
+
+  .home-mission-content {
+    font-family: 'Cotterway Pro Regular', Sans-serif;
+    opacity: 0.7;
+    font-size: 1.4vw;
+    font-weight: 400;
+  }
+
+  .home-section {
+    height: 40vh;
+    margin-top: var(--header-height);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    line-height: 3vw;
+    padding-left: 1.5vw;
+
+    h3 {
+      font-size: 1.25vw;
+    }
+
+    .home-banner-title {
+      font-size: 2.5vw;
+      line-height: 4vw;
+      font-weight: 600;
+    }
+
+    > :nth-child(2) {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+  .about-bs {
+    background-color: #e1ebff;
+    margin: 10vw 2vw;
+    padding: 2vw;
+    border-radius: 25px;
+    line-height: 2.5vw;
+    font-size: 18px;
+  }
+  .about-bs h2 {
+    color: #3272f6;
+    padding: 2vw;
+  }
+  .about-bs .col-lg-3 {
+    display: flex;
+    margin-left: 40vw;
+  }
+  @media screen and (max-width: 768px) {
+    .about-bs {
+      line-height: 6vw;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    .about-bs .col-lg-3 {
+      display: flex;
+      margin-left: 30vw;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .about-bs {
+      line-height: 7.5vw;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .about-bs .col-lg-3 {
+      display: flex;
+      margin-left: 30vw;
+    }
+  }
+  .responsive-image-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .responsive-image-wrapper img {
+    width: 60%;
+    max-height: 25vw;
+  }
+
+  .intro-slider {
+    padding-top: 10vw;
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slider {
+    display: flex;
     width: 100%;
+    animation: slide 10s infinite;
   }
-}
-.hover-container-all{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 5vw;  
- justify-content: center;
-}
-.hover-container {
-  width: 25vw;
-  height: 35vh;
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px 20px 0px 0px;
- 
-  background: linear-gradient(90deg, #09182d 0%, #183863 50%, #3272f6 100%);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
 
-.hover-container .inner-container {
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  border-radius: 13px; /* Adjusted to fit inside the parent */
-}
+  .slides {
+    display: flex;
+  }
 
-.image {
-  background-image: url("https://lbntechsolutions.com/blogs/wp-content/uploads/2023/09/Tips-to-Handle-Digital-Branding.jpg");
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  transition: opacity 0.5s ease-in-out;
- 
-}
+  .slide {
+    width: 100%;
+    flex-shrink: 0;
+  }
 
-.content {
-  background-color: #000c52;
-  color: white;
-  width: 100%;
-  height: 8vh;
-  padding: 1vw;
-  position: absolute;
-  bottom: 0;
-  transition: height 0.5s ease-in-out, margin-top 0.5s ease-in-out;
- 
-}
+  .slide img {
+    width: 80%;
+    display: block;
+  }
 
-.hover-container:hover .content {
-  height: 35vh;
-  margin-top: -30vh; 
-  
-}
+  @keyframes slide {
+    0%,
+    20% {
+      transform: translateX(0%);
+    }
+    25%,
+    45% {
+      transform: translateX(-100%);
+    }
+    50%,
+    70% {
+      transform: translateX(-200%);
+    }
+    75%,
+    100% {
+      transform: translateX(-300%);
+    }
+  }
 
-.hover-container:hover .image {
-  opacity: 0;
-}
-@media screen and (max-width:480px){
+  .growth {
+    padding-top: 7vw;
+  }
+
+  .highlights .row {
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .highlights .col-lg-3 > :nth-child(1) {
+    border: 1.5px solid #3272f6;
+    border-radius: 20px;
+    padding: 3rem 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .home-section {
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    .home-about-content {
+      font-size: 3vw;
+    }
+
+    .home-mission {
+      width: 60vw;
+    }
+
+    .home-mission-title {
+      font-size: 2vw;
+    }
+
+    .home-mission-content {
+      font-size: 1.8vw;
+    }
+
+    .home-section h3 {
+      font-size: 4vh;
+    }
+
+    .brands {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .responsive-image-wrapper {
+      display: none;
+    }
+
+    .growth {
+      padding-top: 5vw;
+    }
+
+    .home-section {
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 0rem;
+    }
+
+    .home-section > :nth-child(2) {
+      gap: 1rem;
+    }
+
+    .home-banner-title {
+      font-size: 5vw;
+      line-height: 8vw;
+      padding-left: 15px;
+    }
+
+    .button {
+      display: flex;
+      margin-left: 0;
+    }
+
+    h3 {
+      padding-left: 15px;
+    }
+
+    .home-about-content {
+      font-size: 4vw;
+    }
+
+    .home-mission {
+      width: 80vw;
+    }
+
+    .home-mission-title {
+      font-size: 3vw;
+    }
+
+    .home-mission-content {
+      font-size: 2.5vw;
+    }
+
+    .brands {
+      grid-template-columns: 1fr;
+    }
+
+    .text-start {
+      width: 100%;
+    }
+  }
   .hover-container-all {
-  padding: 10vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5vw;
+    justify-content: center;
   }
-  .hover-container {   
-  width: 100%;
-}
+  .hover-container {
+    width: 25vw;
+    height: 35vh;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px 20px 0px 0px;
 
+    background: linear-gradient(90deg, #09182d 0%, #183863 50%, #3272f6 100%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
 
+  .hover-container .inner-container {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 13px; /* Adjusted to fit inside the parent */
+  }
 
-.image {
-  background-image: url("https://lbntechsolutions.com/blogs/wp-content/uploads/2023/09/Tips-to-Handle-Digital-Branding.jpg");
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  transition: opacity 0.5s ease-in-out;
- 
-}
-.content h4{
-  padding: 6px;
-  font-size: 25px;
-  text-align: center;
-}
-.content {
-  background-color: #000c52;
-  color: white;
-  width: 100%;
-  height: 7vh;
-  padding: 1vw;
-  position: absolute;
-  bottom: 0;
-  transition: height 0.5s ease-in-out, margin-top 0.5s ease-in-out;
- 
-}
+  .image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: opacity 0.5s ease-in-out;
+  }
 
-.hover-container:hover .content {
-  height: 35vh;
-  margin-top: -30vh; 
-  
-}
+  .branding {
+    background-image: url('images/service/branding.jpg');
+  }
+  .graphic-design {
+    background-image: url('/images/service/graphic design.jpg');
+  }
+  .web-development {
+    background-image: url('/images/service/web-development-word-digital-background_698953-4784.avif');
+  }
+  .seo {
+    background-image: url('/images/service/seo.jpg');
+  }
+  .performance {
+    background-image: url('/images/service/performance marketing.jpg');
+  }
+  .social {
+    background-image: url('/images/service/social media marketing.jpeg');
+  }
+  .ppc {
+    background-image: url('/images/service/ppc.jpg');
+  }
+  .adshoot {
+    background-image: url('/images/service/ad shoot.jpg');
+  }
+  .events {
+    background-image: url('/images/service/events.jpg');
+  }
+  .content {
+    background-color: #000c52;
+    color: white;
+    width: 100%;
+    height: 8vh;
+    padding: 1vw;
+    position: absolute;
+    bottom: 0;
+    transition:
+      height 0.4s ease-in-out,
+      margin-top 0.4s ease-in-out;
+  }
 
-.hover-container:hover .image {
-  opacity: 0;
-}
-}
+  .content span {
+    font-size: 18px;
+  }
+  .hover-container:hover .content {
+    height: 35vh;
+    margin-top: -30vh;
+  }
 
+  .hover-container:hover .image {
+    opacity: 0;
+  }
+  @media screen and (max-width: 768px) {
+    .hover-container-all {
+      padding: 10vw;
+    }
+    .hover-container {
+      width: 100%;
+    }
+    .content h4 {
+      font-size: 30px;
+      text-align: center;
+    }
+    .content h4 span {
+      font-size: 25px;
+    }
+    .content {
+      width: 100%;
+      height: 7vh;
+      padding: 1vw;
+    }
+
+    .hover-container:hover .content {
+      height: 35vh;
+      margin-top: -30vh;
+    }
+
+    .hover-container:hover .image {
+      opacity: 0;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .hover-container-all {
+      padding: 10vw;
+    }
+    .hover-container {
+      width: 100%;
+    }
+
+    .content h4 {
+      font-size: 25px;
+      text-align: center;
+    }
+    .content h4 span {
+      font-size: 16px;
+    }
+    .content {
+      width: 100%;
+      height: 7vh;
+      padding: 3vw;
+    }
+
+    .hover-container:hover .content {
+      height: 35vh;
+      margin-top: -30vh;
+    }
+
+    .hover-container:hover .image {
+      opacity: 0;
+    }
+  }
 </style>

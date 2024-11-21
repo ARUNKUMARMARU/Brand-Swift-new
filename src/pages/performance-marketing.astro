@@ -1,117 +1,175 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Header from "../components/header.astro";
-import Footer from "../components/footer3.astro";
-import Section from "../components/Section.astro";
-import Card from "../components/Card.astro"
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/header.astro';
+import Footer from '../components/footer3.astro';
+import Section from '../components/Section.astro';
+import Card from '../components/Card.astro';
+
+const photos = [
+  {
+    img: '/images/slide1.jpg',
+    link: '#',
+  },
+  {
+    img: '/images/slide2.jpg',
+    link: '#',
+  },
+  {
+    img: '/images/slide3.jpg',
+    link: '#',
+  },
+  {
+    img: '/images/slide4.jpg',
+    link: '#',
+  },
+];
 ---
+
 <Layout title="Best Digital Marketing Agency in Bangalore" link="">
-<Header/>
-<div class="blur-wrapper">
-    
+  <Header />
+  <div class="blur-wrapper">
     <Section>
-       
-       <div class="intro-seo">
-        <h1 class="elementor-heading-title">Unleash the Power of Data-Driven Performance Marketing</h1>
-        <p class="elementor-widget-container">Optimize Your Campaigns with Precision Strategies and Drive Measurable Results</p>
-       </div>
-       
+      <div class="intro-seo">
+        <h1 class="elementor-heading-title">
+          Unleash the Power of Data-Driven Performance Marketing
+        </h1>
+        <p class="elementor-widget-container">
+          Optimize Your Campaigns with Precision Strategies and Drive Measurable
+          Results
+        </p>
+      </div>
     </Section>
 
     <Section>
-        <div class="seo-list">
-            <div>
-                <h2>Our Performance Marketing packages Offer</h2>
-            </div>
-            <div class="elementor-7575">
-                <div>
-                    <ul>
-                        <h3><b>Campaign Setup</b></h3>
-                        <li>In-depth market research and advanced strategy development</li>
-                     </ul>
-                </div>
-                <div>
-                    <ul>
-                       <h3> <b>Ad Creation</b></h3>
-                        <li>Custom ad design, copywriting, and multi-format testing</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <h3><b>Platform Management</b></h3>
-                        <li>Extensive management across multiple platforms and networks</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                       <h3> <b>Budget Management</b></h3>
-                        <li>Strategic budget and bid optimization, including automated rules</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <h3><b>Performance Tracking</b></h3>
-                        <li>Comprehensive analytics with conversion tracking and ROI analysiss</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <h3><b>Support</b></h3>
-                        <li>Dedicated account manager with weekly strategy meetings and priority support</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="getquote-seo">
-                <a href="/contact" class="btn-2">
-                 Get Quote
-                </a>
-              </div>
+      <div class="seo-list">
+        <div>
+          <h2>Our Performance Marketing packages Offer</h2>
         </div>
-    </Section>
-
-    <Section>
-        <div class="seo-process-container">
-            <div>
-                <h2>Our Process of Performance Marketing</h2>
-            </div>
-            <div class="seo-process-list-container">
-                <div class="seo-process-list">
-                    <h4>Discovery and Goal Setting</h4>
-                    <p>Understand your business objectives, target audience, and key performance indicators and Define specific, measurable goals such as increasing conversions, improving ROI and boosting brand awareness.</p>
-                </div>
-                <div class="seo-process-list">
-                    <h4>Market Research and Strategy Development</h4>
-                    <p>Conduct research to understand market trends, competitor strategies, and audience behavior and Develop a comprehensive performance marketing strategy that outlines target segments, campaign objectives and channel selection.</p>
-                </div>
-                <div class="seo-process-list">
-                    <h4>Campaign Planning and Setup</h4>
-                    <p>Design and create compelling ad content, including visuals and copy, tailored to your audience and goals and Choose the appropriate advertising platforms based on your target audience and objectives</p>
-                </div>
-                <div class="seo-process-list">
-                    <h4>Campaign Launch and Management</h4>
-                    <p>Boost your website's authority and reach by building strong backlinks and promoting your content on social media platforms. Engaging with your audience on social channels helps to increase brand awareness and drive traffic.</p>
-                </div>
-                <div class="seo-process-list">
-                    <h4>Performance Tracking and Analysis</h4>
-                    <p>Track key metrics such as clicks, conversions, cost-per-click (CPC), and return on ad spend and Analyze performance data to assess the effectiveness of campaigns and identify areas for improvement.</p>
-                </div>
-                <div class="seo-process-list">
-                    <h4>Adjustment and Scaling</h4>
-                    <p>Make data-driven adjustments to improve campaign performance based on analysis and feedback and Increase investment in high-performing campaigns and explore additional channels or strategies for scaling.</p>
-                </div>
-            </div>
+        <div class="elementor-7575">
+          <div>
+            <ul>
+              <h3><b>Campaign Setup</b></h3>
+              <li>
+                In-depth market research and advanced strategy development
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <h3><b>Ad Creation</b></h3>
+              <li>Custom ad design, copywriting, and multi-format testing</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <h3><b>Platform Management</b></h3>
+              <li>
+                Extensive management across multiple platforms and networks
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <h3><b>Budget Management</b></h3>
+              <li>
+                Strategic budget and bid optimization, including automated rules
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <h3><b>Performance Tracking</b></h3>
+              <li>
+                Comprehensive analytics with conversion tracking and ROI
+                analysiss
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <h3><b>Support</b></h3>
+              <li>
+                Dedicated account manager with weekly strategy meetings and
+                priority support
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="getquote-seo">
+          <a href="/contact" class="btn-2"> Get Quote </a>
+        </div>
+      </div>
+    </Section>
+
+    <Section>
+      <div class="seo-process-container">
+        <div>
+          <h2>Our Process of Performance Marketing</h2>
+        </div>
+        <div class="seo-process-list-container">
+          <div class="seo-process-list">
+            <h4>Discovery and Goal Setting</h4>
+            <p>
+              Understand your business objectives, target audience, and key
+              performance indicators and Define specific, measurable goals such
+              as increasing conversions, improving ROI and boosting brand
+              awareness.
+            </p>
+          </div>
+          <div class="seo-process-list">
+            <h4>Market Research and Strategy Development</h4>
+            <p>
+              Conduct research to understand market trends, competitor
+              strategies, and audience behavior and Develop a comprehensive
+              performance marketing strategy that outlines target segments,
+              campaign objectives and channel selection.
+            </p>
+          </div>
+          <div class="seo-process-list">
+            <h4>Campaign Planning and Setup</h4>
+            <p>
+              Design and create compelling ad content, including visuals and
+              copy, tailored to your audience and goals and Choose the
+              appropriate advertising platforms based on your target audience
+              and objectives
+            </p>
+          </div>
+          <div class="seo-process-list">
+            <h4>Campaign Launch and Management</h4>
+            <p>
+              Boost your website's authority and reach by building strong
+              backlinks and promoting your content on social media platforms.
+              Engaging with your audience on social channels helps to increase
+              brand awareness and drive traffic.
+            </p>
+          </div>
+          <div class="seo-process-list">
+            <h4>Performance Tracking and Analysis</h4>
+            <p>
+              Track key metrics such as clicks, conversions, cost-per-click
+              (CPC), and return on ad spend and Analyze performance data to
+              assess the effectiveness of campaigns and identify areas for
+              improvement.
+            </p>
+          </div>
+          <div class="seo-process-list">
+            <h4>Adjustment and Scaling</h4>
+            <p>
+              Make data-driven adjustments to improve campaign performance based
+              on analysis and feedback and Increase investment in
+              high-performing campaigns and explore additional channels or
+              strategies for scaling.
+            </p>
+          </div>
+        </div>
+      </div>
     </Section>
     <Section>
-       <div>
-        <Card/>
-       </div>
+      <div>
+        <Card photos={photos} />
+      </div>
     </Section>
-   
-    <Footer/>
-</div>
-</div>
 
+    <Footer />
+  </div>
 </Layout>
-
-   
