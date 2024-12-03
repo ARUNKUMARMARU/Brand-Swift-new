@@ -1,31 +1,42 @@
 ---
-import Header from "../components/header.astro";
-import Layout from "../layouts/Layout.astro";
-import Footer from "../components/footer3.astro";
-import Section from "../components/Section.astro";
+import Header from '../components/header.astro';
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/footer3.astro';
+import Section from '../components/Section.astro';
 ---
 
-<Layout title="About Us | Leading Digital Marketing Agency in Bangalore", link="">
- 
-  <Header/>
-<div class="blur-wrapper">
-  <Section>
-    <div class="about section" id="about" >
-      <div class="container">
-        <div class="d-flex flex-column gap-4">
-          <div class="section-title text-center pb-0">
-            <h5 class="aboutus-title">About Us</h5> 
+<Layout
+  title="About Us | BrandSwift - Leading Digital Marketing Agency in Bangalore"
+  description="Discover BrandSwift, Bangalore's premier digital marketing agency. Learn about our journey, mission, values, and dedication to delivering innovative marketing solutions to elevate your brand"
+  keywords="About BrandSwift, Digital Marketing Experts Bangalore, BrandSwift Mission and Vision, Marketing Professionals Bangalore, Innovative Marketing Solutions"
+  robots="index, follow"
+  canonical="https://brandswift.in/about/"
+  og_title="About Us | BrandSwift - Leading Digital Marketing Agency in Bangalore"
+  og_description="Meet the team behind BrandSwift, Bangalore's trusted digital marketing agency. Explore our values and expertise in branding, web development, and marketing"
+  og_image="summary_large_image"
+  twitter_card="About Us | BrandSwift - Leading Digital Marketing Agency in Bangalore"
+  twitter_title="About Us | BrandSwift - Leading Digital Marketing Agency in Bangalore"
+  twitter_description="Get to know BrandSwift, Bangalore's expert team in branding, SEO, and social media marketing. Discover our story and commitment to your success"
+  twitter_image=""
+>
+  <Header />
+  <div class="blur-wrapper">
+    <Section>
+      <div class="about section" id="about">
+        <div class="container">
+          <div class="d-flex flex-column gap-4">
+            <div class="section-title text-center pb-0">
+              <h5 class="aboutus-title">About Us</h5>
 
-            <h1 class="text-center m-auto">             
-              Empowering Businesses to Achieve Unprecedented Digital Success
-            </h1>
-          </div>         
+              <h1 class="text-center m-auto">
+                Empowering Businesses to Achieve Unprecedented Digital Success
+              </h1>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-  </Section>
-  <!-- <Section>
+    </Section>
+    <!-- <Section>
    <div style="height:100px; position:sticky;overflow: scroll;">
     <div class="vision" id="vision-id">
       <h2>Our Vision</h2>
@@ -38,84 +49,122 @@ import Section from "../components/Section.astro";
    </div>
   </Section> -->
 
-  <Section>
-    <div class="mission section">
-      <div class="container">
-        <div class="mission-wrap">
-          <div class="row justify-content-around">
-            <div class="col-md-3 col-12">
-              <div id="list-example" class="list-group">
-                <a class="list-group-item list-group-item-action" href="#list-item-1">Our Vision </a>
-                <a class="list-group-item list-group-item-action" href="#list-item-2">Our Mission</a>
-              </div>
-            </div>
-            <div class="col-md-8 col-12">              
-              <div data-bs-spy="scroll" class="mission-height" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0" data-bs-offset="0">
-                <div class="wrap">
-                  <h4 id="list-item-1">Our Vision</h4>
-                  <p>
-                    Our vision is to be a trusted digital marketing leader, providing creative solutions that help businesses succeed online.
-                  </p>
+    <Section>
+      <div class="mission section">
+        <div class="container">
+          <div class="mission-wrap">
+            <div class="row justify-content-around">
+              <div class="col-md-3 col-12">
+                <div id="list-example" class="list-group">
+                  <a
+                    class="list-group-item list-group-item-action"
+                    href="#list-item-1"
+                    >Our Vision
+                  </a>
+                  <a
+                    class="list-group-item list-group-item-action"
+                    href="#list-item-2">Our Mission</a
+                  >
                 </div>
-                <div class="wrap">
-                  
+              </div>
+              <div class="col-md-8 col-12">
+                <div
+                  data-bs-spy="scroll"
+                  class="mission-height"
+                  data-bs-target="#list-example"
+                  data-bs-smooth-scroll="true"
+                  class="scrollspy-example"
+                  tabindex="0"
+                  data-bs-offset="0"
+                >
+                  <div class="wrap">
+                    <h4 id="list-item-1">Our Vision</h4>
+                    <p>
+                      Our vision is to be a trusted digital marketing leader,
+                      providing creative solutions that help businesses succeed
+                      online.
+                    </p>
+                  </div>
+                  <div class="wrap">
                     <h4 id="list-item-2">Our Mission</h4>
-                  <p>
-                    To help business build strong relationships with their customers through creative digital marketing solutions
-                  </p>
-                 
+                    <p>
+                      To help business build strong relationships with their
+                      customers through creative digital marketing solutions
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>    
-  </Section>  
-  <Section>
-    <div>
-      <div class="why-choose-tittle">       
-        <h5>Why Choose Us</h5>
-        <p>We are specialized in transforming business ideas into interactive solutions.</p>
-      </div>
-      <div class="why-choose-container">
-        <div class="why-choose-list">
-          <h5>Transparency</h5>
-                <p>We pride ourselves on transparency, offering clients a clear view of their digital marketing campaigns. You'll know where every dollar is spent, ensuring trust and accountability.</p>
-        </div>
-        <div class="why-choose-list">
-          <h5>Results</h5>
-                <p>Ultimately, our success is measured by your results. We don't settle for anything less than delivering tangible, data-driven outcomes that propel your business forward in the online world.</p>
-        </div>
-        <div class="why-choose-list">
-          <h5>Affordable</h5>
-                <p>Quality digital marketing shouldn't be a luxury. We provide cost-effective solutions that don't compromise on excellence, making success accessible to businesses of all sizes.</p>
-        </div>
-        <div class="why-choose-list">
-          <h5>Customer Support</h5>
-                <p>Our dedicated support team is always ready to assist. We believe in a client-centric approach, ensuring your questions and concerns are addressed promptly.</p>
-        </div>
-        <div class="why-choose-list">
-          <h5>Creativity</h5>
-                <p>Creativity is our driving force. We craft unique strategies that captivate audiences and differentiate your brand in a crowded digital landscape.</p>
-        </div>
-      </div>
-    </div>
-  </Section>
-    
-  <Section>
-    <div class="values section">     
-      <div class="container">
-        <div class="section-title text-center">
-          <h5 style={{color:"#3272f6"}}>Our Values</h5>
-          <p class="text-center">
-            We believe that we Succeed when our clients succeed. 
+    </Section>
+    <Section>
+      <div>
+        <div class="why-choose-tittle">
+          <h5>Why Choose Us</h5>
+          <p>
+            We are specialized in transforming business ideas into interactive
+            solutions.
           </p>
         </div>
-        <div class="d-flex flex-column gap-5">
-         
-          <div class="values-grid">
-            <!-- <div class="grid">               
+        <div class="why-choose-container">
+          <div class="why-choose-list">
+            <h5>Transparency</h5>
+            <p>
+              We pride ourselves on transparency, offering clients a clear view
+              of their digital marketing campaigns. You'll know where every
+              dollar is spent, ensuring trust and accountability.
+            </p>
+          </div>
+          <div class="why-choose-list">
+            <h5>Results</h5>
+            <p>
+              Ultimately, our success is measured by your results. We don't
+              settle for anything less than delivering tangible, data-driven
+              outcomes that propel your business forward in the online world.
+            </p>
+          </div>
+          <div class="why-choose-list">
+            <h5>Affordable</h5>
+            <p>
+              Quality digital marketing shouldn't be a luxury. We provide
+              cost-effective solutions that don't compromise on excellence,
+              making success accessible to businesses of all sizes.
+            </p>
+          </div>
+          <div class="why-choose-list">
+            <h5>Customer Support</h5>
+            <p>
+              Our dedicated support team is always ready to assist. We believe
+              in a client-centric approach, ensuring your questions and concerns
+              are addressed promptly.
+            </p>
+          </div>
+          <div class="why-choose-list">
+            <h5>Creativity</h5>
+            <p>
+              Creativity is our driving force. We craft unique strategies that
+              captivate audiences and differentiate your brand in a crowded
+              digital landscape.
+            </p>
+          </div>
+        </div>
+      </div>
+    </Section>
+
+    <Section>
+      <div class="values section">
+        <div class="container">
+          <div class="section-title text-center">
+            <h5 style={{ color: '#3272f6' }}>Our Values</h5>
+            <p class="text-center">
+              We believe that we Succeed when our clients succeed.
+            </p>
+          </div>
+          <div class="d-flex flex-column gap-5">
+            <div class="values-grid">
+              <!-- <div class="grid">               
               <div class="value">                
                 <h5 class="sun-head ">Accountability</h5>                
               </div>
@@ -126,19 +175,19 @@ import Section from "../components/Section.astro";
               </div>
             </div> -->
 
-            <div class="card1">     
-              <h3>Accountability</h3>
-              <p class="small"> At our digital marketing company, accountability is our
-                cornerstone. We hold ourselves responsible for every campaign's
-                success. </p>
-              <div class="go-corner" >
-                <div class="go-arrow">
-                  →
+              <div class="card1">
+                <h3>Accountability</h3>
+                <p class="small">
+                  At our digital marketing company, accountability is our
+                  cornerstone. We hold ourselves responsible for every
+                  campaign's success.
+                </p>
+                <div class="go-corner">
+                  <div class="go-arrow">→</div>
                 </div>
-              </div>     
-          </div>
-            
-            <!-- <div class="grid"> 
+              </div>
+
+              <!-- <div class="grid"> 
               <div class="value">               
                 <h5 class="sun-head ">Innovation</h5>
               </div>
@@ -151,16 +200,19 @@ import Section from "../components/Section.astro";
               
             </div> -->
 
-            <div class="card1">     
-              <h3>Innovation</h3>
-              <p class="small"> Innovation drives us forward. We create unique solutions that push limits and adapt to changing trends. Using the latest tools and strategies, we keep your brand at the forefront of the digital world.</p>
-              <div class="go-corner" >
-                <div class="go-arrow">
-                  →
+              <div class="card1">
+                <h3>Innovation</h3>
+                <p class="small">
+                  Innovation drives us forward. We create unique solutions that
+                  push limits and adapt to changing trends. Using the latest
+                  tools and strategies, we keep your brand at the forefront of
+                  the digital world.
+                </p>
+                <div class="go-corner">
+                  <div class="go-arrow">→</div>
                 </div>
-              </div>     
-          </div>
-            <!-- <div class="grid">
+              </div>
+              <!-- <div class="grid">
             
   
               <div class="value">               
@@ -174,16 +226,18 @@ import Section from "../components/Section.astro";
               </div>
             </div> -->
 
-            <div class="card1">     
-              <h3>Execution</h3>
-              <p class="small"> Execution is where ideas come to life. Our team’s careful planning and precise execution turn concepts into real success. We don’t just make plans; we make things happen.</p>
-              <div class="go-corner" >
-                <div class="go-arrow">
-                  →
+              <div class="card1">
+                <h3>Execution</h3>
+                <p class="small">
+                  Execution is where ideas come to life. Our team’s careful
+                  planning and precise execution turn concepts into real
+                  success. We don’t just make plans; we make things happen.
+                </p>
+                <div class="go-corner">
+                  <div class="go-arrow">→</div>
                 </div>
-              </div>     
-          </div>
-            <!-- <div class="grid">
+              </div>
+              <!-- <div class="grid">
          
   
               <div class="value">                
@@ -197,16 +251,19 @@ import Section from "../components/Section.astro";
               </div>
             </div> -->
 
-            <div class="card1">     
-              <h3>Team Work</h3>
-              <p class="small"> Our success is driven by teamwork. Our skilled professionals work together seamlessly to deliver complete marketing solutions. The power of collaboration is key, producing outstanding results.</p>
-              <div class="go-corner" >
-                <div class="go-arrow">
-                  →
+              <div class="card1">
+                <h3>Team Work</h3>
+                <p class="small">
+                  Our success is driven by teamwork. Our skilled professionals
+                  work together seamlessly to deliver complete marketing
+                  solutions. The power of collaboration is key, producing
+                  outstanding results.
+                </p>
+                <div class="go-corner">
+                  <div class="go-arrow">→</div>
                 </div>
-              </div>     
-          </div>
-            <!-- <div class="grid">
+              </div>
+              <!-- <div class="grid">
             
   
               <div class="value">
@@ -220,16 +277,19 @@ import Section from "../components/Section.astro";
                 </p>
               </div>
             </div> -->
-            <div class="card1">     
-              <h3>Commitment</h3>
-              <p class="small">We are fully committed to helping you succeed. Our dedication to your goals is strong and consistent. We go above and beyond to make sure you achieve your objectives, no matter what challenges come your way.</p>
-              <div class="go-corner" >
-                <div class="go-arrow">
-                  →
+              <div class="card1">
+                <h3>Commitment</h3>
+                <p class="small">
+                  We are fully committed to helping you succeed. Our dedication
+                  to your goals is strong and consistent. We go above and beyond
+                  to make sure you achieve your objectives, no matter what
+                  challenges come your way.
+                </p>
+                <div class="go-corner">
+                  <div class="go-arrow">→</div>
                 </div>
-              </div>     
-          </div>
-            <!-- <div class="grid">
+              </div>
+              <!-- <div class="grid">
               
   
               <div class="value">
@@ -244,600 +304,624 @@ import Section from "../components/Section.astro";
                 </p>
               </div>
             </div> -->
-            <div class="card1">     
-              <h3>Growth</h3>
-              <p class="small"> Our goal is to help your business grow. We measure our success by how much your business expands. We use effective strategies to support your ongoing growth and unlock your full potential online.</p>
-              <div class="go-corner" >
-                <div class="go-arrow">
-                  →
-                </div>
-              </div>     
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </Section>
-  
-  <Section>
-    <div class="team section" id="team">
-      <div class="container">
-        <div class="section-title text-center">
-          <h5 style={{color:'#3272f6'}}>Our Team</h5>
-
-          <p class="fw-bold">
-            India’s only <span class="pink">Digital Marketing</span> Team to
-            Revolutionize your digital presence
-          </p>
-
-         
-        </div>
-        <div class="team-wrapper d-flex flex-column gap-5 pt-5">
-          
-  
-          <div class="row justify-content-around align-items-center gy-5">
-          
-            <div class="col-lg-3 text-center">
-              <div class="team-card">
-                <div>
-                  <img src="/images/md2.jpg" alt="" style="max-width:250px; border-radius: 50%;" />
-                </div>
-                <div>
-                  <p style={{color:'#3272f6'}}>Manoj Kumar.S</p>
-                  <p >Founder & CEO , Brand Swift</p>
-                  <p>Follow me on</p>
-                  <p> <a href="https://www.linkedin.com/in/manoj-kumar-sundar-raj-53500082/" target="_blank" style="color: black;"><i class="fab fa-linkedin-in"></i></a></p>
+              <div class="card1">
+                <h3>Growth</h3>
+                <p class="small">
+                  Our goal is to help your business grow. We measure our success
+                  by how much your business expands. We use effective strategies
+                  to support your ongoing growth and unlock your full potential
+                  online.
+                </p>
+                <div class="go-corner">
+                  <div class="go-arrow">→</div>
                 </div>
               </div>
             </div>
-  
-            <div class="col-lg-7 f-col gap-3">
-              <p class="sub-head pink"><span class="pink fw-bold">Founder's Message</span></p>
-              <p class="animate-me">
-                "Founder’s Message  As the Founder of Brand Swift, my passion lies in helping businesses thrive in the ever-evolving digital landscape. In today’s fast-paced world, a strong online presence is not just a necessity, it’s a powerful tool for growth, brand awareness, and customer engagement. With a deep understanding of the digital ecosystem, I am committed to crafting strategies that not only elevate your brand but also create meaningful connections with your audience.  At Brand Swift, we believe in the perfect blend of creative storytelling and data-driven insights. Our team of dedicated professionals works relentlessly to turn your vision into reality by combining innovative marketing techniques with precise analytics. We understand that every brand has its unique story, and our goal is to help you tell it in a way that captivates and resonates with your audience, while also delivering measurable results.  What sets us apart is our unwavering dedication to our clients. When you partner with Brand Swift, you’re not just another client on our roster, you become part of a collaborative journey. We take the time to understand your business, your challenges, and your goals. This allo".
-              </p>
-  
-              <p class="fw-bold">
-                Manoj Kumar.S <br />
-                <span class="text-black">Founder & CEO , Brand Swift</span>
-              </p>
-            </div>
-          </div>  
-         
+          </div>
         </div>
       </div>
-    </div>
+    </Section>
 
-  </Section>
-  
-    <Footer/>
-</div>
+    <Section>
+      <div class="team section" id="team">
+        <div class="container">
+          <div class="section-title text-center">
+            <h5 style={{ color: '#3272f6' }}>Our Team</h5>
+
+            <p class="fw-bold">
+              India’s only <span class="pink">Digital Marketing</span> Team to Revolutionize
+              your digital presence
+            </p>
+          </div>
+          <div class="team-wrapper d-flex flex-column gap-5 pt-5">
+            <div class="row justify-content-around align-items-center gy-5">
+              <div class="col-lg-3 text-center">
+                <div class="team-card">
+                  <div>
+                    <img
+                      src="/images/md2.jpg"
+                      alt="Founder-CEO-of-Brand-Swift"
+                      style="max-width:250px; border-radius: 50%;"
+                    />
+                  </div>
+                  <div>
+                    <p style={{ color: '#3272f6' }}>Manoj Kumar.S</p>
+                    <p>Founder & CEO , Brand Swift</p>
+                    <p>Follow me on</p>
+                    <p>
+                      <a
+                        href="https://www.linkedin.com/in/manoj-kumar-sundar-raj-53500082/"
+                        target="_blank"
+                        style="color: black;"
+                        ><i class="fab fa-linkedin-in"></i></a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-7 f-col gap-3">
+                <p class="sub-head pink">
+                  <span class="pink fw-bold">Founder's Message</span>
+                </p>
+                <p class="animate-me">
+                  "Founder’s Message As the Founder of Brand Swift, my passion
+                  lies in helping businesses thrive in the ever-evolving digital
+                  landscape. In today’s fast-paced world, a strong online
+                  presence is not just a necessity, it’s a powerful tool for
+                  growth, brand awareness, and customer engagement. With a deep
+                  understanding of the digital ecosystem, I am committed to
+                  crafting strategies that not only elevate your brand but also
+                  create meaningful connections with your audience. At Brand
+                  Swift, we believe in the perfect blend of creative
+                  storytelling and data-driven insights. Our team of dedicated
+                  professionals works relentlessly to turn your vision into
+                  reality by combining innovative marketing techniques with
+                  precise analytics. We understand that every brand has its
+                  unique story, and our goal is to help you tell it in a way
+                  that captivates and resonates with your audience, while also
+                  delivering measurable results. What sets us apart is our
+                  unwavering dedication to our clients. When you partner with
+                  Brand Swift, you’re not just another client on our roster, you
+                  become part of a collaborative journey. We take the time to
+                  understand your business, your challenges, and your goals.
+                  This allo".
+                </p>
+
+                <p class="fw-bold">
+                  Manoj Kumar.S <br />
+                  <span class="text-black">Founder & CEO , Brand Swift</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Section>
+
+    <Footer />
+  </div>
 </Layout>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    if (window.innerWidth <= 600) { 
-        const cards = document.querySelectorAll('.why-choose-list');
+  document.addEventListener('DOMContentLoaded', function () {
+    if (window.innerWidth <= 600) {
+      const cards = document.querySelectorAll('.why-choose-list');
 
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.7
-        };
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.7,
+      };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    cards.forEach(card => card.classList.remove('active'));
-                    entry.target.classList.add('active');
-                }
-            });
-        }, observerOptions);
-
-        cards.forEach(card => {
-            observer.observe(card);
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            cards.forEach((card) => card.classList.remove('active'));
+            entry.target.classList.add('active');
+          }
         });
+      }, observerOptions);
 
-        window.addEventListener('scroll', () => {
-            const scrollHeight = document.documentElement.scrollHeight;
-            const scrollTop = document.documentElement.scrollTop;
-            const clientHeight = document.documentElement.clientHeight;
+      cards.forEach((card) => {
+        observer.observe(card);
+      });
 
-            if (scrollTop + clientHeight >= scrollHeight) {
-                cards.forEach(card => card.classList.remove('active'));
-            }
-        });
+      window.addEventListener('scroll', () => {
+        const scrollHeight = document.documentElement.scrollHeight;
+        const scrollTop = document.documentElement.scrollTop;
+        const clientHeight = document.documentElement.clientHeight;
+
+        if (scrollTop + clientHeight >= scrollHeight) {
+          cards.forEach((card) => card.classList.remove('active'));
+        }
+      });
     }
-});
-
+  });
 </script>
 
 <style lang="scss">
-.list-group-item.active {
-  color: #3272f6;
-}
-@media (min-width: 768px) {
+  .list-group-item.active {
+    color: #3272f6;
+  }
+  @media (min-width: 768px) {
     .col-md-8 {
-        flex: 0 0 auto;
-        width: 75%;
-    }
-}
-
-.about {
-  padding-top: var(--header-height);
-
-  .section-title {
-    h1 {
-      font-family: var(--ff-head);
-      font-size: 50px;
-      font-weight: 600;
-      line-height: 1.2;
+      flex: 0 0 auto;
+      width: 75%;
     }
   }
-}
 
-.mission-height {
-  height: 200px;
-  overflow-y: scroll;
-}
+  .about {
+    padding-top: var(--header-height);
 
-.mission-wrap {
-  .row {
-    > :nth-child(2) {
-      > :nth-child(1) {
-       
-        display: flex;
-        // align-items: center;
-        flex-direction: column;
-        gap: 3rem;
+    .section-title {
+      h1 {
+        font-family: var(--ff-head);
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 1.2;
+      }
+    }
+  }
 
-        .wrap {
-          height: 100%;
-          padding: 0 3rem;
+  .mission-height {
+    height: 200px;
+    overflow-y: scroll;
+  }
+
+  .mission-wrap {
+    .row {
+      > :nth-child(2) {
+        > :nth-child(1) {
+          display: flex;
+          // align-items: center;
+          flex-direction: column;
+          gap: 3rem;
+
+          .wrap {
+            height: 100%;
+            padding: 0 3rem;
+          }
         }
       }
+
+      .scrollspy-example::-webkit-scrollbar {
+        width: 1px;
+      }
+
+      .scrollspy-example::-webkit-scrollbar-thumb {
+        background: #3272f6;
+        border-radius: 6px;
+      }
+    }
+  }
+
+  .list-group {
+    border: none !important;
+
+    .list-group-item {
+      border: none;
+      border-radius: 10px;
+      background-color: transparent;
+      font-family: var(--ff-head);
+      font-size: 30px;
+      font-weight: 600;
+    }
+  }
+
+  .why-choose-tittle {
+    text-align: center;
+    padding-top: 5vw;
+    line-height: 3rem;
+
+    h5 {
+      color: #3272f6;
+      padding-bottom: 2vw;
     }
 
-    .scrollspy-example::-webkit-scrollbar {
-      width: 1px;
+    p {
+      width: 60%;
+      line-height: 4rem;
+      font-weight: 600;
+      font-size: 3vw;
+      margin: 0 auto;
+      padding-bottom: 3vw;
     }
-
-    .scrollspy-example::-webkit-scrollbar-thumb {
-      background: #3272f6;
-      border-radius: 6px;
-    }
-  }
-}
-
-.list-group {
-  border: none !important;
-
-  .list-group-item {
-    border: none;
-    border-radius: 10px;
-    background-color: transparent;
-    font-family: var(--ff-head);
-    font-size: 30px;
-    font-weight: 600;
-  }
-}
-
-.why-choose-tittle {
-  text-align: center;
-  padding-top: 5vw;
-  line-height: 3rem;
-
-  h5 {
-    color: #3272f6;
-    padding-bottom: 2vw;
   }
 
-  p {
-    width: 60%;
-    line-height: 4rem;
-    font-weight: 600;
-    font-size: 3vw;
-    margin: 0 auto;
-    padding-bottom: 3vw;
-  }
-}
-
-.why-choose-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-  align-items: center;
-  justify-content: center;
-  line-height: 2rem;
-}
-
-.why-choose-list {
-  padding: 1rem;
-  width: 23vw;
-  background-color: #f5f5f5;
-  border-radius: 30px;
-
-  &.active {
-    box-shadow: 1px 1px 10px #3e7cf8;
-  }
-
-  &:hover {
-    box-shadow: 1px 1px 10px #3e7cf8;
-  }
-}
-
-@media (hover: none) {
-  .why-choose-list:hover {
-    box-shadow: none;
-  }
-}
-
-.why-choose-list h5 {
-  color: #3272f6;
-}
-
-.values-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
-
-  @media (max-width: 991px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 600px) {
-    grid-template-columns: 1fr;
-  }
-
-  .grid {
+  .why-choose-container {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1.5rem 2rem;
-    background-color: rgba(245, 245, 245, 0.176);
-
-    .sun-head {
-      margin: 0;
-    }
-
-    img {
-      padding-bottom: 1rem;
-      width: 80px;
-    }
-
-    p {
-      font-size: 15px;
-    }
-  }
-}
-
-.aboutus-title {
-  margin-top: 5vw;
-  color: #3272f6;
-}
-
-.team {
-  .team-wrapper {
-    gap: 8rem;
-
-    .row {
-      position: relative;
-
-      .quote {
-        position: absolute;
-        object-fit: contain;
-        width: 300px;
-        opacity: 4%;
-        right: 0;
-       
-      }
-    }
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    line-height: 2rem;
   }
 
-  .team-card {
-    border-radius: 25px;
-    text-align: center;
+  .why-choose-list {
+    padding: 1rem;
+    width: 23vw;
+    background-color: #f5f5f5;
+    border-radius: 30px;
+
+    &.active {
+      box-shadow: 1px 1px 10px #3e7cf8;
+    }
 
     &:hover {
-      > :nth-child(1) {
-        background-color: var(--clr-light);
-        transition: var(--transition);
-      }
-    }
-
-    p {
-      margin: 0;
-    }
-
-    .sub-head {
-      color: var(--clr-dark);
-    }
-
-    > :nth-child(2) {
-      padding: 0.5rem 0;
-    }
-  }
-}
-
-.active {
-  background-color: var(--clr-light);
-}
-
-.hidden {
-  display: none;
-}
-
-@media screen and (max-width: 1024px) {
-  .values-grid .grid {
-    width: 700px;
-    text-align: center;
-
-    &:hover {
-      height: auto;
-      gap: 2rem;
+      box-shadow: 1px 1px 10px #3e7cf8;
     }
   }
 
-  .mission .row .round {
-    left: 39%;
-    top: -15%;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .technicals {
-    grid-template-columns: repeat(2, 373px);
+  @media (hover: none) {
+    .why-choose-list:hover {
+      box-shadow: none;
+    }
   }
 
-  .mission .row {
+  .why-choose-list h5 {
+    color: #3272f6;
+  }
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
 
-    .round {
-      left: 43%;
-      top: -20%;
+    @media (max-width: 991px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+
+    .grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1.5rem 2rem;
+      background-color: rgba(245, 245, 245, 0.176);
+
+      .sun-head {
+        margin: 0;
+      }
+
+      img {
+        padding-bottom: 1rem;
+        width: 80px;
+      }
+
+      p {
+        font-size: 15px;
+      }
     }
   }
-}
 
-@media screen and (max-width: 1300px) {
-  .why-us .why-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-
-    > :nth-child(1) {
-      grid-row: 1 / 2;
-    }
-    > :nth-child(2) {
-      grid-row: 2 / 3;
-    }
-    > :nth-child(3) {
-      grid-row: 3 / 4;
-    }
+  .aboutus-title {
+    margin-top: 5vw;
+    color: #3272f6;
   }
-}
 
-@media screen and (max-width: 1440px) {
-  .values-grid .grid {
-    width: 350px;
-  }
-}
+  .team {
+    .team-wrapper {
+      gap: 8rem;
 
-@media screen and (max-width: 767px) {
-  .why-us .why-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
+      .row {
+        position: relative;
 
-    > :nth-child(1) {
-      grid-row: 1 / 2;
-    }
-    > :nth-child(2) {
-      grid-row: 2 / 3;
-      display: none;
-    }
-    > :nth-child(3) {
-      display: none;
-    }
-    > :nth-child(4) {
-      display: block;
-
-      .content {
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 3rem;
-
-        .card {
-          width: auto;
-          margin: 0 auto;
-          display: flex;
-          flex-direction: column;
-          gap: 0.6rem;
-          background-color: var(--clr-dark);
-          padding: 1.5rem;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-        }
-
-        img {
-          height: 80px;
-          width: 80px;
+        .quote {
+          position: absolute;
           object-fit: contain;
+          width: 300px;
+          opacity: 4%;
+          right: 0;
+        }
+      }
+    }
+
+    .team-card {
+      border-radius: 25px;
+      text-align: center;
+
+      &:hover {
+        > :nth-child(1) {
+          background-color: var(--clr-light);
+          transition: var(--transition);
+        }
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .sub-head {
+        color: var(--clr-dark);
+      }
+
+      > :nth-child(2) {
+        padding: 0.5rem 0;
+      }
+    }
+  }
+
+  .active {
+    background-color: var(--clr-light);
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .values-grid .grid {
+      width: 700px;
+      text-align: center;
+
+      &:hover {
+        height: auto;
+        gap: 2rem;
+      }
+    }
+
+    .mission .row .round {
+      left: 39%;
+      top: -15%;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .technicals {
+      grid-template-columns: repeat(2, 373px);
+    }
+
+    .mission .row {
+      gap: 3rem;
+
+      .round {
+        left: 43%;
+        top: -20%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    .why-us .why-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, auto);
+
+      > :nth-child(1) {
+        grid-row: 1 / 2;
+      }
+      > :nth-child(2) {
+        grid-row: 2 / 3;
+      }
+      > :nth-child(3) {
+        grid-row: 3 / 4;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1440px) {
+    .values-grid .grid {
+      width: 350px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .why-us .why-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, auto);
+
+      > :nth-child(1) {
+        grid-row: 1 / 2;
+      }
+      > :nth-child(2) {
+        grid-row: 2 / 3;
+        display: none;
+      }
+      > :nth-child(3) {
+        display: none;
+      }
+      > :nth-child(4) {
+        display: block;
+
+        .content {
+          display: flex;
+          flex-direction: column-reverse;
+          gap: 3rem;
+
+          .card {
+            width: auto;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            background-color: var(--clr-dark);
+            padding: 1.5rem;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+          }
+
+          img {
+            height: 80px;
+            width: 80px;
+            object-fit: contain;
+          }
         }
       }
     }
   }
-}
 
-.image-disabled {
-  opacity: 0;
-}
-
-.change-bg {
-  width: 100%;
-  height: 300px;
-  background-color: transparent;
-  transition: background-color 0.5s ease-in-out;
-}
-
-.sub-head {
-  color: #3272f6;
-}
-
-@media screen and (max-width: 768px) {
-  .text-center {
-    font-size: 1vw;
+  .image-disabled {
+    opacity: 0;
   }
 
-  .about .section-title p {
+  .change-bg {
     width: 100%;
-    font-size: 5vh;
-    font-weight: 500;
+    height: 300px;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out;
   }
 
-  .choose {
-    font-size: 4vh;
-    width: 100%;
+  .sub-head {
+    color: #3272f6;
   }
-  .why-choose-tittle {
-    padding-top: 15vw;
-    line-height: 3rem;
 
-    h5 {
-      padding-bottom: 2vw;
+  @media screen and (max-width: 768px) {
+    .text-center {
+      font-size: 1vw;
     }
 
-    p {
-      width: 75%;
-      line-height: 2rem;
-      font-weight: 700;
-      font-size: 5vw;
-      padding-bottom: 5vw;
+    .about .section-title p {
+      width: 100%;
+      font-size: 5vh;
+      font-weight: 500;
+    }
+
+    .choose {
+      font-size: 4vh;
+      width: 100%;
+    }
+    .why-choose-tittle {
+      padding-top: 15vw;
+      line-height: 3rem;
+
+      h5 {
+        padding-bottom: 2vw;
+      }
+
+      p {
+        width: 75%;
+        line-height: 2rem;
+        font-weight: 700;
+        font-size: 5vw;
+        padding-bottom: 5vw;
+      }
+    }
+
+    .why-choose-container {
+      flex-direction: row;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .why-choose-list {
+      width: 60vw;
+      border-radius: 25px;
     }
   }
 
-  .why-choose-container {
-    flex-direction: row;
-    gap: 1.5rem;
+  @media screen and (max-width: 480px) {
+    .about .section-title p {
+      width: 100%;
+      font-size: 3vh;
+      font-weight: 500;
+    }
+
+    .text-center {
+      font-size: 3.5vw;
+    }
+
+    .vision {
+      padding-top: 200px;
+    }
+
+    .choose {
+      font-size: 3vh;
+      width: 100%;
+    }
+
+    .why-choose-tittle {
+      padding-top: 15vw;
+      line-height: 3rem;
+
+      h5 {
+        padding-bottom: 2vw;
+      }
+
+      p {
+        width: 75%;
+        line-height: 2rem;
+        font-weight: 700;
+        font-size: 5vw;
+        padding-bottom: 5vw;
+      }
+    }
+
+    .why-choose-container {
+      flex-direction: row;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .why-choose-list {
+      width: 60vw;
+      border-radius: 25px;
+    }
+  }
+  .go-corner {
+    display: flex;
+    align-items: center;
     justify-content: center;
-  }
-
-  .why-choose-list {
-    width: 60vw;
-    border-radius: 25px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .about .section-title p {
-    width: 100%;
-    font-size: 3vh;
-    font-weight: 500;
-  }
-
-  .text-center {
-    font-size: 3.5vw;
-  }
-
-  .vision {
-    padding-top: 200px;
-  }
-
-  .choose {
-    font-size: 3vh;
-    width: 100%;
-  }
-
-  .why-choose-tittle {
-    padding-top: 15vw;
-    line-height: 3rem;
-
-    h5 {
-      padding-bottom: 2vw;
-    }
-
-    p {
-      width: 75%;
-      line-height: 2rem;
-      font-weight: 700;
-      font-size: 5vw;
-      padding-bottom: 5vw;
-    }
-  }
-
-  .why-choose-container {
-    flex-direction: row;
-    gap: 1.5rem;
-    justify-content: center;
-  }
-
-  .why-choose-list {
-    width: 60vw;
-    border-radius: 25px;
-  }
-}
-.go-corner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  background-color: #3272f6;
-  border-radius: 0 4px 0 32px;
-}
-
-.go-arrow {
-  margin-top: -4px;
-  margin-right: -4px;
-  color: white;
-  font-family: courier, sans;
-}
-
-.card1 {
-  display: block;
-  position: relative;
-  width: 300px;
-  font-size: 18px;
-  line-height: 2rem;
-  background-color: #f2f8f9;
-  border-radius: 10px;
-  padding: 32px 24px;
-  margin: 12px;
-  text-decoration: none;
-  z-index: 0;
-  overflow: hidden;
-
-  &:before {
-    content: "";
     position: absolute;
-    z-index: -1;
-    top: -16px;
-    right: -16px;
-    background: #3272f6;
-    height: 40px;
-    width: 40px;
-    border-radius: 32px;
-    transform: scale(1);
-    transform-origin: 50% 50%;
-    transition: transform 0.25s ease-out;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: #3272f6;
+    border-radius: 0 4px 0 32px;
   }
 
-  &:hover:before {
-    transform: scale(21);
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
   }
-}
 
-.card1:hover {
-  p {
-    transition: all 0.3s ease-out;
-    color: rgba(255, 255, 255, 0.8);
-  }
-  h3 {
-    transition: all 0.3s ease-out;
-    color: #ffffff;
-  }
-}
+  .card1 {
+    display: block;
+    position: relative;
+    width: 300px;
+    font-size: 18px;
+    line-height: 2rem;
+    background-color: #f2f8f9;
+    border-radius: 10px;
+    padding: 32px 24px;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
 
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -16px;
+      right: -16px;
+      background: #3272f6;
+      height: 40px;
+      width: 40px;
+      border-radius: 32px;
+      transform: scale(1);
+      transform-origin: 50% 50%;
+      transition: transform 0.25s ease-out;
+    }
+
+    &:hover:before {
+      transform: scale(21);
+    }
+  }
+
+  .card1:hover {
+    p {
+      transition: all 0.3s ease-out;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    h3 {
+      transition: all 0.3s ease-out;
+      color: #ffffff;
+    }
+  }
 </style>

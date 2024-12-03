@@ -2,190 +2,6 @@
 const { photos } = Astro.props;
 ---
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-    <style>
-        .body {
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: #000;
-            padding: 0 40px;
-            font-family: "Source Sans Pro",
-                Helvetica, sans-serif;
-            font-weight: 300;
-        }
-
-
-
-        #grid {
-            display: grid;
-            grid-template-columns:
-                repeat(auto-fill, 150px);
-            grid-column-gap: 30px;
-            grid-row-gap: 30px;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            max-width: 700px;
-            
-        }
-
-
-        #grid .card {
-            background-color: #ccc;
-            width: 150px;
-            height: 150px;
-            transition: all 0.1s ease;
-            border-radius: 3px;
-            position: relative;
-            z-index: 1;
-            box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
-            overflow: hidden;
-            cursor: pointer;
-        }
-
-
-
-        #grid .card:hover {
-            transform: scale(2);
-            z-index: 2;
-            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
-        }
-
-        #grid .card:hover img {
-            filter: grayscale(0);
-        }
-
-
-
-        #grid .card .reflection {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: 2;
-            left: 0;
-            top: 0;
-            transition: all 0.1s ease;
-            opacity: 0;
-            mix-blend-mode: soft-light;
-        }
-
-
-
-        #grid .card img {
-            width: 100%;
-            height: 100%;
-            -o-object-fit: cover;
-            object-fit: cover;
-            filter: grayscale(0.65);
-            transition: all 0.3s ease;
-        }
-
-       
-
-    </style>
-</head>
-
-<body>
-
-    <div class="body">
-        <div class="grid" id="grid">
-            <photo-card
-                img="https://images.pexels.com/photos/290386/pexels-photo-290386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></photo-card>
-            <photo-card
-                img="https://images.pexels.com/photos/844167/pexels-photo-844167.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></photo-card>
-            <photo-card
-                img="https://images.pexels.com/photos/1467300/pexels-photo-1467300.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></photo-card>
-            <photo-card
-                img="https://images.pexels.com/photos/1139040/pexels-photo-1139040.jpeg?auto=compress&cs=tinysrgb&w=800"></photo-card>
-            <photo-card
-                img="https://images.pexels.com/photos/2531709/pexels-photo-2531709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></photo-card>
-            <photo-card
-                img="https://images.pexels.com/photos/1819650/pexels-photo-1819650.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></photo-card>
-            <photo-card
-                img="https://images.pexels.com/photos/2403251/pexels-photo-2403251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></photo-card>
-            <photo-card
-                img="https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></photo-card>
-        </div>
-    
-    </div>
-    
-   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
-    <script>
-        Vue.component("photo-card", {
-            template: `<a class="card"
-                :href="link"
-                target="_blank"
-                ref="card"
-                @mousemove="move"
-                @mouseleave="leave"
-                @mouseover="over">
-                  <div class="reflection" ref="refl"></div>
-                  <img :src="img"/>
-            </a>`,
-            props: ["img", "link"],
-            mounted() { },
-            data: () => ({
-                debounce: null
-            }),
-
-            methods: {
-                over() {
-                    const refl = this.$refs.refl;
-                    refl.style.opacity = 1;
-                },
-                leave() {
-                    const card = this.$refs.card;
-                    const refl = this.$refs.refl;
-                    card.style.transform = `perspective(500px) scale(1)`;
-                    refl.style.opacity = 0;
-                },
-
-                move() {
-                    const card = this.$refs.card;
-                    const refl = this.$refs.refl;
-
-                    const relX = (event.offsetX + 1) / card.offsetWidth;
-                    const relY = (event.offsetY + 1) / card.offsetHeight;
-                    const rotY = `rotateY(${(relX - 0.5) * 60}deg)`;
-                    const rotX = `rotateX(${(relY - 0.5) * -60}deg)`;
-                    card.style.transform = `perspective(500px) scale(2) ${rotY} ${rotX}`;
-
-                    const lightX = this.scale(relX, 0, 1, 150, -50);
-                    const lightY = this.scale(relY, 0, 1, 30, -100);
-                    const lightConstrain = Math.min(Math.max(relY, 0.3), 0.7);
-                    const lightOpacity = this.scale(lightConstrain, 0.3, 1, 1, 0) * 255;
-                    const lightShade = `rgba(${lightOpacity}, ${lightOpacity}, ${lightOpacity}, 1)`;
-                    const lightShadeBlack = `rgba(0, 0, 0, 1)`;
-                    refl.style.backgroundImage = `radial-gradient(circle at ${lightX}% ${lightY}%, ${lightShade} 20%, ${lightShadeBlack})`;
-                },
-                scale: (val, inMin, inMax, outMin, outMax) =>
-                    outMin + (val - inMin) * (outMax - outMin) / (inMax - inMin)
-            }
-        });
-
-
-
-        const app = new Vue({
-            el: "#grid"
-        });
-    </script>
-</body>
-
-</html> -->
-
 <style>
   .body {
     margin: 0;
@@ -196,7 +12,7 @@ const { photos } = Astro.props;
     justify-content: center;
     background-color: #000;
     padding: 0 40px;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
     font-weight: 300;
   }
 
@@ -257,35 +73,33 @@ const { photos } = Astro.props;
 
 <div class="body">
   <div class="grid" id="grid">
-    {photos.map((photo) => (
-      <a
-        class="card"
-        href={photo.link}
-        target="_blank"
-      >
-        <div class="reflection"></div>
-        <img src={photo.img} alt="" />
-      </a>
-    ))}
+    {
+      photos.map((photo) => (
+        <a class="card" href={photo.link} target="_blank">
+          <div class="reflection" />
+          <img src={photo.img} alt={photo.alt} />
+        </a>
+      ))
+    }
   </div>
 </div>
 
 <script>
   function over(event) {
-    const refl = event.currentTarget.querySelector(".reflection");
+    const refl = event.currentTarget.querySelector('.reflection');
     refl.style.opacity = 1;
   }
 
   function leave(event) {
     const card = event.currentTarget;
-    const refl = event.currentTarget.querySelector(".reflection");
-    card.style.transform = "perspective(500px) scale(1)";
+    const refl = event.currentTarget.querySelector('.reflection');
+    card.style.transform = 'perspective(500px) scale(1)';
     refl.style.opacity = 0;
   }
 
   function move(event) {
     const card = event.currentTarget;
-    const refl = event.currentTarget.querySelector(".reflection");
+    const refl = event.currentTarget.querySelector('.reflection');
 
     const relX = (event.offsetX + 1) / card.offsetWidth;
     const relY = (event.offsetY + 1) / card.offsetHeight;
@@ -298,7 +112,7 @@ const { photos } = Astro.props;
     const lightConstrain = Math.min(Math.max(relY, 0.3), 0.7);
     const lightOpacity = scale(lightConstrain, 0.3, 1, 1, 0) * 255;
     const lightShade = `rgba(${lightOpacity}, ${lightOpacity}, ${lightOpacity}, 1)`;
-    const lightShadeBlack = "rgba(0, 0, 0, 1)";
+    const lightShadeBlack = 'rgba(0, 0, 0, 1)';
     refl.style.backgroundImage = `radial-gradient(circle at ${lightX}% ${lightY}%, ${lightShade} 20%, ${lightShadeBlack})`;
   }
 
@@ -306,7 +120,7 @@ const { photos } = Astro.props;
     return outMin + ((val - inMin) * (outMax - outMin)) / (inMax - inMin);
   }
 
-  document.querySelectorAll('.card').forEach(card => {
+  document.querySelectorAll('.card').forEach((card) => {
     card.addEventListener('mousemove', move);
     card.addEventListener('mouseleave', leave);
     card.addEventListener('mouseover', over);

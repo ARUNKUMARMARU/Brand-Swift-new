@@ -1,14 +1,29 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Header from "../components/header.astro";
-import Footer from "../components/footer3.astro";
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/header.astro';
+import Footer from '../components/footer3.astro';
 ---
 
-<Layout title="Contact Us | Top Digital Marketing Services in Bangalore" link="contact">
+<Layout
+  title="Contact Us | BrandSwift - Get in Touch with the Best Digital Marketing Agency in Bangalore"
+  description="Reach out to BrandSwift, Bangalore's top digital marketing agency. Contact us for expert branding, SEO, web development, and marketing solutions tailored to your business"
+  keywords="Contact BrandSwift, Digital Marketing Agency Bangalore, Branding Agency Bangalore Contact, SEO Services Contact Bangalore, Web Development Contact Bangalore, Marketing Solutions Contact"
+  robots="index, follow"
+  canonical="https://brandswift.in/contact/"
+  og_title="Contact Us | BrandSwift - Get in Touch with the Best Digital Marketing Agency in Bangalore"
+  og_description="Contact BrandSwift for innovative digital marketing solutions. Let us help your brand succeed with expert branding, SEO, and social media strategies"
+  og_image=""
+  twitter_card="summary_large_image"
+  twitter_title="Contact Us | BrandSwift - Get in Touch with the Best Digital Marketing Agency in Bangalore"
+  twitter_description="Talk to BrandSwift today for professional branding, SEO, and marketing solutions. Contact Bangalore's trusted digital marketing experts"
+  twitter_image=""
+>
   <Header />
   <div class="blur-wrapper">
     <div class="contact-title">Let's Connect and Collaborate!</div>
-    <p class="contact-paragraph">Partner with us for marketing that breaks through the noise.</p>
+    <p class="contact-paragraph">
+      Partner with us for marketing that breaks through the noise.
+    </p>
     <div class="performancetop">
       <div class="performance">
         <div class="input">
@@ -40,276 +55,274 @@ import Footer from "../components/footer3.astro";
               <option value="Digital Marketing">Digital Marketing</option>
               <option value="Web Design">Web Design</option>
               <option value="Web Development">Web Development</option>
-              <option value="Social Media Management">Social Media Management</option>
+              <option value="Social Media Management"
+                >Social Media Management</option
+              >
               <option value="Graphic Design">Graphic Design</option>
             </select>
             <textarea
               id="message"
               name="message"
-              rows="4"            
-              placeholder="Your Message"
-            ></textarea>
+              rows="4"
+              placeholder="Your Message"></textarea>
             <div class="submit">
-              <button  class="btn">Submit</button>
+              <button class="btn">Submit</button>
             </div>
           </form>
         </div>
         <div>
-          <img src="/images/contact-candid.png">
+          <img src="/images/contact-candid.png" />
         </div>
       </div>
     </div>
-    <Footer/>
+    <Footer />
   </div>
 </Layout>
 
+<script>
+  document
+    .getElementById('contact-form')
+    .addEventListener('submit', function (event) {
+      event.preventDefault();
 
-<script> 
-            
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-      
-      event.preventDefault();      
-      
-       const formData = new FormData(event.target);
+      const formData = new FormData(event.target);
       const data = Object.fromEntries(formData.entries());
       var templateParams = {
-      name: data.name,
-      number: data.number,
-      email: data.email,     
-      service: data.service,      
-      message: data.message
-    };
-    
-       emailjs.send('service_8tpviia', 'template_35uwk3r', templateParams)
-  .then(function(response) {
-     console.log('SUCCESS!', response.status, response.text);
-     window.alert("Thank you for contacting us! We will be in touch with you shortly.");
-     
-  })
-      
-  });
+        name: data.name,
+        number: data.number,
+        email: data.email,
+        service: data.service,
+        message: data.message,
+      };
+
+      emailjs
+        .send('service_8tpviia', 'template_35uwk3r', templateParams)
+        .then(function (response) {
+          console.log('SUCCESS!', response.status, response.text);
+          window.alert(
+            'Thank you for contacting us! We will be in touch with you shortly.'
+          );
+        });
+    });
 </script>
 
 <style lang="scss">
-
-.contact-title {
-  padding-top: 20vh;
-  font-size: 5vw;
-  font-weight: 400;
-  padding-left: 7vw;
-}
-
-.contact-paragraph {
-  padding-left: 7vw;
-}
-
-.performance {
-  background-image: linear-gradient(to bottom right, #87adf9, #f7ecdb);
-  width: 100%;
-  height: 100%;
-  padding-top: 10vh;
-  border-radius: 5vh;
-  display: flex;
-  align-items: flex-start; 
-  padding-left: 7vw;
-}
-.performance img{
- max-width: 100vw;
- border-radius: 5vh;
-}
-
-.performancetop {
-  padding-top: 20vh;
-  display: flex;
-  flex-direction: row;
-}
-
-.input {
-  display: flex;
-  flex-direction: column;
-  width: 50vw; 
-}
-
-.input input,
-.input select,
-.input textarea,
-.input .submit {
-  margin-bottom: 1em;
-  padding: 0.5em;
-  font-size: 1em;
-  width: 70%; 
-}
-
-form {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 10px;
-  row-gap: 40px;
-  margin: 0 auto;
-}
-
-.btn {
-  margin-bottom: 1em;
-  font-size: 1em;
-  width: 30%; 
-  background-color: #3272f6;
-  color: white;
-  border-radius: 15px; 
-}
-
-textarea,
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-select {
-  width: 370px;
-  border: none;
-  padding: 17px;
-  outline: none;
-  border-radius: 25px;
-}
-@media screen and (max-width: 1440px) {
-  textarea,
-  input[type="text"],
-  input[type="tel"],
-  input[type="email"],
-  select {
-    width: 320px;
-  }
-}
-
-@media screen and (max-width: 1280px) {
-  textarea,
-  input[type="text"],
-  input[type="tel"],
-  input[type="email"],
-  select {
-    width: auto;
-  }
-}
-
-@media screen and (max-width: 992px) {
   .contact-title {
-    font-size: 4vw;
-    padding-left: 5vw;
+    padding-top: 20vh;
+    font-size: 5vw;
+    font-weight: 400;
+    padding-left: 7vw;
   }
 
   .contact-paragraph {
-    padding-left: 5vw;
+    padding-left: 7vw;
+  }
+
+  .performance {
+    background-image: linear-gradient(to bottom right, #87adf9, #f7ecdb);
+    width: 100%;
+    height: 100%;
+    padding-top: 10vh;
+    border-radius: 5vh;
+    display: flex;
+    align-items: flex-start;
+    padding-left: 7vw;
+  }
+  .performance img {
+    max-width: 100vw;
+    border-radius: 5vh;
   }
 
   .performancetop {
-    padding-top: 15vh;
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .input {
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 50vw;
   }
 
-  .performance {
-    padding-left: 5vw;
-  }
-
-  .input {
-    align-items: center;
-  }
-
-  textarea,
-  input[type="text"],
-  input[type="tel"],
-  input[type="email"],
-  select {
-    width: 280px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .contact-title {
-    font-size: 6vw;
-    padding-left: 3vw;
-  }
-
-  .contact-paragraph {
-    padding-left: 3vw;
-  }
-
-  .performance {
-    padding-left: 3vw;
-  }
-
-  textarea,
-  input[type="text"],
-  input[type="tel"],
-  input[type="email"],
-  select {
-    width: 240px;
-  }
-
-  .btn {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .contact-title {
-    font-size: 8vw;
-    padding-left: 2vw;
-  }
-
-  .contact-paragraph {
-    padding-left: 2vw;
-  }
-
-  .performance {
-    padding-left: 2vw;
-  }
-  .performance img{
-    display: none;
-  }
-  .btn {
-    width: 60%;
-  }
-  .input {
-    padding-left: 10vw;    
- 
-  width: 100vw; 
-}
-
-.input input,
-.input select,
-.input textarea,
-.input .submit {
- 
- 
-  font-size: 0.80rem;
-  width: 80%; 
-}
-}
-
-@media screen and (max-width: 390px) {
-  .contact-title {
-    font-size: 10vw;
-    padding-left: 1vw;
-  }
-
-  .contact-paragraph {
-    padding-left: 1vw;
-  }
-
-  .performance {
-    padding-left: 1vw;
-  }
-
-  textarea,
-  input[type="text"],
-  input[type="tel"],
-  input[type="email"],
-  select {
-    width: 180px;
-  }
-
-  .btn {
+  .input input,
+  .input select,
+  .input textarea,
+  .input .submit {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    font-size: 1em;
     width: 70%;
   }
-}
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    row-gap: 40px;
+    margin: 0 auto;
+  }
+
+  .btn {
+    margin-bottom: 1em;
+    font-size: 1em;
+    width: 30%;
+    background-color: #3272f6;
+    color: white;
+    border-radius: 15px;
+  }
+
+  textarea,
+  input[type='text'],
+  input[type='tel'],
+  input[type='email'],
+  select {
+    width: 370px;
+    border: none;
+    padding: 17px;
+    outline: none;
+    border-radius: 25px;
+  }
+  @media screen and (max-width: 1440px) {
+    textarea,
+    input[type='text'],
+    input[type='tel'],
+    input[type='email'],
+    select {
+      width: 320px;
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+    textarea,
+    input[type='text'],
+    input[type='tel'],
+    input[type='email'],
+    select {
+      width: auto;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .contact-title {
+      font-size: 4vw;
+      padding-left: 5vw;
+    }
+
+    .contact-paragraph {
+      padding-left: 5vw;
+    }
+
+    .performancetop {
+      padding-top: 15vh;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .performance {
+      padding-left: 5vw;
+    }
+
+    .input {
+      align-items: center;
+    }
+
+    textarea,
+    input[type='text'],
+    input[type='tel'],
+    input[type='email'],
+    select {
+      width: 280px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .contact-title {
+      font-size: 6vw;
+      padding-left: 3vw;
+    }
+
+    .contact-paragraph {
+      padding-left: 3vw;
+    }
+
+    .performance {
+      padding-left: 3vw;
+    }
+
+    textarea,
+    input[type='text'],
+    input[type='tel'],
+    input[type='email'],
+    select {
+      width: 240px;
+    }
+
+    .btn {
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .contact-title {
+      font-size: 8vw;
+      padding-left: 2vw;
+    }
+
+    .contact-paragraph {
+      padding-left: 2vw;
+    }
+
+    .performance {
+      padding-left: 2vw;
+    }
+    .performance img {
+      display: none;
+    }
+    .btn {
+      width: 60%;
+    }
+    .input {
+      padding-left: 10vw;
+
+      width: 100vw;
+    }
+
+    .input input,
+    .input select,
+    .input textarea,
+    .input .submit {
+      font-size: 0.8rem;
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 390px) {
+    .contact-title {
+      font-size: 10vw;
+      padding-left: 1vw;
+    }
+
+    .contact-paragraph {
+      padding-left: 1vw;
+    }
+
+    .performance {
+      padding-left: 1vw;
+    }
+
+    textarea,
+    input[type='text'],
+    input[type='tel'],
+    input[type='email'],
+    select {
+      width: 180px;
+    }
+
+    .btn {
+      width: 70%;
+    }
+  }
 </style>

@@ -1,28 +1,54 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Header from "../components/header.astro";
-import Footer3 from "../components/footer3.astro";
-import Section from "../components/Section.astro";
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/header.astro';
+import Footer3 from '../components/footer3.astro';
+import Section from '../components/Section.astro';
 ---
-<Layout title="Blog - Brand Swift" link="">
-    <Header/>
-    <div class="blur-wrapper">
-        <Section>
-          
-                <div class="container">
-                    <a href="/blog-list/workflow">
-                        <div class="card">
-                            <div class="img-container">
-                              <img src="https://st2.depositphotos.com/2119479/7679/i/950/depositphotos_76796041-stock-photo-digital-marketing.jpg" alt=""/>
-                            </div>
-                            <div class="card-details">
-                              <h2>The Ultimate Digital Marketing Workflow: From Strategy to Results</h2>
-                              <p>In today’s fast-paced digital world, a well-executed marketing plan can make all the difference for businesses looking to stand out. Whether you are an e-commerce brand, a healthcare institution, or a hospitality service, the right strategy can <span>Read more...</span></p>
-                            </div>
-                          </div>
-                    </a>
 
-                    <!-- <a href="">
+<Layout
+  title="Blog | BrandSwift - Digital Marketing Insights and Trends"
+  description="Stay updated with the latest digital marketing trends, insights, and strategies. Read BrandSwift's blog for expert tips on branding, SEO, PPC, and more."
+  keywords="Digital Marketing Blog, Branding Tips, SEO Strategies Bangalore, Social Media Marketing Blog, PPC Insights, Web Development Trends, Marketing Trends Bangalore"
+  robots="index, follow"
+  canonical="https://brandswift.in/blog/"
+  og_title="Blog | BrandSwift - Digital Marketing Insights and Trends"
+  og_description="Discover valuable insights on branding, SEO, and digital marketing trends from BrandSwift. Learn how to boost your online presence effectively"
+  og_image=""
+  twitter_card="summary_large_image"
+  twitter_title="Blog | BrandSwift - Digital Marketing Insights and Trends"
+  twitter_description="Explore expert advice on digital marketing strategies, branding, and SEO with BrandSwift's insightful blog. Stay ahead in the marketing world"
+  twitter_image=""
+>
+  <Header />
+  <div class="blur-wrapper">
+    <Section>
+      <div class="container">
+        <a href="/blog-list/workflow">
+          <div class="card">
+            <div class="img-container">
+              <img
+                src="https://st2.depositphotos.com/2119479/7679/i/950/depositphotos_76796041-stock-photo-digital-marketing.jpg"
+                alt="brand-swift-digital-markrting"
+              />
+            </div>
+            <div class="card-details">
+              <h2>
+                The Ultimate Digital Marketing Workflow: From Strategy to
+                Results
+              </h2>
+              <p>
+                In today’s fast-paced digital world, a well-executed marketing
+                plan can make all the difference for businesses looking to stand
+                out. Whether you are an e-commerce brand, a healthcare
+                institution, or a hospitality service, the right strategy can <span
+                  >Read more...</span
+                >
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <!-- <a href="">
                         <div class="card">
                             <div class="img-container">
                               <img src="https://www.evereffect.com/wp-content/uploads/2022/05/Depositphotos_76796041_GRN.jpg" alt=""/>
@@ -33,7 +59,7 @@ import Section from "../components/Section.astro";
                             </div>
                           </div>
                     </a> -->
-                     <!-- <div class="card">
+        <!-- <div class="card">
                       <div class="img-container">
                         <img src="http://santoshg.com/codepen/thor_card.jpg" alt=""/>
                       </div>
@@ -78,89 +104,87 @@ import Section from "../components/Section.astro";
                         <p>Black Widow appears in a relaunched ongoing series by writer Nathan Edmondson and artist Phil Noto. The first issue debuted in January 2014. In October 2015, it was announced that Mark Waid and Chris Samnee would be launching a new Black Widow series for 2016 as part of Marvel's post-Secret Wars relaunch.</p>
                       </div>
                     </div> -->
-                    </div>        
-           
-        </Section>
-<Footer3/>
-    </div>
-
+      </div>
+    </Section>
+    <Footer3 />
+  </div>
 </Layout>
 
 <style>
-   .container{
-  max-width:1000px;
-  margin:100px auto;
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:space-around;
-}
+  .container {
+    max-width: 1000px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-.card{
-  position:relative;
-  margin:20px 0;
-  width:300px;
-  height:400px;
-  background: #fff;
-  transform-style:preserve-3d;
-  transform:perspective(2000px);
-  transition:1s;
-  box-shadow:inset 100px 0 50px rgba(0,0,0,0.5);
-}
+  .card {
+    position: relative;
+    margin: 20px 0;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+    box-shadow: inset 100px 0 50px rgba(0, 0, 0, 0.5);
+  }
 
-.card:hover{
-  z-index:1111;
-  transform:perspective(2000px) rotate(-10deg);
-  box-shadow:inset 20px 0 50px rgba(0,0,0,0.5);
-}
+  .card:hover {
+    z-index: 1111;
+    transform: perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
+  }
 
-.card .img-container{
-  position:relative;
-  width:100%;
-  height:100%;
-  border:1px solid #000;
-  box-sizing:border-box;
-  transform-origin:left;
-  z-index:1;
-  transition:1s;
-}
+  .card .img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+  }
 
-.card .img-container img{
-  position:absolute;
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  object-fit:cover;
-}
+  .card .img-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 
-.card:hover .img-container{
-  transform:rotateY(-135deg);
-}
+  .card:hover .img-container {
+    transform: rotateY(-135deg);
+  }
 
-.card .card-details{
-  position:absolute;
-  left:0;
-  top:0;
-  box-sizing:border-box;
-  padding:20px;
-  color:#000;
-}
+  .card .card-details {
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #000;
+  }
 
- .card .card-details h2{
-  margin:0;
-  padding:0.5em 0;
-  text-transform:uppercase;
-  font-size:1.5em;
-  color:#3272f6;
-}
+  .card .card-details h2 {
+    margin: 0;
+    padding: 0.5em 0;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #3272f6;
+  }
 
-.card .card-details p{
-  margin:0;
-  padding:0;
-  line-height:25px;
-  font-size:1.1em;
-}
-.card-details span{
+  .card .card-details p {
+    margin: 0;
+    padding: 0;
+    line-height: 25px;
+    font-size: 1.1em;
+  }
+  .card-details span {
     font-weight: 500;
-}
+  }
 </style>

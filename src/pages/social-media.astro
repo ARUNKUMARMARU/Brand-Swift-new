@@ -1,10 +1,10 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Header from "../components/header.astro";
-import Footer from "../components/footer3.astro";
-import Section from "../components/Section.astro";
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/header.astro';
+import Footer from '../components/footer3.astro';
+import Section from '../components/Section.astro';
 // import Card from "../components/Card.html"
-import Card from "../components/Card.astro";
+import Card from '../components/Card.astro';
 
 const photos = [
   {
@@ -23,107 +23,132 @@ const photos = [
     img: '/images/slide4.jpg',
     link: '#',
   },
-  
 ];
 ---
 
-<Layout title="Best Digital Marketing Agency in Bangalore" link="">
-<Header/>
-<div class="blur-wrapper">
-    
+<Layout
+  title="Social Media Marketing Services | BrandSwift - Engage and Grow Your Audience"
+  description="Drive engagement and brand awareness with BrandSwift's social media marketing services in Bangalore. Tailored strategies for impactful social media presence"
+  keywords="Social Media Marketing Bangalore, Social Media Management, SMM Services Bangalore, Facebook Marketing, Instagram Marketing, LinkedIn Marketing"
+  robots="index, follow"
+  canonical="https://brandswift.in/social-media/"
+  og_title="Social Media Marketing Services | BrandSwift - Engage and Grow Your Audience"
+  og_description="Maximize your social media impact with BrandSwift. We create tailored campaigns to engage and grow your audience across platforms"
+  og_image=""
+  twitter_card="summary_large_image"
+  twitter_title="Social Media Marketing Services | BrandSwift - Engage and Grow Your Audience"
+  twitter_description="Elevate your brand on social media with expert strategies from BrandSwift. From Instagram to LinkedIn, we help you connect with your audience"
+  twitter_image=""
+>
+  <Header />
+  <div class="blur-wrapper">
     <Section>
-       
-       <div class="intro-seo">
+      <div class="intro-seo">
         <h1 class="elementor-heading-title">Social Media Marketing</h1>
         <h2>Amplify Your Brand Reach with Targeted Social Media Strategies</h2>
-        <p class="elementor-widget-container">Elevate your brand with tailored social media strategies and see your audience grow across platforms</p>
-       </div>
-       
+        <p class="elementor-widget-container">
+          Elevate your brand with tailored social media strategies and see your
+          audience grow across platforms
+        </p>
+      </div>
     </Section>
 
     <Section>
-        <div class="seo-list">
-            <div>
-                <h2>Our Social Media Marketing packages Offer</h2>
-            </div>
-            <div class="elementor-7575">
-                <div>
-                    
-                        <h3><b>Content Creation & Curation</b></h3>
-                        <p>Custom posts, graphics, and videos designed to engage your target audience across social platforms.</p>
-                    
-                </div>
-                <div>
-                    
-                    <h3><b>Targeted Advertising Campaigns</b></h3>
-                    <p>Set up and management of paid social media ads tailored to maximize reach and conversions.</p>
-                
-            </div>
-                <div>
-                   
-                       <h3> <b>Platform Management</b></h3>
-                        <p>Full management of social media accounts, including posting schedules and audience interaction.</p>
-                </div>
-                <div>
-                  
-                        <h3><b>Analytics & Reporting</b></h3>
-                       <p>Detailed performance reports, tracking metrics like engagement rates, reach, and growth.</p>
-                </div>
-                <div>
-                   
-                       <h3> <b>Community Building & Engagement</b></h3>
-                        <p>Strategies to build a loyal social media following through active engagement and customer interaction.</p>
-                </div>                
-            </div>
-            <div class="getquote-seo">
-                <a href="/contact" class="btn-2">
-                 Get Quote
-                </a>
-              </div>
+      <div class="seo-list">
+        <div>
+          <h2>Our Social Media Marketing packages Offer</h2>
         </div>
-    </Section>
-    <Section>
-        
-         <Card photos={photos}/>
-       
-     </Section>
-
-    <Section>
-        <div class="seo-process-container">
-            <div>
-                <h2>Our Process of SEO</h2>
-            </div>
-            <div class="seo-process-list-container">
-                <div class="seo-process-list">
-                    <h4>Research & Strategy Development</h4>
-                    <p>In-depth market analysis to identify key social media trends and develop a customized strategy for brand growth.</p>
-                </div>
-                <div class="seo-process-list">
-                    <h4>Content Planning & Creation</h4>
-                    <p>Crafting unique, engaging content designed to resonate with your target audience and boost brand visibility.</p>
-                </div>
-                <div class="seo-process-list">
-                    <h4>Campaign Execution & Monitoring</h4>
-                    <p>Launching targeted campaigns across selected social media platforms, continually optimizing for maximum impact.</p>
-                </div>
-                <div class="seo-process-list">
-                    <h4>Engagement & Interaction</h4>
-                    <p>Actively engaging with followers to foster community interaction, building a strong social presence.</p>
-                </div>
-                <div class="seo-process-list">
-                    <h4>Analytics & Optimization</h4>
-                    <p>Tracking performance metrics to refine strategies, ensuring continuous improvement in social media reach and engagement.</p>
-                </div>
-                
-            </div>
+        <div class="elementor-7575">
+          <div>
+            <h3><b>Content Creation & Curation</b></h3>
+            <p>
+              Custom posts, graphics, and videos designed to engage your target
+              audience across social platforms.
+            </p>
+          </div>
+          <div>
+            <h3><b>Targeted Advertising Campaigns</b></h3>
+            <p>
+              Set up and management of paid social media ads tailored to
+              maximize reach and conversions.
+            </p>
+          </div>
+          <div>
+            <h3><b>Platform Management</b></h3>
+            <p>
+              Full management of social media accounts, including posting
+              schedules and audience interaction.
+            </p>
+          </div>
+          <div>
+            <h3><b>Analytics & Reporting</b></h3>
+            <p>
+              Detailed performance reports, tracking metrics like engagement
+              rates, reach, and growth.
+            </p>
+          </div>
+          <div>
+            <h3><b>Community Building & Engagement</b></h3>
+            <p>
+              Strategies to build a loyal social media following through active
+              engagement and customer interaction.
+            </p>
+          </div>
         </div>
+        <div class="getquote-seo">
+          <a href="/contact" class="btn-2"> Get Quote </a>
+        </div>
+      </div>
     </Section>
-    
-   
-    <Footer/>
-</div>
-</div>
+    <Section>
+      <Card photos={photos} />
+    </Section>
 
+    <Section>
+      <div class="seo-process-container">
+        <div>
+          <h2>Our Process of SEO</h2>
+        </div>
+        <div class="seo-process-list-container">
+          <div class="seo-process-list">
+            <h4>Research & Strategy Development</h4>
+            <p>
+              In-depth market analysis to identify key social media trends and
+              develop a customized strategy for brand growth.
+            </p>
+          </div>
+          <div class="seo-process-list">
+            <h4>Content Planning & Creation</h4>
+            <p>
+              Crafting unique, engaging content designed to resonate with your
+              target audience and boost brand visibility.
+            </p>
+          </div>
+          <div class="seo-process-list">
+            <h4>Campaign Execution & Monitoring</h4>
+            <p>
+              Launching targeted campaigns across selected social media
+              platforms, continually optimizing for maximum impact.
+            </p>
+          </div>
+          <div class="seo-process-list">
+            <h4>Engagement & Interaction</h4>
+            <p>
+              Actively engaging with followers to foster community interaction,
+              building a strong social presence.
+            </p>
+          </div>
+          <div class="seo-process-list">
+            <h4>Analytics & Optimization</h4>
+            <p>
+              Tracking performance metrics to refine strategies, ensuring
+              continuous improvement in social media reach and engagement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </Section>
+
+    <Footer />
+  </div>
 </Layout>
-
-   

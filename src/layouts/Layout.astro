@@ -1,34 +1,81 @@
 ---
 interface Props {
   title: string;
-  link: string;
+  description: string;
+  keywords: string;
+  robots: string;
+  canonical: string;
+  og_title: string;
+  og_description: string;
+  og_image: string;
+  twitter_card: string;
+  twitter_title: string;
+  twitter_description: string;
+  twitter_image: string;
 }
 
-const { title, link } = Astro.props;
+const {
+  title,
+  description,
+  keywords,
+  robots,
+  canonical,
+  og_title,
+  og_description,
+  og_image,
+  twitter_card,
+  twitter_title,
+  twitter_description,
+  twitter_image,
+} = Astro.props;
+
 import '../style/global.css';
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-WNT93FXR');
+    </script>
+    <!-- End Google Tag Manager -->
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="language" content="English" />
-    <meta name="title" content="Brand Swift" />
-    <meta
-      name="keywords"
-      content="Best digital marketing agency Bangalore, best SEO agency Bangalore, Bangalore digital marketing experts, digital advertising Bangalore"
-    />
-    <meta
-      name="description"
-      content="Boost your business with Brand Swift, a top digital marketing agency in Bangalore. Specializing in SEO and social media marketing to drive growth and online success. Contact us today!"
-    />
+    <meta name="title" content={title} />
+    <meta name="keywords" content={keywords} />
+    <meta name="description" content={description} />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
-    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
-    <link rel="canonical" href="https://brandswift.in/" />
-    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonical} />
+    <meta name="robots" content={robots} />
+    <meta
+      property="og:image"
+      content="https://brandswift.in/images/bs-logo-new.png"
+    />
+    <meta property="og:title" content={og_title} />
+    <meta property="og:description" content={og_description} />
+    <meta property="og:image" content={og_image} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content={twitter_card} />
+    <meta name="twitter:title" content={twitter_title} />
+    <meta name="twitter:description" content={twitter_description} />
+    <meta name="twitter:image" content={twitter_image} />
     <meta
       name="google-site-verification"
       content="w96wX-JB_CULrzcFSSiSwLZCxGk8bqoA6ns53RqDNrQ"
@@ -48,19 +95,12 @@ import '../style/global.css';
     </script>
 
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+
     <meta property="og:title" content={title} />
     <meta
       property="og:description"
       content="We are a Top Digital Marketing Agency in Bangalore"
     />
-    <meta
-      property="og:image"
-      content="https://brandswift.in/images/bs-logo-new.png"
-    />
-    <meta property="og:url" content="https://brandswift.in/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Brand Swift" />
 
     <link
       rel="stylesheet"
@@ -130,6 +170,16 @@ import '../style/global.css';
     ></script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WNT93FXR"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe></noscript
+    >
+    <!-- End Google Tag Manager (noscript) -->
+
     <div class="blob-wrapper">
       <div class="blob-section">
         <div class="blob" id="blob1"></div>

@@ -1,32 +1,31 @@
 ---
-const { title , date , image, link} =  Astro.props
+const { title, date, image, alt, link } = Astro.props;
 ---
-<a href={link} >
-    <div class="blog-tile d-flex flex-column gap-3 ">
-        <div>
-         <img src={image} alt="">
-        </div>
-        <div>
-         <p>{date}</p>
-         <p class="fw-bold">{title}</p>
-     
-        </div>
-     </div>
+
+<a href={link}>
+  <div class="blog-tile d-flex flex-column gap-3">
+    <div>
+      <img src={image} alt={alt} />
+    </div>
+    <div>
+      <p>{date}</p>
+      <p class="fw-bold">{title}</p>
+    </div>
+  </div>
 </a>
 
-
 <style lang="scss">
-.blog-tile{
+  .blog-tile {
     // border: solid 1px black;
 
     width: 350px;
-    >:nth-child(1){
-        // border: solid 1px black;
+    > :nth-child(1) {
+      // border: solid 1px black;
+      width: 100%;
+      img {
         width: 100%;
-        img{
-            width: 100%;
-            border-radius: 25px;
-        }
+        border-radius: 25px;
+      }
     }
-}
+  }
 </style>

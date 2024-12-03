@@ -9,7 +9,20 @@ import Homeservice from '../components/homeservice.astro';
 import Industry from '../components/industry.astro';
 ---
 
-<Layout title="Best Digital Marketing Agency in Bangalore" link="">
+<Layout
+  title="BrandSwift | Best Digital Marketing Agency in Bangalore"
+  description="Boost your brand with BrandSwift, the leading digital marketing agency in Bangalore. We specialize in Branding, Graphic Design, SEO, Web Development, Social Media Marketing, PPC, and more. Elevate your business with proven strategies"
+  keywords="Digital Marketing Agency in Bangalore, Branding Agency Bangalore, Graphic Design Services, SEO Company Bangalore, Social Media Marketing Bangalore, Performance Marketing, PPC Services, Web Development Bangalore, Ad Shoot Services, Corporate Event Management Bangalore"
+  robots="index, follow"
+  canonical="https://brandswift.in/"
+  og_title="BrandSwift | Best Digital Marketing Agency in Bangalore"
+  og_description="Partner with BrandSwift for end-to-end digital marketing solutions in Bangalore. From branding to corporate event management, we drive business growth with innovative strategies"
+  og_image=""
+  twitter_card="summary_large_image"
+  twitter_title="BrandSwift | Best Digital Marketing Agency in Bangalore"
+  twitter_description="Achieve business success with BrandSwift, Bangalore's top digital marketing agency. Explore our branding, web development, and marketing services today"
+  twitter_image=""
+>
   <Header />
   <div class="blur-wrapper">
     <!-- <Section>
@@ -276,77 +289,12 @@ import Industry from '../components/industry.astro';
     </Section>
 
     <Industry />
-    <!-- <div class="section project-section">
-      <div>
-        <div class="section-title text-center">
-          <h5 style={{ color: '#3272f6' }}>Industries We Serve</h5>
-        </div>
-        <div class="latest-wrapper">
-          <div>
-            <div class="img">
-              <img
-                src="/images/industry/education.webp"
-                alt="dav school marketing"
-              />
-            </div>
-            <h3>Education</h3>
-          </div>
-
-          <div>
-            <div class="img">
-              <img
-                src="/images/industry/Digital-real-estate.jpg"
-                alt="marigold school marketing"
-              />
-            </div>
-            <h3>Marigold International School</h3>
-          </div>
-
-          <div>
-            <a href="#" class="project-layout">
-              <div class="mhimg">
-                <img
-                  src="/images/industry/healthcare.jpeg"
-                  alt="marigold hospital marketing"
-                />
-              </div>
-              <h3>Marigold Hospital</h3>            
-            </a>
-          </div>
-
-          <div>
-            <a href="#" class="project-layout">
-              <div class="img">
-                <img
-                  src="/images/siddhantha.gif"
-                  alt="siddhanta school markrting"
-                />
-              </div>
-              <h3>Siddhanta Intellectual School</h3>            
-            </a>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
     <Reviews />
 
     <Footer />
   </div>
 </Layout>
-<script>
-  //   document.addEventListener("DOMContentLoaded", function () {
-  //   const slider = document.querySelector('.slider');
-
-  //   slider.addEventListener('mouseover', function () {
-  //     slider.style.animationPlayState = 'paused';
-  //   });
-
-  //   slider.addEventListener('mouseout', function () {
-  //     slider.style.animationPlayState = 'running';
-  //   });
-  // });
-</script>
 
 <style lang="scss">
   .color-text {
@@ -662,7 +610,7 @@ import Industry from '../components/industry.astro';
   }
 
   .branding {
-    background-image: url('images/service/branding.jpg');
+    background-image: url('/images/service/branding.webp');
   }
   .graphic-design {
     background-image: url('/images/service/graphic design.jpg');
