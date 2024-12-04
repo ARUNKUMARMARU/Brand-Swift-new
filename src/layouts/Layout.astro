@@ -52,7 +52,7 @@ import '../style/global.css';
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="language" content="English" />
-    <meta name="title" content={title} />
+    <title>{title}</title>
     <meta name="keywords" content={keywords} />
     <meta name="description" content={description} />
     <meta
@@ -146,10 +146,10 @@ import '../style/global.css';
     />
 
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
+      @context": "https://schema.org",
         "@type": ["LocalBusiness", "Organization"],
         "name": "Brand Swift",
+        "image": "https://brandswift.in/images/bs-logo-new.png",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "3, Banashankari 6th Stage, 4th Block",
@@ -163,8 +163,7 @@ import '../style/global.css';
         "url": "https://www.brandswift.in",
         "openingHours": "Mo-Fr 09:00-18:00",
         "description": "Brand Swift is a digital marketing agency based in Bangalore, specializing in SEO, SEM, and social media marketing.",
-        "sameAs": "https://www.instagram.com/brandswift.in/"
-      }
+        "sameAs": "https://www.instagram.com/brandswift.in/
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"
     ></script>
