@@ -34,7 +34,7 @@ import Footer from '../components/footer3.astro';
         </li>
         <li>
           <h4>Information We Collect</h4>
-          <p style={{ marginBottom: '0' }}>
+          <p class="margin0">
             <b>Personal Data :</b> When you contact us or use our services, we may
             collect personal information such as your name, email address, phone
             number, and company details.
@@ -47,9 +47,7 @@ import Footer from '../components/footer3.astro';
         </li>
         <li>
           <h4>How We Use Your Information</h4>
-          <p style={{ marginBottom: '2vw' }}>
-            We use the information we collect to:
-          </p>
+          <p class="margin2">We use the information we collect to:</p>
           <ul>
             <li>Provide, maintain, and improve our services</li>
             <li>Communicate with you about updates, offers, and promotions</li>
@@ -61,7 +59,7 @@ import Footer from '../components/footer3.astro';
         </li>
         <li>
           <h4>Sharing Your Information</h4>
-          <p style={{ marginBottom: '2vw' }}>
+          <p class="margin2">
             We do not sell or rent your personal data to third parties. We may
             share your information with:
           </p>
@@ -106,9 +104,15 @@ import Footer from '../components/footer3.astro';
   </div>
 </Layout>
 <style>
+  .margin0 {
+    margin-bottom: 10px !important;
+  }
+  .margin2 {
+    margin-bottom: 2vw !important;
+  }
   .policy-container {
     padding-top: 10vw;
-    padding-left: 2vw;
+    padding-left: 2.5vw;
   }
   .policy-container li {
     font-size: 28px;

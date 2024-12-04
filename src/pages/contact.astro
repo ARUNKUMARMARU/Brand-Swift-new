@@ -66,12 +66,12 @@ import Footer from '../components/footer3.astro';
               rows="4"
               placeholder="Your Message"></textarea>
             <div class="submit">
-              <button class="btn">Submit</button>
+              <button class="btn" value="Submit">Submit</button>
             </div>
           </form>
         </div>
         <div>
-          <img src="/images/contact-candid.png" />
+          <img src="/images/contact-candid.webp" />
         </div>
       </div>
     </div>
@@ -79,13 +79,14 @@ import Footer from '../components/footer3.astro';
   </div>
 </Layout>
 
-<script>
+<!-- <script>
   document
     .getElementById('contact-form')
     .addEventListener('submit', function (event) {
       event.preventDefault();
 
       const formData = new FormData(event.target);
+      console.log(event.target);
       const data = Object.fromEntries(formData.entries());
       var templateParams = {
         name: data.name,
@@ -104,8 +105,48 @@ import Footer from '../components/footer3.astro';
           );
         });
     });
-</script>
+</script> -->
 
+<script type="text/javascript">
+  document
+    .getElementById('contact-form')
+    .addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const submitButton = event.target.querySelector('button');
+      submitButton.classList.add('button-loading');
+      submitButton.innerText = 'Loading...';
+
+      const formData = new FormData(event.target);
+      const data = Object.fromEntries(formData.entries());
+      var templateParams = {
+        firstname: data.firstname,
+        lastname: data.lastname,
+        email: data.email,
+        phonenumber: data.phonenumber,
+        message: data.message,
+      };
+
+      emailjs
+        .send('service_8tpviia', 'template_s2yajum', templateParams)
+        .then(function (response) {
+          window.alert(
+            'Thank you for your interest! We will reach out to you soon.'
+          );
+
+          event.target.reset();
+          submitButton.classList.remove('button-loading');
+          submitButton.innerText = 'Submit';
+        })
+        .catch(function (error) {
+          console.error('EmailJS Error:', error);
+          window.alert('Oops! Something went wrong.');
+
+          submitButton.classList.remove('button-loading');
+          submitButton.innerText = 'Submit';
+        });
+    });
+</script>
 <style lang="scss">
   .contact-title {
     padding-top: 20vh;

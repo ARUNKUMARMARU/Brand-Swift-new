@@ -86,7 +86,7 @@
         </li>
         <li>
           <a href="https://maps.app.goo.gl/doe7jEutz7PW6p8Z6" target="_blank"
-            ><img src="/images/bs-map.png" alt="Brand Swift Google Map" /></a
+            ><img src="/images/bs-map.webp" alt="Brand Swift Google Map" /></a
           >
         </li>
       </ul>
@@ -98,11 +98,15 @@
   </div>
 </div>
 
-<script>
+<!-- <script>
   document
     .getElementById('contact-form')
     .addEventListener('submit', function (event) {
       event.preventDefault();
+
+      const submitButton = event.target.querySelector('input[type="submit"]');
+      submitButton.classList.add('button-loading');
+      submitButton.value = 'Loading...';
 
       const formData = new FormData(event.target);
       const data = Object.fromEntries(formData.entries());
@@ -117,10 +121,57 @@
           window.alert(
             'Thank you for contacting us! We will be in touch with you shortly.'
           );
+
+          event.target.reset();
+          submitButton.classList.remove('button-loading');
+          submitButton.value = 'Submit';
+        });
+    });
+</script> -->
+
+<script type="text/javascript">
+  document
+    .getElementById('contact-form')
+    .addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      // Get the submit button and apply loading state
+      const submitButton = event.target.querySelector('input[type="submit"]');
+      submitButton.classList.add('button-loading');
+      submitButton.value = 'Loading...'; // Clear the text
+
+      const formData = new FormData(event.target);
+      const data = Object.fromEntries(formData.entries());
+      var templateParams = {
+        firstname: data.firstname,
+        lastname: data.lastname,
+        email: data.email,
+        phonenumber: data.phonenumber,
+        message: data.message,
+      };
+
+      emailjs
+        .send('service_8tpviia', 'template_s2yajum', templateParams)
+        .then(function (response) {
+          window.alert(
+            'Thank you for your interest! We will reach out to you soon.'
+          );
+
+          // Reset form and button loading state
+          event.target.reset();
+          submitButton.classList.remove('button-loading');
+          submitButton.value = 'Submit';
+        })
+        .catch(function (error) {
+          console.error('EmailJS Error:', error); // Log error for debugging
+          window.alert('Oops! Something went wrong.');
+
+          // Reset button loading state on error
+          submitButton.classList.remove('button-loading');
+          submitButton.value = 'Submit';
         });
     });
 </script>
-
 <style>
   .logo img {
     width: 12vw;
