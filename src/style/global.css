@@ -356,7 +356,7 @@ a {
   font-size: 60px;
   font-weight: 400;
   background-image: var(--gradient-2);
-  -webkit-background-clip: text;
+
   font-family: var(--ff-head);
   -webkit-text-fill-color: transparent;
 }
@@ -532,7 +532,6 @@ a {
   line-height: 1.2;
   font-weight: 400;
   background-image: var(--gradient);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media screen and (max-width: 500px) {
