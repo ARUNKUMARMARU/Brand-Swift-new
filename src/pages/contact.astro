@@ -71,7 +71,7 @@ import Footer from '../components/footer3.astro';
           </form>
         </div>
         <div>
-          <img src="/images/contact-candid.webp" />
+          <img loading="lazy" src="/images/contact-candid.webp" />
         </div>
       </div>
     </div>
@@ -79,33 +79,7 @@ import Footer from '../components/footer3.astro';
   </div>
 </Layout>
 
-<!-- <script>
-  document
-    .getElementById('contact-form')
-    .addEventListener('submit', function (event) {
-      event.preventDefault();
-
-      const formData = new FormData(event.target);
-      console.log(event.target);
-      const data = Object.fromEntries(formData.entries());
-      var templateParams = {
-        name: data.name,
-        number: data.number,
-        email: data.email,
-        service: data.service,
-        message: data.message,
-      };
-
-      emailjs
-        .send('service_8tpviia', 'template_35uwk3r', templateParams)
-        .then(function (response) {
-          console.log('SUCCESS!', response.status, response.text);
-          window.alert(
-            'Thank you for contacting us! We will be in touch with you shortly.'
-          );
-        });
-    });
-</script> -->
+<!-- <script>document.getElementById("contact-form").addEventListener("submit",(function(e){e.preventDefault();const t=new FormData(e.target);console.log(e.target);const n=Object.fromEntries(t.entries());var o={name:n.name,number:n.number,email:n.email,service:n.service,message:n.message};emailjs.send("service_8tpviia","template_35uwk3r",o).then((function(e){console.log("SUCCESS!",e.status,e.text),window.alert("Thank you for contacting us! We will be in touch with you shortly.")}))}));</script> -->
 
 <script type="text/javascript">
   document

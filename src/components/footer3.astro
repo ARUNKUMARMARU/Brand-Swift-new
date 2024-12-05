@@ -32,7 +32,7 @@
     <div class="newsletter">
       <div class="logo">
         <a href="/">
-          <img src="/images/bs-logo-new.png" alt="logo" />
+          <img loading="lazy" src="/images/bs-logo-new.png" alt="logo" />
         </a>
       </div>
       <div class="newsletter-content">
@@ -98,36 +98,7 @@
   </div>
 </div>
 
-<!-- <script>
-  document
-    .getElementById('contact-form')
-    .addEventListener('submit', function (event) {
-      event.preventDefault();
-
-      const submitButton = event.target.querySelector('input[type="submit"]');
-      submitButton.classList.add('button-loading');
-      submitButton.value = 'Loading...';
-
-      const formData = new FormData(event.target);
-      const data = Object.fromEntries(formData.entries());
-      var templateParams = {
-        email: data.email,
-      };
-
-      emailjs
-        .send('service_8tpviia', 'template_s2yajum', templateParams)
-        .then(function (response) {
-          console.log('SUCCESS!', response.status, response.text);
-          window.alert(
-            'Thank you for contacting us! We will be in touch with you shortly.'
-          );
-
-          event.target.reset();
-          submitButton.classList.remove('button-loading');
-          submitButton.value = 'Submit';
-        });
-    });
-</script> -->
+<!-- <script>document.getElementById("contact-form").addEventListener("submit",(function(t){t.preventDefault();const e=t.target.querySelector('input[type="submit"]');e.classList.add("button-loading"),e.value="Loading...";const n=new FormData(t.target);var a={email:Object.fromEntries(n.entries()).email};emailjs.send("service_8tpviia","template_s2yajum",a).then((function(n){console.log("SUCCESS!",n.status,n.text),window.alert("Thank you for contacting us! We will be in touch with you shortly."),t.target.reset(),e.classList.remove("button-loading"),e.value="Submit"}))}));</script> -->
 
 <script type="text/javascript">
   document

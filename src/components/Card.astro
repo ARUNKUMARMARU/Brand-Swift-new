@@ -77,7 +77,7 @@ const { photos } = Astro.props;
       photos.map((photo) => (
         <a class="card" href={photo.link} target="_blank">
           <div class="reflection" />
-          <img src={photo.img} alt={photo.alt} />
+          <img loading="lazy" src={photo.img} alt={photo.alt} />
         </a>
       ))
     }
@@ -85,44 +85,34 @@ const { photos } = Astro.props;
 </div>
 
 <script>
-  function over(event) {
-    const refl = event.currentTarget.querySelector('.reflection');
-    refl.style.opacity = 1;
+  function over(e) {
+    e.currentTarget.querySelector('.reflection').style.opacity = 1;
   }
-
-  function leave(event) {
-    const card = event.currentTarget;
-    const refl = event.currentTarget.querySelector('.reflection');
-    card.style.transform = 'perspective(500px) scale(1)';
-    refl.style.opacity = 0;
+  function leave(e) {
+    const t = e.currentTarget,
+      r = e.currentTarget.querySelector('.reflection');
+    (t.style.transform = 'perspective(500px) scale(1)'), (r.style.opacity = 0);
   }
-
-  function move(event) {
-    const card = event.currentTarget;
-    const refl = event.currentTarget.querySelector('.reflection');
-
-    const relX = (event.offsetX + 1) / card.offsetWidth;
-    const relY = (event.offsetY + 1) / card.offsetHeight;
-    const rotY = `rotateY(${(relX - 0.5) * 60}deg)`;
-    const rotX = `rotateX(${(relY - 0.5) * -60}deg)`;
-    card.style.transform = `perspective(500px) scale(2) ${rotY} ${rotX}`;
-
-    const lightX = scale(relX, 0, 1, 150, -50);
-    const lightY = scale(relY, 0, 1, 30, -100);
-    const lightConstrain = Math.min(Math.max(relY, 0.3), 0.7);
-    const lightOpacity = scale(lightConstrain, 0.3, 1, 1, 0) * 255;
-    const lightShade = `rgba(${lightOpacity}, ${lightOpacity}, ${lightOpacity}, 1)`;
-    const lightShadeBlack = 'rgba(0, 0, 0, 1)';
-    refl.style.backgroundImage = `radial-gradient(circle at ${lightX}% ${lightY}%, ${lightShade} 20%, ${lightShadeBlack})`;
+  function move(e) {
+    const t = e.currentTarget,
+      r = e.currentTarget.querySelector('.reflection'),
+      a = (e.offsetX + 1) / t.offsetWidth,
+      o = (e.offsetY + 1) / t.offsetHeight,
+      c = `rotateY(${60 * (a - 0.5)}deg)`,
+      n = `rotateX(${-60 * (o - 0.5)}deg)`;
+    t.style.transform = `perspective(500px) scale(2) ${c} ${n}`;
+    const s = scale(a, 0, 1, 150, -50),
+      l = scale(o, 0, 1, 30, -100),
+      i = 255 * scale(Math.min(Math.max(o, 0.3), 0.7), 0.3, 1, 1, 0),
+      u = `rgba(${i}, ${i}, ${i}, 1)`;
+    r.style.backgroundImage = `radial-gradient(circle at ${s}% ${l}%, ${u} 20%, rgba(0, 0, 0, 1))`;
   }
-
-  function scale(val, inMin, inMax, outMin, outMax) {
-    return outMin + ((val - inMin) * (outMax - outMin)) / (inMax - inMin);
+  function scale(e, t, r, a, o) {
+    return a + ((e - t) * (o - a)) / (r - t);
   }
-
-  document.querySelectorAll('.card').forEach((card) => {
-    card.addEventListener('mousemove', move);
-    card.addEventListener('mouseleave', leave);
-    card.addEventListener('mouseover', over);
+  document.querySelectorAll('.card').forEach((e) => {
+    e.addEventListener('mousemove', move),
+      e.addEventListener('mouseleave', leave),
+      e.addEventListener('mouseover', over);
   });
 </script>

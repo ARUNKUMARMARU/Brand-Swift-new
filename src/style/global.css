@@ -355,10 +355,8 @@ a {
 .footer-first-section .row .big-title {
   font-size: 60px;
   font-weight: 400;
-  background-image: var(--gradient-2);
 
   font-family: var(--ff-head);
-  -webkit-text-fill-color: transparent;
 }
 @media screen and (max-width: 600px) {
   .footer-first-section .row .big-title {

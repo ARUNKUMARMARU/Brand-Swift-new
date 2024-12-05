@@ -146,21 +146,7 @@ import Footer from '../components/footer3.astro';
   </div>
 </Layout>
 
-<script>
-  const leftArrow = document.getElementById('left-arrow');
-  const rightArrow = document.getElementById('right-arrow');
-  const cards = document.querySelector('.md-container');
-
-  leftArrow.addEventListener('click', () => {
-    const firstCard = cards.firstElementChild;
-    cards.appendChild(firstCard);
-  });
-
-  rightArrow.addEventListener('click', () => {
-    const lastCard = cards.lastElementChild;
-    cards.insertBefore(lastCard, cards.firstElementChild);
-  });
-</script>
+<script>const leftArrow=document.getElementById("left-arrow"),rightArrow=document.getElementById("right-arrow"),cards=document.querySelector(".md-container");leftArrow.addEventListener("click",(()=>{const e=cards.firstElementChild;cards.appendChild(e)})),rightArrow.addEventListener("click",(()=>{const e=cards.lastElementChild;cards.insertBefore(e,cards.firstElementChild)}));</script>
 
 <style>
   .service-controls {

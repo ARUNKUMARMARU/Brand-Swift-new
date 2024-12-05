@@ -327,6 +327,7 @@ import Section from '../components/Section.astro';
                 <div class="team-card">
                   <div>
                     <img
+                      loading="lazy"
                       src="/images/manojkumar.webp"
                       alt="Founder-CEO-of-Brand-Swift"
                       class="founder"
@@ -385,36 +386,26 @@ import Section from '../components/Section.astro';
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     if (window.innerWidth <= 600) {
-      const cards = document.querySelectorAll('.why-choose-list');
-
-      const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.7,
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            cards.forEach((card) => card.classList.remove('active'));
-            entry.target.classList.add('active');
-          }
+      const e = document.querySelectorAll('.why-choose-list'),
+        t = new IntersectionObserver(
+          (t) => {
+            t.forEach((t) => {
+              t.isIntersecting &&
+                (e.forEach((e) => e.classList.remove('active')),
+                t.target.classList.add('active'));
+            });
+          },
+          { root: null, rootMargin: '0px', threshold: 0.7 }
+        );
+      e.forEach((e) => {
+        t.observe(e);
+      }),
+        window.addEventListener('scroll', () => {
+          const t = document.documentElement.scrollHeight;
+          document.documentElement.scrollTop +
+            document.documentElement.clientHeight >=
+            t && e.forEach((e) => e.classList.remove('active'));
         });
-      }, observerOptions);
-
-      cards.forEach((card) => {
-        observer.observe(card);
-      });
-
-      window.addEventListener('scroll', () => {
-        const scrollHeight = document.documentElement.scrollHeight;
-        const scrollTop = document.documentElement.scrollTop;
-        const clientHeight = document.documentElement.clientHeight;
-
-        if (scrollTop + clientHeight >= scrollHeight) {
-          cards.forEach((card) => card.classList.remove('active'));
-        }
-      });
     }
   });
 </script>
